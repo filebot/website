@@ -6,6 +6,7 @@
 *.zip
 *.pkg
 *.deb
+*.spk
 *.tar.xz
 
 # exclude verification files
