@@ -2,7 +2,7 @@ Options +Indexes
 
 IndexStyleSheet https://www.filebot.net/index.css
 IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreCase IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
-IndexOrderDefault Ascending Date
+
 
 AddType text/plain KEYS
 AddType text/plain .asc
