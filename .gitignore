@@ -1,6 +1,16 @@
+*.variables
+
+# exclude binaries
 *.exe
 *.msi
 *.zip
 *.pkg
 *.deb
 *.tar.xz
+
+# exclude verification files
+*.asc
+*.sha256
+
+# exclude auto-generated files
+*.json
