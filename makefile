@@ -5,7 +5,7 @@ RSYNC := rsync --update --verbose --recursive --times --links --executability --
 
 
 put:
-	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~
+	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
 
 get:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
