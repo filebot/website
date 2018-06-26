@@ -1,6 +1,8 @@
 Options +Indexes
 
 IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
+IndexOrderDefault Ascending Date
+
 
 AddType text/plain KEYS
 AddType text/plain .asc
