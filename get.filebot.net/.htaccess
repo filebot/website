@@ -1,6 +1,6 @@
+# disable directory index
+Options -Indexes
+
 # redirect to store
 redirect 302 /windows/ https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=get
 redirect 302 /mac/ https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=get
-
-# disable directory index
-Options -Indexes
