@@ -13,7 +13,7 @@ website:
 	open dist/filebot.net/index.html
 
 deploy-website:
-	ant website
+	make clean website
 	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
 	make purge-cache
 
