@@ -5,11 +5,14 @@ RSYNC := rsync --update --verbose --recursive --times --executability --keep-dir
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
-log:
-	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
+build:
+	ant website
 
 put:
 	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
 
 get:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
+
+sync-log:
+	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .

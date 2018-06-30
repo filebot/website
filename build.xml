@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project name="filebot-website" default="website">
+
+	<!-- define source dirs -->
+	<property name="www.dist" location="${basedir}/dist/www.filebot.net" />
+	<property name="www.src" location="${basedir}/www.filebot.net" />
+
+	<!-- import property files -->
+	<property file="${basedir}/profile.properties" />
+	<property file="${basedir}/app.properties" />
+
+	<!-- define release files -->
+	<property name="release" value="${application.name}_${application.version}" />
+
+	<!-- timestamp variables -->
+	<tstamp prefix="tstamp">
+		<format property="year" pattern="yyyy" />
+	</tstamp>
+
+
+	<target name="website" description="Build website">
+		<!-- copy static website resources -->
+		<copy todir="${www.dist}" preservelastmodified="yes" verbose="yes">
+			<fileset dir="${www.src}" />
+		</copy>
+
+		<!-- copy text files and replace ant variables -->
+		<copy-replace todir="${www.dist}">
+			<fileset dir="${www.src}">
+				<include name="**/*.htaccess" />
+				<include name="**/*.html" />
+				<include name="**/*.php" />
+			</fileset>
+		</copy-replace>
+	</target>
+
+
+
+
+	<macrodef name="copy-replace" description="Copy text files and replace ant variables">
+		<attribute name="todir" />
+		<element name="filesets" implicit="yes" />
+		<sequential>
+			<copy todir="@{todir}" encoding="utf-8" overwrite="yes" verbose="yes">
+				<filesets />
+				<filterset begintoken="@{" endtoken="}">
+					<propertyset>
+						<propertyref builtin="all" />
+					</propertyset>
+				</filterset>
+			</copy>
+		</sequential>
+	</macrodef>
+
+</project>
