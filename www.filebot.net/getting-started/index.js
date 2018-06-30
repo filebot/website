@@ -73,13 +73,6 @@ function getData() {
 		})
 	}
 
-	// prefer embedded iframe over new window
-	if (!embed) {
-		data.forEach(function(it) {
-			it['iframe'] = it.link
-		})
-	}
-
 	return data
 }
 
