@@ -30,12 +30,6 @@ redirect 302 /forums/faq.php          https://www.filebot.net/forums/viewtopic.p
 redirect 302 /forums/help/faq         https://www.filebot.net/forums/viewtopic.php?f=3&t=7
 
 
-# Force HTTPS
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-
 # Disable Directory Index
 Options -Indexes
 
