@@ -2,7 +2,7 @@
 <project name="filebot-website" default="website">
 
 	<!-- define source dirs -->
-	<property name="www.dist" location="${basedir}/dist/www.filebot.net" />
+	<property name="www.dist" location="${basedir}/dist/filebot.net" />
 	<property name="www.src" location="${basedir}/www.filebot.net" />
 
 	<!-- import property files -->
