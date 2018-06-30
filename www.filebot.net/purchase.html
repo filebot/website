@@ -4,15 +4,9 @@
 		<title>Buy FileBot License</title>
 		<link rel="stylesheet" href="base.css">
 		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-
 		<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-		<script type="text/javascript">
-			Paddle.Setup({
-				vendor: 32405
-			});
-		</script>
+		<script src="purchase.js"></script>
 	</head>
 	<body>
 		<div class="page">
@@ -45,7 +39,6 @@
 					</p>
 				</div>
 
-
 				<div id="purchase" class="section purchase">
 					<a id="year" href="#!" class="paddle_button" data-allow-quantity="false" data-referrer="web" data-product="532439">
 						Buy FileBot License (1 year)
@@ -59,28 +52,9 @@
 					</ul>
 				</div>
 
-
-
-				<script type="text/javascript">
-					$(window).on('load', function() {
-						var deployment = location.hash.substring(1)
-
-						if (deployment) {
-							Paddle.Checkout.open({
-								product: 532439,
-								allowQuantity: false,
-								referring_domain: deployment
-							});
-						}
-					});
-				</script>
-
-
-
 				<p class="suggestion" style="margin-top: 250px">
 				Need some help getting started? Join the <a href="https://www.filebot.net/forums/viewforum.php?f=8">forums</a> and ask.
 				</p>
-
 
 				<div class="footer">
 					<p><a href="https://www.filebot.net/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
