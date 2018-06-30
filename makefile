@@ -1,12 +1,12 @@
 include *.variables
 
 
-RSYNC := rsync --update --verbose --recursive --times --executability --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store --exclude '*/HEAD/*' --exclude '*.msi' --exclude '*.pkg' --exclude '*.deb' --exclude '*.tar.xz' --exclude '*.spk' --exclude '*.asc'
+RSYNC := rsync --update --verbose --recursive --times --executability --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store --exclude '*/HEAD/*' --exclude '*.zip' --exclude '*.xz' --exclude '*.msi' --exclude '*.pkg' --exclude '*.deb' --exclude '*.spk' --exclude '*.asc'
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
 sync:
-	make clean get log
+	make clean sync-frs sync-log
 
 website:
 	ant website
