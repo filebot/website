@@ -10,7 +10,7 @@ sync:
 
 website:
 	ant website
-	open dist/filebot.net/index.html
+	# open dist/filebot.net/index.html
 
 deploy-website:
 	make clean website

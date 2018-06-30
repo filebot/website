@@ -3,7 +3,7 @@ Paddle.Setup({
 });
 
 
-$(window).on('load', function() {
+$(document).on('ready', function() {
 	// display / hide app store links depending on the OS
 	if (navigator.userAgent.indexOf('Windows') >= 0) {
 		$(".winappstore").fadeIn()
@@ -22,7 +22,7 @@ $(window).on('load', function() {
 				$('#review .user').text(review.user)
 				$('#review .date').text(review.date)
 				$('#review .text').text(review.text)
-				$('#review').fadeIn('slow')
+				$('#review').fadeIn()
 			}
 		}
 	});
