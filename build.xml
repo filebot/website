@@ -11,6 +11,7 @@
 
 	<!-- define release files -->
 	<property name="release" value="${application.name}_${application.version}" />
+	<property name="link.release.prefix" value="${link.release.index}/${release}/${release}" />
 
 	<!-- timestamp variables -->
 	<tstamp prefix="tstamp">
