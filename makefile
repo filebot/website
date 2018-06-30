@@ -12,7 +12,7 @@ website:
 	ant website
 	open dist/filebot.net/index.html
 
-deploy:
+deploy-website:
 	ant website
 	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
 	make purge-cache
@@ -32,3 +32,4 @@ clean:
 
 purge-cache:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CF_ZONE_ID)/purge_cache" -H "X-Auth-Email: $(CF_AUTH_EMAIL)" -H "X-Auth-Key: $(CF_AUTH_KEY)" -H "Content-Type: application/json" --data '{"purge_everything":true}'
+		
