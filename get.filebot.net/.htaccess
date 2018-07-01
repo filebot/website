@@ -1,6 +1,31 @@
-# disable directory index
-Options -Indexes
-
-# redirect to store
+# Redirect to Windows Store or Mac App Store
 redirect 302 /windows/ https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=get
 redirect 302 /mac/ https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=get
+
+
+# Enable Fancy Directory Index
+Options +Indexes
+
+IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
+IndexOrderDefault Ascending Date
+
+AddType text/plain KEYS
+AddType text/plain .asc
+AddType text/plain .sha256
+
+
+IndexStyleSheet https://www.filebot.net/index.css
+
+AddIcon https://www.filebot.net/icons/folder.png ^^DIRECTORY^^
+AddIcon https://www.filebot.net/icons/keys.png KEYS
+
+AddIcon https://www.filebot.net/icons/download.windows.png .msi
+AddIcon https://www.filebot.net/icons/download.windows.png .zip
+AddIcon https://www.filebot.net/icons/download.mac.png .pkg
+AddIcon https://www.filebot.net/icons/download.mac.png .app.tar.xz
+AddIcon https://www.filebot.net/icons/download.linux.png .deb
+AddIcon https://www.filebot.net/icons/page.zip.png .xz
+AddIcon https://www.filebot.net/icons/page.zip.png .spk
+
+AddIcon https://www.filebot.net/icons/page.key.png .asc
+AddIcon https://www.filebot.net/icons/page.green.png .sha256
