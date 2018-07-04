@@ -21,6 +21,9 @@ IndexStyleSheet https://www.filebot.net/index.css
 AddIcon https://www.filebot.net/icons/folder.png ^^DIRECTORY^^
 AddIcon https://www.filebot.net/icons/keys.png KEYS
 
+AddIcon https://www.filebot.net/icons/page.code.png .xml
+AddIcon https://www.filebot.net/icons/page.code.png .json
+
 AddIcon https://www.filebot.net/icons/download.windows.png .msi
 AddIcon https://www.filebot.net/icons/download.windows.png .zip
 AddIcon https://www.filebot.net/icons/download.mac.png .pkg
