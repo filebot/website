@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugins>
+  <cachechk>20180704074615</cachechk>
+  <item>
+    <name>Unofficial Java Installer</name>
+    <internalName>oracle-java</internalName>
+    <category>Essentials</category>
+    <type>Developer Tools</type>
+    <icon100>https://www.filebot.net/qnap/oracle-java_100.png</icon100>
+    <icon80>https://www.filebot.net/qnap/oracle-java_80.png</icon80>
+    <description>Unofficial Java Installer will help you install Oracle Java SE on your QNAP NAS. Supported platforms include armv7l, armv8, i686 and x86_64 models. During the install, this package will download the latest Oracle Java SE Development Kit (180 MB) for your platform. This may take a while.</description>
+    <developer>rednoah</developer>
+    <developerLink>https://github.com/rednoah/java-installer</developerLink>
+    <fwVersion>4.2.1</fwVersion>
+    <version>1.8.0_171</version>
+    <platform>
+      <platformID>TS-NASARM</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-NASX86</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X28A</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X32</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X32U</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X35A</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-XA28A</platformID>
+      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+    </platform>
+  </item>
+  <item>
+    <name>Apache Ant Installer</name>
+    <internalName>apache-ant</internalName>
+    <category>Essentials</category>
+    <type>Developer Tools</type>
+    <icon100>https://www.filebot.net/qnap/oracle-java_100.png</icon100>
+    <icon80>https://www.filebot.net/qnap/oracle-java_80.png</icon80>
+    <description>Apache Ant Installer will help you install Apache Ant on your QNAP NAS. On install, this package will download the Apache Ant and Apache Ivy binaries and additional optional libraries. This may take a while.</description>
+    <developer>rednoah</developer>
+    <developerLink>https://github.com/rednoah/ant-installer</developerLink>
+    <fwVersion>4.2.1</fwVersion>
+    <version>1.10.4</version>
+    <platform>
+      <platformID>TS-NASARM</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-NASX86</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X28A</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X32</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X32U</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-X35A</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+    <platform>
+      <platformID>TS-XA28A</platformID>
+      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+    </platform>
+  </item>
+</plugins>

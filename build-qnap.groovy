@@ -1,0 +1,60 @@
+import groovy.xml.*
+
+
+def f = 'get.filebot.net/qnap/index.xml' as File
+def now = new Date()
+
+
+def platforms = ['TS-NASARM', 'TS-NASX86', 'TS-X28A', 'TS-X32', 'TS-X32U', 'TS-X35A', 'TS-XA28A']
+
+
+f.withWriter('UTF-8') { writer ->
+	def xml = new MarkupBuilder(writer)
+
+	xml.mkp.xmlDeclaration(version: "1.0", encoding: "UTF-8")
+	xml.plugins {
+		cachechk(now.format('yyyyMMddhhmmss'))
+
+		// Java Installer
+		item {
+			name('Unofficial Java Installer')
+			internalName('oracle-java')
+			category('Essentials')
+			type('Developer Tools')
+			icon100('https://www.filebot.net/qnap/oracle-java_100.png')
+			icon80('https://www.filebot.net/qnap/oracle-java_80.png')
+			description("Unofficial Java Installer will help you install Oracle Java SE on your QNAP NAS. Supported platforms include armv7l, armv8, i686 and x86_64 models. During the install, this package will download the latest Oracle Java SE Development Kit (180 MB) for your platform. This may take a while.")
+			developer('rednoah')
+			developerLink('https://github.com/rednoah/java-installer')
+			fwVersion('4.2.1')
+			version('1.8.0_171')
+			platforms.each{ id ->
+				platform{
+					platformID(id)
+					location("https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg")
+				}
+			}
+		}
+
+		// Ant Installer
+		item {
+			name('Apache Ant Installer')
+			internalName('apache-ant')
+			category('Essentials')
+			type('Developer Tools')
+			icon100('https://www.filebot.net/qnap/oracle-java_100.png')
+			icon80('https://www.filebot.net/qnap/oracle-java_80.png')
+			description("Apache Ant Installer will help you install Apache Ant on your QNAP NAS. On install, this package will download the Apache Ant and Apache Ivy binaries and additional optional libraries. This may take a while.")
+			developer('rednoah')
+			developerLink('https://github.com/rednoah/ant-installer')
+			fwVersion('4.2.1')
+			version('1.10.4')
+			platforms.each{ id ->
+				platform{
+					platformID(id)
+					location("https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg")
+				}
+			}
+		}
+	}
+}
