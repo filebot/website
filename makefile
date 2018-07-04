@@ -2,7 +2,7 @@ include *.variables
 
 
 ANT := ant -lib lib
-RSYNC := rsync --update --verbose --recursive --times --executability --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store --exclude '*/HEAD/*' --exclude '*.zip' --exclude '*.xz' --exclude '*.msi' --exclude '*.pkg' --exclude '*.deb' --exclude '*.spk' --exclude '*.asc'
+RSYNC := rsync --update --verbose --recursive --times --executability --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store --exclude '*/HEAD/*' --exclude '*.zip' --exclude '*.xz' --exclude '*.msi' --exclude '*.pkg' --exclude '*.deb' --exclude '*.spk' --exclude '*.qpkg' --exclude '*.asc'
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
