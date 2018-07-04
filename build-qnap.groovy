@@ -15,6 +15,30 @@ f.withWriter('UTF-8') { writer ->
 	xml.plugins {
 		cachechk(now.format('yyyyMMddhhmmss'))
 
+		// FileBot
+		item {
+			name('FileBot')
+			internalName('filebot')
+			category('Essentials')
+			type('Utilities')
+			icon100('https://www.filebot.net/qnap/filebot_100.png')
+			icon80('https://www.filebot.net/qnap/filebot_80.png')
+			description("FileBot is the ultimate tool for organizing and renaming your Movies, TV Shows and Anime as well as fetching subtitles and artwork. It's smart and just works.")
+			developer('rednoah')
+			developerLink('https://www.filebot.net/')
+			fwVersion('4.2.1')
+			version('4.8.2')
+			platforms.each{ id ->
+				platform{
+					platformID(id)
+					location('https://get.filebot.net/filebot/FileBot_4.8.2/FileBot_4.8.2.qpkg')
+				}
+			}
+			snapshot('https://www.filebot.net/syno/filebot-snapshot.png')
+			tutorialLink('https://www.filebot.net/cli.html')
+			forumLink('https://www.filebot.net/forums/')
+		}
+
 		// Java Installer
 		item {
 			name('Unofficial Java Installer')
