@@ -20,6 +20,7 @@ redirect 302 /linux/support.html      https://www.filebot.net/forums/viewforum.p
 redirect 302 /linux/snap.html         https://snapcraft.io/filebot
 redirect 302 /linux/docker.html       https://hub.docker.com/r/rednoah/filebot/
 redirect 302 /linux/syno.html         https://www.filebot.net/forums/viewtopic.php?f=13&t=1802
+redirect 302 /linux/qnap.html         https://www.filebot.net/forums/viewtopic.php?f=13&t=6014
 redirect 302 /syno/support.html       https://www.filebot.net/forums/viewforum.php?f=13
 redirect 302 /syno/manual.html        https://www.filebot.net/forums/viewtopic.php?f=13&t=1802
 redirect 302 /channel.html            https://discord.gg/cKVvZ2S
