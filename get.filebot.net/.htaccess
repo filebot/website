@@ -11,10 +11,8 @@ IndexOrderDefault Ascending Date
 
 IndexIgnore *.gif *.ico *.html *.txt
 
-AddType text/plain KEYS
-AddType text/plain .asc
-AddType text/plain .sha256
-
+AddType text/plain KEYS asc sha256
+AddType application/octet-stream msi zip pkg tar xz deb spk qpkg
 
 IndexStyleSheet https://www.filebot.net/index.css
 
