@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugins>
-  <cachechk>20180704113353</cachechk>
+  <cachechk>20180709113901</cachechk>
   <item>
     <name>FileBot</name>
     <internalName>filebot</internalName>
@@ -59,31 +59,31 @@
     <version>1.8.0_171</version>
     <platform>
       <platformID>TS-NASARM</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-NASX86</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X28A</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X32</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X32U</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X35A</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-XA28A</platformID>
-      <location>https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg</location>
     </platform>
   </item>
   <item>
@@ -100,31 +100,31 @@
     <version>1.10.4</version>
     <platform>
       <platformID>TS-NASARM</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-NASX86</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X28A</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X32</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X32U</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-X35A</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
     <platform>
       <platformID>TS-XA28A</platformID>
-      <location>https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg</location>
+      <location>https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg</location>
     </platform>
   </item>
 </plugins>
