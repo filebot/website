@@ -10,8 +10,12 @@ logs
 *.zip
 *.pkg
 *.deb
-*.spk
 *.tar.xz
+*.spk
+*.qpkg
 
 # exclude verification files
 *.asc
+
+# exclude incremental update files
+CHANGES.*
