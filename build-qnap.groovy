@@ -55,7 +55,7 @@ f.withWriter('UTF-8') { writer ->
 			platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/oracle-java-1.8.0_171.qpkg")
+					location("https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg")
 				}
 			}
 		}
@@ -76,7 +76,7 @@ f.withWriter('UTF-8') { writer ->
 			platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/apache-ant-1.10.4.qpkg")
+					location("https://get.filebot.net/qnap/packages/apache-ant_1.10.4.qpkg")
 				}
 			}
 		}
