@@ -2,7 +2,7 @@ include *.variables
 
 
 ANT := ant -lib lib
-RSYNC := rsync --update --verbose --recursive --times --executability --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store
+RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
