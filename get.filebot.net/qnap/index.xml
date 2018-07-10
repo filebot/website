@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugins>
-  <cachechk>20180709113901</cachechk>
+  <cachechk>20180710025914</cachechk>
   <item>
     <name>FileBot</name>
     <internalName>filebot</internalName>
@@ -41,7 +41,7 @@
       <platformID>TS-XA28A</platformID>
       <location>https://get.filebot.net/filebot/FileBot_4.8.2/FileBot_4.8.2.qpkg</location>
     </platform>
-    <snapshot>https://www.filebot.net/syno/filebot-snapshot.png</snapshot>
+    <snapshot>https://www.filebot.net/qnap/filebot-snapshot.png</snapshot>
     <tutorialLink>https://www.filebot.net/cli.html</tutorialLink>
     <forumLink>https://www.filebot.net/forums/</forumLink>
   </item>

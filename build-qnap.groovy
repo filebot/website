@@ -34,7 +34,7 @@ f.withWriter('UTF-8') { writer ->
 					location('https://get.filebot.net/filebot/FileBot_4.8.2/FileBot_4.8.2.qpkg')
 				}
 			}
-			snapshot('https://www.filebot.net/syno/filebot-snapshot.png')
+			snapshot('https://www.filebot.net/qnap/filebot-snapshot.png')
 			tutorialLink('https://www.filebot.net/cli.html')
 			forumLink('https://www.filebot.net/forums/')
 		}
