@@ -6,27 +6,21 @@ RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=r
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
-sync:
-	make clean sync-frs sync-log
+sync-frs:
+	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
+	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
-website: qnap
+deploy-website: clean website qnap
+	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
+	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
+	make purge-cache
+
+website:
 	$(ANT) website
 	# open dist/filebot.net/index.html
 
 qnap:
 	$(ANT) qnap
-
-deploy-website:
-	make clean website
-	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
-	make purge-cache
-
-sync-frs:
-	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
-	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
-
-sync-log:
-	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
 clean:
 	git reset --hard
