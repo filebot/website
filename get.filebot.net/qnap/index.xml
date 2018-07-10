@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugins>
-  <cachechk>20180710025914</cachechk>
+  <cachechk>20180710060624</cachechk>
   <item>
     <name>FileBot</name>
     <internalName>filebot</internalName>
@@ -46,7 +46,7 @@
     <forumLink>https://www.filebot.net/forums/</forumLink>
   </item>
   <item>
-    <name>Unofficial Java Installer</name>
+    <name>Java 8</name>
     <internalName>oracle-java</internalName>
     <category>Essentials</category>
     <type>Developer Tools</type>
@@ -87,7 +87,7 @@
     </platform>
   </item>
   <item>
-    <name>Apache Ant Installer</name>
+    <name>Ant</name>
     <internalName>apache-ant</internalName>
     <category>Essentials</category>
     <type>Developer Tools</type>

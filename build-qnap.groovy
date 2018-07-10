@@ -41,7 +41,7 @@ f.withWriter('UTF-8') { writer ->
 
 		// Java Installer
 		item {
-			name('Unofficial Java Installer')
+			name('Java 8')
 			internalName('oracle-java')
 			category('Essentials')
 			type('Developer Tools')
@@ -62,7 +62,7 @@ f.withWriter('UTF-8') { writer ->
 
 		// Ant Installer
 		item {
-			name('Apache Ant Installer')
+			name('Ant')
 			internalName('apache-ant')
 			category('Essentials')
 			type('Developer Tools')
