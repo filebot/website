@@ -27,7 +27,7 @@ qnap:
 deb:
 	rm -rvf $(DEB_REPO)
 	find get.filebot.net/filebot -type f -name '*.deb' | sort | tail -n 1 | xargs -I '{}' cp -v '{}' dist
-	prm --type deb --release any --component main --arch amd64 --path $(DEB_REPO) --directory dist --gpg rednoah@filebot.net --gpg_sign_algorithm SHA256
+	prm --type deb --release stable --component main --arch amd64 --path $(DEB_REPO) --directory dist --gpg rednoah@filebot.net --gpg_sign_algorithm SHA256
 	find $(DEB_REPO)
 
 clean:
