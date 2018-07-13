@@ -10,7 +10,7 @@ sync-frs:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
-deploy-website: clean website qnap deb
+deploy-website: clean website
 	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
 	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
 	make purge-cache
