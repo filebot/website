@@ -20,7 +20,7 @@ website:
 	# open dist/filebot.net/index.html
 
 repository:
-	$(ANT) deb qnap
+	$(ANT) deb syno qnap
 
 clean:
 	git reset --hard
