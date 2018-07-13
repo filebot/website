@@ -5,6 +5,8 @@ ANT := ant -lib lib
 RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude .DS_Store
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
+DEB_REPO := get.filebot.net/deb
+
 
 sync-frs:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
@@ -21,6 +23,13 @@ website:
 
 qnap:
 	$(ANT) qnap
+
+deb:
+	rm -rvf $(DEB_REPO)
+	mkdir dist
+	find get.filebot.net/filebot -type f -name '*.deb' | sort | tail -n 1 | xargs -I '{}' cp -v '{}' dist
+	prm --type deb --release any --component main --arch amd64 --path $(DEB_REPO) --directory dist --gpg rednoah@filebot.net --gpg_sign_algorithm SHA256
+	find $(DEB_REPO)
 
 clean:
 	git reset --hard

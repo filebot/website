@@ -19,3 +19,7 @@ logs
 
 # exclude incremental update files
 CHANGES.*
+
+# exclude generated repository files
+*.gz
+*.gpg
