@@ -10,14 +10,13 @@ sync-frs:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
-sync-website: clean website
+sync-website: clean website # repository
 	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
 	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
 	make purge-cache
 
 website:
 	$(ANT) website
-	# open dist/filebot.net/index.html
 
 repository:
 	$(ANT) deb syno qnap
