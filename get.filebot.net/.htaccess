@@ -16,11 +16,10 @@ AddType application/octet-stream msi zip pkg tar xz deb spk qpkg
 
 IndexStyleSheet https://www.filebot.net/index.css
 
+DefaultIcon https://www.filebot.net/icons/page.code.png
+
 AddIcon https://www.filebot.net/icons/folder.png ^^DIRECTORY^^
 AddIcon https://www.filebot.net/icons/keys.png KEYS
-
-AddIcon https://www.filebot.net/icons/page.code.png .xml
-AddIcon https://www.filebot.net/icons/page.code.png .json
 
 AddIcon https://www.filebot.net/icons/download.windows.png .msi
 AddIcon https://www.filebot.net/icons/download.windows.png .zip
