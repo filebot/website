@@ -5,13 +5,13 @@
     "packages":[
         {
             "package":"filebot",
-            "version":"4.7.9",
+            "version":"4.8.2",
             "dname":"FileBot",
             "desc":"FileBot is the ultimate tool for organizing and renaming your Movies, TV Shows and Anime as well as fetching subtitles and artwork. It's smart and just works.",
             "maintainer":"FileBot",
-            "maintainer_url":"http://www.filebot.net/",
+            "maintainer_url":"https://www.filebot.net/",
             "distributor":"FileBot",
-            "distributor_url":"http://www.filebot.net/",
+            "distributor_url":"https://www.filebot.net/",
             "start":false,
             "qstart":false,
             "qinst":true,
@@ -22,14 +22,14 @@
             "snapshot":[
                 "https://www.filebot.net/syno/filebot-snapshot.png"
             ],
-            "link":"https://downloads.sourceforge.net/project/filebot/filebot/FileBot_4.7.9/filebot-4.7.9-noarch.spk",
-            "md5":"d7d72266859143c03163d891dcc07141",
-            "sha256":"82212564bb12a5314860f9b2caff542216c81526e1c973664c5fa269324155b6",
-            "size":27125760
+            "link":"https://get.filebot.net/filebot/FileBot_4.8.2/FileBot_4.8.2_noarch.spk",
+            "md5":"7c96ff42f5f4c1774b77ae6a7e82aed6",
+            "sha256":"e93a2590af2cb95b5a05fab6e8d2dc4a0e71766ac1bfc4ec2ad58a4d84342bea",
+            "size":34406400
         },
         {
             "package":"filebot-node",
-            "version":"0.2.4",
+            "version":"0.2.8",
             "dname":"FileBot Node",
             "desc":"FileBot Node allows you to execute and schedule filebot calls via Synology DSM. FileBot Node requires Node.js and FileBot.",
             "maintainer":"FileBot",
@@ -42,15 +42,16 @@
             "qupgrade":true,
             "deppkgs":"filebot",
             "thumbnail":[
-                "https://app.filebot.net/syno/filebot-node-thumbnail.png"
+                "https://www.filebot.net/syno/filebot-node-thumbnail.png"
             ],
             "snapshot":[
-                "https://app.filebot.net/syno/filebot-node-snapshot.png"
+                "https://www.filebot.net/syno/filebot-node-snapshot.png"
             ],
-            "link":"https://downloads.sourceforge.net/project/filebot/filebot-node/filebot-node-0.2.4/filebot-node-0.2.4-noarch.spk",
-            "md5":"b6afb326912ffb5c47870a881c4525b4",
-            "sha256":"78df4391f5c8b390505658139075054b586b9013073e414d507d9db7e2a76f99",
-            "size":665600
+            "link":"https://github.com/filebot/filebot-node/releases/download/0.2.8/filebot-node-0.2.8-noarch.spk",
+            "download_count":"0",
+            "md5":"028753e2656b3980982f59d279be5126",
+            "sha256":"9a7656be92729468ed1dd2a7fcf31dca4a45b58c98b46a1785b9cd3b1fd44e5a",
+            "size":645120
         },
         {
             "package":"oracle-java",
@@ -69,15 +70,16 @@
                 "https://raw.githubusercontent.com/rednoah/java-installer/master/package/synology/images/thumb_256.png"
             ],
             "link":"https://github.com/rednoah/java-installer/releases/download/1.8.0_171/oracle-java-1.8.0_171-noarch.spk",
+            "download_count":"20613",
             "md5":"0d274c9eeccb36a3d8a7eb5aecd5099d",
             "sha256":"58db69096c523e7f59320d842ac81fa1769cace6c6b3162d17c5b61ae0826efe",
             "size":61440
         },
         {
             "package":"apache-ant",
-            "version":"1.10.2",
+            "version":"1.10.4",
             "dname":"Apache Ant Installer",
-            "desc":"Apache Ant Installer will help you install Apache Ant 1.10.2 on your Synology NAS. On install, this package will download the Apache Ant and Apache Ivy binaries and optional libraries. This may take a while.",
+            "desc":"Apache Ant Installer will help you install Apache Ant 1.10.4 on your Synology NAS. On install, this package will download the Apache Ant and Apache Ivy binaries and optional libraries. This may take a while.",
             "maintainer":"Apache Software Foundation",
             "maintainer_url":"http://ant.apache.org/",
             "distributor":"rednoah",
@@ -89,9 +91,10 @@
             "thumbnail":[
                 "https://raw.githubusercontent.com/rednoah/ant-installer/master/package/synology/images/thumb_256.png"
             ],
-            "link":"https://github.com/rednoah/ant-installer/releases/download/1.10.2/apache-ant-1.10.2-noarch.spk",
-            "md5":"f9cf5331d72123cf044a937601c4e028",
-            "sha256":"90ed87ef2d2df2a507b11f685836eab38a77fa39a6caee482a48f20e0fbfc9a1",
+            "link":"https://github.com/rednoah/ant-installer/releases/download/1.10.4/apache-ant-1.10.4-noarch.spk",
+            "download_count":"1583",
+            "md5":"8782746842de6d206f6ff20844e2ebe6",
+            "sha256":"5cde65ef00d8abcba18a915fdf7fd5a88bf10dab30d4346a65d79b2ac165543f",
             "size":51200
         }
     ]

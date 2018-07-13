@@ -58,12 +58,13 @@
 	<target name="syno" description="Update Synology Package Source">
 		<syno:package-source file="${repo.syno}/index.json">
 			<spk file="${repo.release}/${release}_noarch.spk">
+				<info name="link" value="${link.release.prefix}_noarch.spk" />
 				<thumbnail url="https://www.filebot.net/syno/filebot-thumbnail.png" />
 				<snapshot url="https://www.filebot.net/syno/filebot-snapshot.png" />
 			</spk>
-			<source url="https://raw.githubusercontent.com/filebot/filebot-node/master/syno-repo.json" />
-			<source url="https://raw.githubusercontent.com/rednoah/java-installer/master/syno-repo.json" />
-			<source url="https://raw.githubusercontent.com/rednoah/ant-installer/master/syno-repo.json" />
+			<source url="https://raw.githubusercontent.com/filebot/filebot-node/master/syno.json" />
+			<source url="https://raw.githubusercontent.com/rednoah/java-installer/master/syno.json" />
+			<source url="https://raw.githubusercontent.com/rednoah/ant-installer/master/syno.json" />
 		</syno:package-source>
 	</target>
 
