@@ -1,0 +1,1 @@
+RedirectMatch /binary-amd64/([^/]+).deb$ https://get.filebot.net/filebot/$1/$1.deb
