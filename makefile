@@ -6,20 +6,25 @@ RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=r
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
-sync-frs:
+sync: clean
+	make pull-release
+	make website
+	export ANT_OPTS="-Dapplication.version=4.8.2" && make repository
+	make push-website purge-cache
+
+pull-release:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
-sync-website: clean website repository
+push-website:
 	$(RSYNC) dist/filebot.net $(WWW_USER)@$(WWW_HOST):~/
 	$(RSYNC) get.filebot.net $(FRS_USER)@$(FRS_HOST):~/
-	make purge-cache
 
 website:
 	$(ANT) website
 
 repository:
-	export ANT_OPTS="-Dapplication.version=4.8.2" && $(ANT) deb syno qnap
+	$(ANT) deb syno qnap
 
 clean:
 	git reset --hard
