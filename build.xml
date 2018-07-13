@@ -42,7 +42,7 @@
 
 
 	<target name="deb" description="Update DEB Package Repository">
-		<delete dir="${repo.deb}" verbose="yes" />
+		<delete dir="${repo.deb}/dists" verbose="yes" />
 
 		<!-- copy latest deb package -->
 		<copy todir="dist" flatten="yes" preservelastmodified="yes" verbose="yes">
