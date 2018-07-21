@@ -41,21 +41,21 @@ f.withWriter('UTF-8') { writer ->
 
 		// Java Installer
 		item {
-			name('Java 8')
-			internalName('oracle-java')
+			name('Java 8 Installer')
+			internalName('java-8-installer')
 			category('Essentials')
 			type('Developer Tools')
-			icon100('https://www.filebot.net/qnap/oracle-java_100.png')
-			icon80('https://www.filebot.net/qnap/oracle-java_80.png')
-			description("Unofficial Java Installer will help you install Oracle Java SE on your QNAP NAS. Supported platforms include armv7l, armv8, i686 and x86_64 models. During the install, this package will download the latest Oracle Java SE Development Kit (180 MB) for your platform. This may take a while.")
+			icon100('https://www.filebot.net/qnap/java-installer_100.png')
+			icon80('https://www.filebot.net/qnap/java-installer_80.png')
+			description("Java 8 Installer will help you install Oracle Java SE on your QNAP NAS. Supported platforms include armv7l, armv8, i686 and x86_64 models. During the install, this package will download the latest Oracle Java SE Development Kit (180 MB) for your platform. This may take a while.")
 			developer('rednoah')
 			developerLink('https://github.com/rednoah/java-installer')
 			fwVersion('4.2.1')
-			version('1.8.0_171')
+			version('1.8')
 			platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/oracle-java_1.8.0_171.qpkg")
+					location("https://get.filebot.net/qnap/packages/java-8-installer_1.8.qpkg")
 				}
 			}
 		}
