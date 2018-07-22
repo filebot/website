@@ -538,6 +538,11 @@ div.screencast:hover .play {
 	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 }
 
+#purchase > a.paddle_button em {
+	font-style: normal;
+	color: gold;
+}
+
 #purchase > a.paddle_button:before {
 	font-family: FontAwesome;
 	content:"\f07a";
@@ -556,7 +561,7 @@ div.screencast:hover .play {
 
 #purchase > a.paddle_button div.tag {
 	position: absolute;
-	right: 5em;
+	left: 250px;
 	bottom: -1.6em;
 
 	padding: 4px;
@@ -568,7 +573,7 @@ div.screencast:hover .play {
 	font-size: 13px;
 
 	color: white;
-	background-color:#F14E4E;
+	background-color: #F14E4E;
 }
 
 
