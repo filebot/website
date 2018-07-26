@@ -55,7 +55,7 @@ f.withWriter('UTF-8') { writer ->
 			platforms.each{ id ->
 				platform{
 					platformID(id)
-					location('https://get.filebot.net/qnap/packages/filebot-node-0.2.8.1.qpkg')
+					location('https://get.filebot.net/qnap/packages/filebot-node_0.2.8.1.qpkg')
 				}
 			}
 			snapshot('https://www.filebot.net/qnap/filebot-node-snapshot.png')
