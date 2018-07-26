@@ -39,6 +39,29 @@ f.withWriter('UTF-8') { writer ->
 			forumLink('https://www.filebot.net/forums/')
 		}
 
+		// FileBot Node
+		item {
+			name('FileBot')
+			internalName('filebot')
+			category('Essentials')
+			type('Utilities')
+			icon100('https://www.filebot.net/qnap/filebot-node_100.png')
+			icon80('https://www.filebot.net/qnap/filebot-node_80.png')
+			description("FileBot Node allows you to execute filebot via QNAP QTS. FileBot Node requires Node.js and FileBot.")
+			developer('rednoah')
+			developerLink('https://www.filebot.net/')
+			fwVersion('4.2.1')
+			version('0.2.8.1')
+			platforms.each{ id ->
+				platform{
+					platformID(id)
+					location('https://github.com/filebot/filebot-node/releases/download/0.2.8.1/filebot-node-0.2.8.1.qpkg')
+				}
+			}
+			snapshot('https://www.filebot.net/qnap/filebot-node-snapshot.png')
+			forumLink('https://www.filebot.net/qnap/support.html')
+		}
+
 		// Java Installer
 		item {
 			name('Java 8 Installer')
