@@ -41,8 +41,8 @@ f.withWriter('UTF-8') { writer ->
 
 		// FileBot Node
 		item {
-			name('FileBot')
-			internalName('filebot')
+			name('FileBot Node')
+			internalName('filebot-node')
 			category('Essentials')
 			type('Utilities')
 			icon100('https://www.filebot.net/qnap/filebot-node_100.png')
