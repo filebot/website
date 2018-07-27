@@ -26,7 +26,7 @@ f.withWriter('UTF-8') { writer ->
 			description("FileBot is the ultimate tool for organizing and renaming your Movies, TV Shows and Anime as well as fetching subtitles and artwork. It's smart and just works.")
 			developer('rednoah')
 			developerLink('https://www.filebot.net/')
-			fwVersion('4.2.1')
+			fwVersion('4.3.4')
 			version('4.8.2')
 			platforms.each{ id ->
 				platform{
@@ -50,7 +50,7 @@ f.withWriter('UTF-8') { writer ->
 			description("FileBot Node allows you to execute filebot via QNAP QTS. FileBot Node requires Node.js and FileBot.")
 			developer('rednoah')
 			developerLink('https://www.filebot.net/')
-			fwVersion('4.2.1')
+			fwVersion('4.3.4')
 			version('0.2.8.1')
 			platforms.each{ id ->
 				platform{
@@ -73,7 +73,7 @@ f.withWriter('UTF-8') { writer ->
 			description("Java 8 Installer will help you install Oracle Java SE on your QNAP NAS. Supported platforms include armv7l, armv8, i686 and x86_64 models. During the install, this package will download the latest Oracle Java SE Development Kit (180 MB) for your platform. This may take a while.")
 			developer('rednoah')
 			developerLink('https://github.com/rednoah/java-installer')
-			fwVersion('4.2.1')
+			fwVersion('4.3.4')
 			version('1.8')
 			platforms.each{ id ->
 				platform{
@@ -94,7 +94,7 @@ f.withWriter('UTF-8') { writer ->
 			description("Apache Ant Installer will help you install Apache Ant on your QNAP NAS. On install, this package will download the Apache Ant and Apache Ivy binaries and additional optional libraries. This may take a while.")
 			developer('rednoah')
 			developerLink('https://github.com/rednoah/ant-installer')
-			fwVersion('4.2.1')
+			fwVersion('4.3.4')
 			version('1.10.4')
 			platforms.each{ id ->
 				platform{
