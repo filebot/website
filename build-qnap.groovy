@@ -67,8 +67,8 @@ f.withWriter('UTF-8') { writer ->
 
 		// Java Installer
 		item {
-			name(project.properties.'java-installer.title')
-			internalName(project.properties.'java-installer.package')
+			name('Java 8 Installer')
+			internalName('java-8-installer')
 			category('Essentials')
 			type('Developer Tools')
 			icon100('https://www.filebot.net/qnap/java-installer_100.png')
@@ -81,15 +81,15 @@ f.withWriter('UTF-8') { writer ->
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/${project.properties.'java-installer.package'}_${project.properties.'java-installer.version'}.qpkg")
+					location("https://get.filebot.net/qnap/packages/java-8-installer_${project.properties.'java-installer.version'}.qpkg")
 				}
 			}
 		}
 
 		// Ant Installer
 		item {
-			name(project.properties.'ant-installer.title')
-			internalName(project.properties.'ant-installer.package')
+			name('Apache Ant')
+			internalName('apache-ant')
 			category('Essentials')
 			type('Developer Tools')
 			icon100('https://www.filebot.net/qnap/apache-ant_100.png')
@@ -102,7 +102,7 @@ f.withWriter('UTF-8') { writer ->
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/${project.properties.'ant-installer.package'}_${project.properties.'ant-installer.version'}.qpkg")
+					location("https://get.filebot.net/qnap/packages/apache-ant_${project.properties.'ant-installer.version'}.qpkg")
 				}
 			}
 		}
