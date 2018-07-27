@@ -71,6 +71,11 @@
 
 
 	<target name="qnap" description="Update QNAP App Repository">
+		<property prefix="filebot" url="https://raw.githubusercontent.com/filebot/filebot/master/app.properties" />
+		<property prefix="filebot-node" url="https://raw.githubusercontent.com/filebot/filebot-node/master/package.properties" />
+		<property prefix="java-installer" url="https://raw.githubusercontent.com/rednoah/java-installer/master/package.properties" />
+		<property prefix="ant-installer" url="https://raw.githubusercontent.com/rednoah/ant-installer/master/package.properties" />
+
 		<groovy:groovy src="build-qnap.groovy" />
 	</target>
 
