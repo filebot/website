@@ -90,7 +90,7 @@ f.withWriter('UTF-8') { writer ->
 		item {
 			name('Apache Ant')
 			internalName('apache-ant')
-			category('Essentials')
+			category('Build Tools')
 			type('Developer Tools')
 			icon100('https://www.filebot.net/qnap/apache-ant_100.png')
 			icon80('https://www.filebot.net/qnap/apache-ant_80.png')
