@@ -8,9 +8,6 @@ $(document).on('ready', function() {
 	if (navigator.userAgent.indexOf('Windows') >= 0) {
 		$(".winappstore").show()
 	}
-	else if (navigator.userAgent.indexOf('Macintosh') >= 0) {
-		$(".macappstore").show()
-	}
 
 	// display random review
 	$.ajax({
