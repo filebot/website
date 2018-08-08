@@ -18,4 +18,4 @@ logs
 *.asc
 
 # exclude incremental update files
-CHANGES.*
+HEAD
