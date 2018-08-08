@@ -9,7 +9,7 @@ GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 sync: clean
 	make pull-release
 	make website
-	export ANT_OPTS="-Dapplication.version=4.8.2" && make repository
+	make repository
 	make push-website purge-cache
 
 pull-release:
