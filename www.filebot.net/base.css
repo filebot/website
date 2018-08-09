@@ -450,7 +450,7 @@ div.screencast:hover .play {
 	border-radius: 4px;
 }
 
-#download li.macosx, #download li.windows, #purchase li.year {
+#download li.macosx, #download li.windows {
 	list-style: none;
 	margin: 0.5em 1em 1em 1em;
 	padding: 1.5em 1em 1.5em 3.6em;
@@ -469,10 +469,6 @@ div.screencast:hover .play {
 
 #download li.windows {
 	background-image: url('images/microsoft.logo.svg');
-}
-
-#purchase li.year {
-	background-image: url('images/purchase.license.png');
 }
 
 #purchase li.note {
@@ -530,7 +526,7 @@ div.screencast:hover .play {
 #purchase > a.paddle_button {
 	position: relative;
 	display: block;
-	margin: 30px 250px 60px 80px;
+	margin: 30px 250px 50px 80px;
 	padding: 17px 24px 17px 48px;
 	font-size: larger;
 	vertical-align: middle;
