@@ -30,11 +30,11 @@ f.withWriter('UTF-8') { writer ->
 			developer('rednoah')
 			developerLink('https://www.filebot.net/')
 			fwVersion(qnap.version)
-			version(project.properties.'filebot.application.version')
+			version(project.properties.'application.version')
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/filebot/FileBot_${project.properties.'filebot.application.version'}/FileBot_${project.properties.'filebot.application.version'}.qpkg")
+					location("https://get.filebot.net/filebot/FileBot_${project.properties.'application.version'}/FileBot_${project.properties.'application.version'}.qpkg")
 				}
 			}
 			snapshot('https://www.filebot.net/qnap/filebot-snapshot.png')
