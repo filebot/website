@@ -3,12 +3,7 @@ Paddle.Setup({
 });
 
 
-$(document).on('ready', function() {
-	// display / hide app store links depending on the OS
-	if (navigator.userAgent.indexOf('Windows') >= 0) {
-		$(".winappstore").show()
-	}
-
+$(window).on('load', function() {
 	// display random review
 	$.ajax({
 		url: 'reviews.json',
