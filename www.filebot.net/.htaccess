@@ -29,6 +29,7 @@ redirect 302 /linux/syno.html         https://www.filebot.net/forums/viewtopic.p
 redirect 302 /linux/qnap.html         https://www.filebot.net/forums/viewtopic.php?f=13&t=6014
 redirect 302 /linux/snap.html         https://snapcraft.io/filebot
 redirect 302 /linux/docker.html       https://hub.docker.com/r/rednoah/filebot/
+redirect 302 /linux/aur.html          https://aur.archlinux.org/packages/filebot/
 
 # Redirect Forum Links
 redirect 302 /forums/rules.php        https://www.filebot.net/forums/viewtopic.php?f=5&t=1868
