@@ -6,7 +6,18 @@ $root = 'https://get.filebot.net/filebot/';
 $folder = $root.'FileBot_'.$version;
 $file = '';
 
-if ($type == 'msi') {
+if (isset($_GET['type']) && isset($_SERVER['HTTP_USER_AGENT']) {
+	$ua = $_SERVER['HTTP_USER_AGENT']
+	if (preg_match('/\bWindows\b/', $ua)) {
+		$file = 'FileBot_'.$version.'_x64.msi';
+	} else if (preg_match('/\bMacintosh\b/', $ua)) {
+		$file = 'FileBot_'.$version.'.pkg';
+	} else if (preg_match('/\bLinux\b/', $ua)) {
+		$file = 'FileBot_'.$version.'_universal.deb';
+	} else if (preg_match('/\bX11\b/', $ua)) {
+		$file = 'FileBot_'.$version.'-portable.tar.xz';
+	}
+} else if ($type == 'msi') {
 	$file = 'FileBot_'.$version.'_x64.msi';
 } else if ($type == 'zip') {
 	$file = 'FileBot_'.$version.'-portable.zip';
