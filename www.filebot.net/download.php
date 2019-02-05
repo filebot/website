@@ -8,13 +8,13 @@ $file = '';
 
 if (isset($_GET['type']) && isset($_SERVER['HTTP_USER_AGENT']) {
 	$ua = $_SERVER['HTTP_USER_AGENT']
-	if (preg_match('/\bWindows\b/', $ua)) {
+	if (preg_match('/Windows/i', $ua)) {
 		$file = 'FileBot_'.$version.'_x64.msi';
-	} else if (preg_match('/\bMacintosh\b/', $ua)) {
+	} else if (preg_match('/Macintosh/i', $ua)) {
 		$file = 'FileBot_'.$version.'.pkg';
-	} else if (preg_match('/\bLinux\b/', $ua)) {
+	} else if (preg_match('/Ubuntu/i', $ua)) {
 		$file = 'FileBot_'.$version.'_universal.deb';
-	} else if (preg_match('/\bX11\b/', $ua)) {
+	} else if (preg_match('/X11/i', $ua)) {
 		$file = 'FileBot_'.$version.'-portable.tar.xz';
 	}
 } else if ($type == 'msi') {
