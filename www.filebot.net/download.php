@@ -6,8 +6,8 @@ $root = 'https://get.filebot.net/filebot/';
 $folder = $root.'FileBot_'.$version;
 $file = '';
 
-if (!isset($type) && isset($_SERVER['HTTP_USER_AGENT'])) {
-	$ua = $_SERVER['HTTP_USER_AGENT'];
+if (!isset($type)) {
+	$ua = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
 
 	header("Vary: User-Agent");
 	error_log("[HTTP_USER_AGENT] ".$ua);
