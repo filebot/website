@@ -6,9 +6,9 @@ $root = 'https://get.filebot.net/filebot/';
 $folder = $root.'FileBot_'.$version;
 $file = '';
 
-if (isset($_GET['type']) && isset($_SERVER['HTTP_USER_AGENT']) {
+if (!isset($type) && isset($_SERVER['HTTP_USER_AGENT'])) {
 	$ua = $_SERVER['HTTP_USER_AGENT'];
-	error_log("[DOWNLOAD] ".$ua);
+	error_log("[HTTP_USER_AGENT] ".$ua);
 	if (preg_match('/Windows/i', $ua)) {
 		$file = 'FileBot_'.$version.'_x64.msi';
 	} else if (preg_match('/Macintosh/i', $ua)) {
