@@ -7,7 +7,8 @@ $folder = $root.'FileBot_'.$version;
 $file = '';
 
 if (isset($_GET['type']) && isset($_SERVER['HTTP_USER_AGENT']) {
-	$ua = $_SERVER['HTTP_USER_AGENT']
+	$ua = $_SERVER['HTTP_USER_AGENT'];
+	error_log("[DOWNLOAD] ".$ua);
 	if (preg_match('/Windows/i', $ua)) {
 		$file = 'FileBot_'.$version.'_x64.msi';
 	} else if (preg_match('/Macintosh/i', $ua)) {
