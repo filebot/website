@@ -16,8 +16,8 @@ if (!isset($type)) {
 		$file = 'FileBot_'.$version.'_x64.msi';
 	} else if (preg_match('/Macintosh/i', $ua)) {
 		$file = 'FileBot_'.$version.'.pkg';
-	} else if (preg_match('/(Debian|Ubuntu|Mint|Linux)/i', $ua)) {
-		$file = 'FileBot_'.$version.'_universal.deb';
+	} else if (preg_match('/(Debian|Ubuntu|Mint)/i', $ua)) {
+		$file = 'FileBot_'.$version.'_amd64.deb';
 	} else if (preg_match('/X11/i', $ua)) {
 		$file = 'FileBot_'.$version.'-portable.tar.xz';
 	}
