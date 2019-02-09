@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Download FileBot</title>
+		<link rel="stylesheet" href="base.css">
+		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+	</head>
+	<body>
+		<div class="page">
+			<div class="navigation">
+				<div>
+				<ul>
+					<li><a href="https://www.filebot.net/forums/">Forums</a></li>
+					<li><a href="https://www.filebot.net/forums/viewtopic.php?f=3&amp;t=7">FAQ</a></li>
+					<li><a href="https://www.filebot.net/#download">Download</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="header">
+				<a href="https://www.filebot.net/"><img class="logo" alt="logo" src="images/filebot.logo.svg" width="64" height="64" /></a>
+				<h1>
+					FileBot Downloads
+					<span class="description">Installer packages for Windows, Mac and Linux</span>
+				</h1>
+			</div>
+
+			<div class="content">
+				<div class="section download">
+					<img class="icon" src="images/microsoft.logo.svg" alt="download" width="42" height="42" />
+					<h2>FileBot for Windows</h2>
+					<ul class="list">
+						<li>Windows Installer: <a href="@{link.release.prefix}_x64.msi">@{release}_x64.msi</a> or <a href="@{link.release.prefix}_x86.msi">@{release}_x86.msi</a></li>
+						<li>Windows Portable ZIP: <a href="@{link.release.prefix}-portable.zip">@{release}-portable.zip</a></li>
+						<li>Windows package is available <a href="windows/chocolatey.html">via Chocolatey</a></li>
+					</ul>
+				</div>
+
+				<div class="section download">
+					<img class="icon" src="images/apple.logo.svg" alt="download" width="42" height="42" />
+					<h2>FileBot for macOS</h2>
+					<ul class="list">
+						<li>macOS installer: <a href="@{link.release.prefix}.pkg">@{release}.pkg</a></li>
+						<li>macOS app bundle: <a href="@{link.release.prefix}.app.tar.xz">@{release}.app.tar.xz</a></li>
+						<li>macOS package is available <a href="mac/brew.html">via brew cask</a></li>
+					</ul>
+				</div>
+
+				<div class="section download">
+					<img class="icon" src="images/ubuntu.logo.svg" alt="download" width="48" height="48" />
+					<h2>FileBot for Ubuntu and Debian Linux</h2>
+					<ul class="list">
+						<li>Debian package: <a href="@{link.release.prefix}_amd64.deb">@{release}_amd64.deb</a> <small class="comment">(requires OpenJDK 11)</small></li>
+						<li>Debian 10 / Ubuntu 18.10 package: <a href="@{link.release.prefix}_universal.deb">@{release}_universal.deb</a> <small class="comment">(requires OpenJDK 11)</small></li>
+						<li>Raspberry Pi package: <a href="@{link.release.prefix}_universal-jdk8.deb">@{release}_universal-jdk8.deb</a> <small class="comment">(requires OpenJDK 8)</small></li>
+						<li>Debian package is available <a href="linux/apt.html">via APT</a></li>
+						<li>Ubuntu package is available <a href="linux/snap.html">on the Ubuntu Store</a></li>
+					</ul>
+				</div>
+
+				<div class="section download">
+					<img class="icon" src="images/package.png" alt="download" width="48" height="48" />
+					<h2>FileBot for all POSIX platforms</h2>
+					<ul class="list">
+						<li>POSIX portable tarball: <a href="@{link.release.prefix}-portable.tar.xz">@{release}-portable.tar.xz</a> <small class="comment">for Linux, BSD and Solaris</small> <small class="comment">(requires OpenJDK 8)</small></li>
+						<li>Arch Linux package is available <a href="linux/aur.html">via AUR</a></li>
+						<li>Docker images are available <a href="linux/docker.html">on Docker Hub</a></li>
+					</ul>
+				</div>
+
+				<div class="section download">
+					<img class="icon" src="images/package.png" alt="download" width="48" height="48" />
+					<h2>FileBot for Synology DSM and QNAP QTS </h2>
+					<ul class="list">
+						<li>Synology NAS package is available <a href="linux/syno.html">via Package Center</a></li>
+						<li>QNAP NAS package is available <a href="linux/qnap.html">via App Center</a></li>
+					</ul>
+				</div>
+
+				<p class="suggestion" style="margin-top: 250px">
+				Need some help getting started? Join the <a href="https://www.filebot.net/forums/viewforum.php?f=8">forums</a> and ask.
+				</p>
+
+				<div class="footer">
+					<p><a href="https://www.filebot.net/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

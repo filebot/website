@@ -17,6 +17,10 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
+  <loc>https://www.filebot.net/download.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
   <loc>https://www.filebot.net/forums/</loc>
   <changefreq>daily</changefreq>
 </url>
