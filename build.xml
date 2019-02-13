@@ -44,13 +44,28 @@
 	<target name="deb" description="Update DEB Package Repository">
 		<delete dir="${repo.deb}/dists" verbose="yes" />
 
-		<!-- copy latest deb package -->
-		<copy todir="dist" flatten="yes" preservelastmodified="yes" verbose="yes">
-			<fileset dir="${repo.release}" includes="*.deb" />
+		<!-- main -->
+		<copy todir="dist/deb/main" flatten="yes" preservelastmodified="yes" verbose="yes">
+			<fileset dir="${repo.release}" includes="*_amd64.deb" />
 		</copy>
-
-		<exec executable="prm" dir="dist" failonerror="yes">
+		<exec executable="prm" dir="dist/deb/main" failonerror="yes">
 			<arg line="--directory . --type deb --release stable --component main --arch amd64 --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		</exec>
+
+		<!-- universal -->
+		<copy todir="dist/deb/universal" flatten="yes" preservelastmodified="yes" verbose="yes">
+			<fileset dir="${repo.release}" includes="*_amd64.deb" />
+		</copy>
+		<exec executable="prm" dir="dist/deb/universal" failonerror="yes">
+			<arg line="--directory . --type deb --release stable --component universal --arch noarch --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		</exec>
+
+		<!-- universal-jdk8 -->
+		<copy todir="dist/deb/universal-jdk8" flatten="yes" preservelastmodified="yes" verbose="yes">
+			<fileset dir="${repo.release}" includes="*_amd64.deb" />
+		</copy>
+		<exec executable="prm" dir="dist/deb/universal-jdk8" failonerror="yes">
+			<arg line="--directory . --type deb --release stable --component universal-jdk8 --arch noarch --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
 		</exec>
 	</target>
 
