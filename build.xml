@@ -72,8 +72,8 @@
 
 	<target name="syno" description="Update Synology Package Source">
 		<syno:package-source file="${repo.syno}/index.json">
-			<spk file="${repo.release}/${release}_noarch.spk">
-				<info name="link" value="${link.release.prefix}_noarch.spk" />
+			<spk file="${repo.release}/${release}.spk">
+				<info name="link" value="${link.release.prefix}.spk" />
 				<thumbnail url="https://www.filebot.net/syno/filebot-thumbnail.png" />
 				<snapshot url="https://www.filebot.net/syno/filebot-snapshot.png" />
 			</spk>
