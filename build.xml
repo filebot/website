@@ -41,6 +41,7 @@
 	</target>
 
 
+	<!-- @require https://github.com/rednoah/prm -->
 	<target name="deb" description="Update DEB Package Repository">
 		<delete dir="${repo.deb}/dists" verbose="yes" />
 
