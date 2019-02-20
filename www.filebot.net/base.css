@@ -577,24 +577,3 @@ div.screencast:hover .play {
 	font-size: 9pt;
 	margin: 30px 20px;
 }
-
-
-/**
-
-#download li.ubuntu {
-	list-style: none; 
-	background: url('images/ubuntu.logo.svg') no-repeat 0.4em center;
-    background-size: 22px 22px;
-	margin: 0.5em 1em 1em 4em;
-	padding: 0.5em 0.6em 0.5em 2.0em;
-	border-radius: 4px 4px 4px 4px;
-	display: inline-block;
-	background-color: linen;
-	box-shadow: 0px 0px 5px orangered;
-}
-
-#download li.ubuntu a {
-	color: rgb(221, 72, 20);
-}
-
-**/
