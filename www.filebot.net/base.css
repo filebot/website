@@ -572,6 +572,11 @@ div.screencast:hover .play {
 	background-color: #F14E4E;
 }
 
+#purchase p.paddle {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 9pt;
+	margin: 30px 20px;
+}
 
 
 /**
