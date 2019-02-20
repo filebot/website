@@ -1,0 +1,42 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.4;
+	color: #555;
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 54px;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+	margin-top: 0.7em;
+}
+
+h1 span {
+	padding: 2px 10px 3px;
+	left: -10px;
+	color: #666;
+}
+
+p.important {
+	text-transform: capitalize;
+	text-align: left;
+	margin: 30px 40px
+}
+
+p, ol, ul {
+	margin: 5px 20px 20px 0px;
+	text-align: justify;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ul {
+	list-style-type: disc;
+}
