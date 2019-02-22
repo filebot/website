@@ -100,13 +100,13 @@
 						</tr>
 						<tr>
 							<td>n</td>
-							<td>series/movie name</td>
+							<td>series / movie name</td>
 							<td>Dark Angel</td>
 							<td>String</td>
 						</tr>
 						<tr>
 							<td>y</td>
-							<td>series/movie year</td>
+							<td>series / movie year</td>
 							<td>2009</td>
 							<td>Integer</td>
 						</tr>
@@ -166,19 +166,19 @@
 						</tr>
 						<tr>
 							<td>plex</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4116" target="_blank">Plex Naming Standard</a></td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4116">Plex Naming Standard</a></td>
 							<td>&lt;relative path&gt;</td>
 							<td>File</td>
 						</tr>
 						<tr>
 							<td>imdbid</td>
-							<td>imdb id</td>
+							<td>IMDb ID</td>
 							<td>tt0756683</td>
 							<td>String</td>
 						</tr>
 						<tr>
 							<td>az</td>
-							<td>name initial</td>
+							<td>sort name initial</td>
 							<td>A</td>
 							<td>String</td>
 						</tr>
@@ -238,7 +238,7 @@
 						</tr>
 						<tr>
 							<td>kbps</td>
-							<td>bitrate in kb/s</td>
+							<td>bitrate in kbps</td>
 							<td>320 kbps</td>
 							<td>String</td>
 						</tr>
@@ -262,13 +262,13 @@
 						</tr>
 						<tr>
 							<td>hd</td>
-							<td>UHD/HD/SD video</td>
+							<td>UHD / HD / SD video</td>
 							<td>HD</td>
 							<td>String</td>
 						</tr>
 						<tr>
 							<td>s3d</td>
-							<td>Stereoscopic 3D tag</td>
+							<td>stereoscopic 3D tag</td>
 							<td>3D SBS</td>
 							<td>String</td>
 						</tr>
@@ -280,7 +280,7 @@
 						</tr>
 						<tr>
 							<td>group</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4" target="_blank">release group</a></td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4">release group</a></td>
 							<td>ALLiANCE</td>
 							<td>String</td>
 						</tr>
@@ -298,7 +298,19 @@
 						</tr>
 						<tr>
 							<td>fn</td>
-							<td>original filename</td>
+							<td>current filename</td>
+							<td>Serenity</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>original</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=324">original filename</a></td>
+							<td>Serenity</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>mediaTitle</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">embedded media title</a></td>
 							<td>Serenity</td>
 							<td>String</td>
 						</tr>
@@ -436,32 +448,38 @@
 						</tr>
 						<tr>
 							<td>media</td>
-							<td>general media info object</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">general media properties</a></td>
 							<td>&lt;media properties&gt;</td>
 							<td>[String:String]</td>
 						</tr>
 						<tr>
 							<td>video</td>
-							<td>video streams</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">video streams</a></td>
 							<td>&lt;video streams&gt;</td>
 							<td>[String:String]*</td>
 						</tr>
 						<tr>
 							<td>audio</td>
-							<td>audio streams</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">audio streams</a></td>
 							<td>&lt;audio streams&gt;</td>
 							<td>[String:String]*</td>
 						</tr>
 						<tr>
 							<td>text</td>
-							<td>subtitle streams</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">subtitle streams</a></td>
 							<td>&lt;subtitle streams&gt;</td>
 							<td>[String:String]*</td>
 						</tr>
 						<tr>
+							<td>self</td>
+							<td>match bindings</td>
+							<td>&lt;bindings&gt;</td>
+							<td>[String:Any]</td>
+						</tr>
+						<tr>
 							<td>model</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=9814" target="_blank">match context</a></td>
-							<td>&lt;all binding values&gt;</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=9814">match context</a></td>
+							<td>&lt;list of bindings&gt;</td>
 							<td>[String:Any]*</td>
 						</tr>
 					</table>
