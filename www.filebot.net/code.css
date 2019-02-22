@@ -96,3 +96,7 @@ table.binding td:last-child {
 	font-size: smaller;
 	vertical-align: baseline;
 }
+
+table.binding tr:hover {
+	background-color: GhostWhite;
+}

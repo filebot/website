@@ -100,13 +100,13 @@
 						</tr>
 						<tr>
 							<td>n</td>
-							<td>series / movie name</td>
+							<td>movie / series name</td>
 							<td>Dark Angel</td>
 							<td>String</td>
 						</tr>
 						<tr>
 							<td>y</td>
-							<td>series / movie year</td>
+							<td>movie / series year</td>
 							<td>2009</td>
 							<td>Integer</td>
 						</tr>
@@ -123,15 +123,33 @@
 							<td>Integer</td>
 						</tr>
 						<tr>
+							<td>sxe</td>
+							<td>season / episode number</td>
+							<td>1x01</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>s00e00</td>
+							<td>season / episode number</td>
+							<td>S01E01</td>
+							<td>String</td>
+						</tr>
+						<tr>
 							<td>t</td>
 							<td>episode title</td>
 							<td>Labyrinth</td>
 							<td>String</td>
 						</tr>
 						<tr>
+							<td>d</td>
 							<td>airdate</td>
-							<td>episode airdate</td>
 							<td>2009-06-01</td>
+							<td>Date</td>
+						</tr>
+						<tr>
+							<td>startdate</td>
+							<td>series start date</td>
+							<td>2002-09-20</td>
 							<td>Date</td>
 						</tr>
 						<tr>
@@ -141,27 +159,123 @@
 							<td>Integer</td>
 						</tr>
 						<tr>
-							<td>special</td>
-							<td>special number</td>
-							<td>1</td>
-							<td>Integer</td>
-						</tr>
-						<tr>
 							<td>ny</td>
 							<td>name (year)</td>
 							<td>Avatar (2009)</td>
 							<td>String</td>
 						</tr>
 						<tr>
-							<td>sxe</td>
-							<td>season / episode numbers</td>
-							<td>1x01</td>
+							<td>es</td>
+							<td>episode numbers</td>
+							<td>[1, 2, 3]</td>
+							<td>Integer*</td>
+						</tr>
+						<tr>
+							<td>sy</td>
+							<td>season years</td>
+							<td>[2002, 2003]</td>
+							<td>Integer*</td>
+						</tr>
+						<tr>
+							<td>sc</td>
+							<td>season count</td>
+							<td>5</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>di</td>
+							<td>duplicate index</td>
+							<td>1</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>dc</td>
+							<td>duplicate count</td>
+							<td>2</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>age</td>
+							<td>age in days</td>
+							<td>7</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>special</td>
+							<td>special number</td>
+							<td>1</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>episode</td>
+							<td>episode object</td>
+							<td>Firefly - 1x01 - Serenity</td>
+							<td>Episode</td>
+						</tr>
+						<tr>
+							<td>series</td>
+							<td>series object</td>
+							<td>&lt;series properties&gt;</td>
+							<td>Series</td>
+						</tr>
+						<tr>
+							<td>primaryTitle</td>
+							<td>primary name</td>
+							<td>Juuni Kokuki</td>
 							<td>String</td>
 						</tr>
 						<tr>
-							<td>s00e00</td>
-							<td>season / episode numbers</td>
-							<td>S01E01</td>
+							<td>alias</td>
+							<td>alias names</td>
+							<td>[Juuni Kokuki, ...]</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>movie</td>
+							<td>movie object</td>
+							<td>Avatar (2009)</td>
+							<td>Movie</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td>movie / series ID</td>
+							<td>78874</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>tmdbid</td>
+							<td><a href="https://www.themoviedb.org/">TheMovieDB ID</a></td>
+							<td>19995</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>imdbid</td>
+							<td>IMDb ID</td>
+							<td>tt0756683</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>pi</td>
+							<td>movie part index</td>
+							<td>1</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>pn</td>
+							<td>movie part count</td>
+							<td>2</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>lang</td>
+							<td>subtitle language</td>
+							<td>eng</td>
+							<td>Language</td>
+						</tr>
+						<tr>
+							<td>subt</td>
+							<td>subtitle tags</td>
+							<td>.eng.forced</td>
 							<td>String</td>
 						</tr>
 						<tr>
@@ -171,16 +285,124 @@
 							<td>File</td>
 						</tr>
 						<tr>
-							<td>imdbid</td>
-							<td>IMDb ID</td>
-							<td>tt0756683</td>
-							<td>String</td>
+							<td>kodi</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4116">Kodi Naming Standard</a></td>
+							<td>&lt;relative path&gt;</td>
+							<td>File</td>
 						</tr>
 						<tr>
 							<td>az</td>
 							<td>sort name initial</td>
 							<td>A</td>
 							<td>String</td>
+						</tr>
+						<tr>
+							<td>type</td>
+							<td>object type</td>
+							<td>Episode</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>anime</td>
+							<td>is anime episode</td>
+							<td>false</td>
+							<td>true | false</td>
+						</tr>
+						<tr>
+							<td>regular</td>
+							<td>is regular episode</td>
+							<td>true</td>
+							<td>true | false</td>
+						</tr>
+						<tr>
+							<td>music</td>
+							<td>music object</td>
+							<td>Leona Lewis - I See You</td>
+							<td>AudioTrack</td>
+						</tr>
+						<tr>
+							<td>album</td>
+							<td>audio track album</td>
+							<td>Avatar</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>artist</td>
+							<td>audio track artist</td>
+							<td>Leona Lewis</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>albumArtist</td>
+							<td>album artist</td>
+							<td>James Horner</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>actors</td>
+							<td>list of actors</td>
+							<td>[Zoe Saldana, ...]</td>
+							<td>String*</td>
+						</tr>
+						<tr>
+							<td>director</td>
+							<td>movie director</td>
+							<td>James Cameron</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>collection</td>
+							<td>movie collection</td>
+							<td>Avatar Collection</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>ci</td>
+							<td>movie collection index</td>
+							<td>1</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>genre</td>
+							<td>primary genre</td>
+							<td>Science Fiction</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>genres</td>
+							<td>all genres</td>
+							<td>[Science Fiction, ...]</td>
+							<td>String*</td>
+						</tr>
+						<tr>
+							<td>languages</td>
+							<td>spoken languages</td>
+							<td>[eng]</td>
+							<td>Language*</td>
+						</tr>
+						<tr>
+							<td>runtime</td>
+							<td>movie / episode runtime</td>
+							<td>162</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>certification</td>
+							<td>content rating</td>
+							<td>PG-13</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>rating</td>
+							<td>movie rating</td>
+							<td>7.4</td>
+							<td>Decimal</td>
+						</tr>
+						<tr>
+							<td>votes</td>
+							<td>movie votes</td>
+							<td>17720</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>vc</td>
@@ -213,6 +435,12 @@
 							<td>String</td>
 						</tr>
 						<tr>
+							<td>aco</td>
+							<td>audio codec profile</td>
+							<td>TrueHD+Atmos</td>
+							<td>String</td>
+						</tr>
+						<tr>
 							<td>af</td>
 							<td>audio channels</td>
 							<td>6ch</td>
@@ -226,9 +454,15 @@
 						</tr>
 						<tr>
 							<td>resolution</td>
-							<td>video size</td>
+							<td>video resolution</td>
 							<td>1280x720</td>
 							<td>String</td>
+						</tr>
+						<tr>
+							<td>dim</td>
+							<td>video dimensions</td>
+							<td>[1280, 720]</td>
+							<td>Integer*</td>
 						</tr>
 						<tr>
 							<td>bitdepth</td>
@@ -237,9 +471,21 @@
 							<td>Integer</td>
 						</tr>
 						<tr>
+							<td>hdr</td>
+							<td>high dynamic range</td>
+							<td>HDR</td>
+							<td>String</td>
+						</tr>
+						<tr>
 							<td>kbps</td>
-							<td>bitrate in kbps</td>
+							<td>bitrate in kbit/s</td>
 							<td>320 kbps</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>mbps</td>
+							<td>bitrate in mbit/s</td>
+							<td>2.0 Mbps</td>
 							<td>String</td>
 						</tr>
 						<tr>
@@ -249,12 +495,6 @@
 							<td>String</td>
 						</tr>
 						<tr>
-							<td>minutes</td>
-							<td>Duration in minutes</td>
-							<td>42</td>
-							<td>Integer</td>
-						</tr>
-						<tr>
 							<td>ws</td>
 							<td>widescreen tag</td>
 							<td>WS</td>
@@ -262,14 +502,8 @@
 						</tr>
 						<tr>
 							<td>hd</td>
-							<td>UHD / HD / SD video</td>
+							<td>UHD / HD / SD tag</td>
 							<td>HD</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>s3d</td>
-							<td>stereoscopic 3D tag</td>
-							<td>3D SBS</td>
 							<td>String</td>
 						</tr>
 						<tr>
@@ -285,27 +519,15 @@
 							<td>String*</td>
 						</tr>
 						<tr>
+							<td>s3d</td>
+							<td>stereoscopic 3D tag</td>
+							<td>3D SBS</td>
+							<td>String</td>
+						</tr>
+						<tr>
 							<td>group</td>
 							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4">release group</a></td>
 							<td>ALLiANCE</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>crc32</td>
-							<td>crc32 checksum</td>
-							<td>3E16AF40</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>gigabytes</td>
-							<td>Filesize in gigabytes</td>
-							<td>4.2</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>fn</td>
-							<td>current filename</td>
-							<td>Serenity</td>
 							<td>String</td>
 						</tr>
 						<tr>
@@ -313,108 +535,6 @@
 							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=324">original filename</a></td>
 							<td>Serenity</td>
 							<td>String</td>
-						</tr>
-						<tr>
-							<td>mediaTitle</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">embedded media title</a></td>
-							<td>Serenity</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>ext</td>
-							<td>file extension</td>
-							<td>mkv</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>episode</td>
-							<td>episode object</td>
-							<td>Firefly - 1x01 - Serenity</td>
-							<td>Episode</td>
-						</tr>
-						<tr>
-							<td>movie</td>
-							<td>movie object</td>
-							<td>Avatar (2009)</td>
-							<td>Movie</td>
-						</tr>
-						<tr>
-							<td>pi</td>
-							<td>movie part index</td>
-							<td>1</td>
-							<td>Integer</td>
-						</tr>
-						<tr>
-							<td>pn</td>
-							<td>movie part count</td>
-							<td>2</td>
-							<td>Integer</td>
-						</tr>
-						<tr>
-							<td>lang</td>
-							<td>subtitle language</td>
-							<td>eng</td>
-							<td>Language</td>
-						</tr>
-						<tr>
-							<td>subt</td>
-							<td>subtitle tags</td>
-							<td>.eng.forced</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>collection</td>
-							<td>movie collection</td>
-							<td>Avatar Collection</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>ci</td>
-							<td>movie collection index</td>
-							<td>1</td>
-							<td>Integer</td>
-						</tr>
-						<tr>
-							<td>director</td>
-							<td>movie director</td>
-							<td>James Cameron</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>actors</td>
-							<td>list of actors</td>
-							<td>[Zoe Saldana, ...]</td>
-							<td>String*</td>
-						</tr>
-						<tr>
-							<td>genre</td>
-							<td>primary genre</td>
-							<td>Science Fiction</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>genres</td>
-							<td>list of genres</td>
-							<td>[Science Fiction, ...]</td>
-							<td>String*</td>
-						</tr>
-						<tr>
-							<td>languages</td>
-							<td>list of spoken languages</td>
-							<td>[eng]</td>
-							<td>Language*</td>
-						</tr>
-						<tr>
-							<td>certification</td>
-							<td>content rating</td>
-							<td>PG-13</td>
-							<td>String</td>
-						</tr>
-						<tr>
-							<td>rating</td>
-							<td>movie rating</td>
-							<td>8.5</td>
-							<td>Decimal</td>
 						</tr>
 						<tr>
 							<td>info</td>
@@ -429,13 +549,31 @@
 							<td>[String:Any]</td>
 						</tr>
 						<tr>
-							<td>home</td>
-							<td>user home folder</td>
-							<td>/Users/Alice</td>
-							<td>File</td>
+							<td>localize</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3761">dynamic localization</a></td>
+							<td>&lt;all languages&gt;</td>
+							<td>[String:Any]</td>
 						</tr>
 						<tr>
-							<td>file</td>
+							<td>order</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=2769">dynamic episode order</a></td>
+							<td>&lt;all episode orders&gt;</td>
+							<td>[String:Any]</td>
+						</tr>
+						<tr>
+							<td>fn</td>
+							<td>current filename</td>
+							<td>Serenity</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>ext</td>
+							<td>file extension</td>
+							<td>mkv</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>f</td>
 							<td>file object</td>
 							<td>&lt;file path&gt;</td>
 							<td>File</td>
@@ -447,14 +585,86 @@
 							<td>File</td>
 						</tr>
 						<tr>
-							<td>dim</td>
-							<td>video dimensions</td>
-							<td>[1280, 720]</td>
-							<td>Integer*</td>
+							<td>mediaPath</td>
+							<td>media path</td>
+							<td>&lt;relative path&gt;</td>
+							<td>File</td>
+						</tr>
+						<tr>
+							<td>mime</td>
+							<td>media type</td>
+							<td>[video, mkv]</td>
+							<td>String*</td>
+						</tr>
+						<tr>
+							<td>mediaTitle</td>
+							<td>embedded media title</td>
+							<td>Serenity</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>audioLanguages</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">audio streams</a></td>
+							<td>&lt;audio languages&gt;</td>
+							<td>Language*</td>
+						</tr>
+						<tr>
+							<td>textLanguages</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">subtitle streams</a></td>
+							<td>&lt;subtitle languages&gt;</td>
+							<td>Language*</td>
+						</tr>
+						<tr>
+							<td>duration</td>
+							<td>media duration</td>
+							<td>PT23M9.974S</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>seconds</td>
+							<td>duration in seconds</td>
+							<td>1389</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>minutes</td>
+							<td>duration in minutes</td>
+							<td>23</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>hours</td>
+							<td>duration in HH:mm</td>
+							<td>0:23</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>bytes</td>
+							<td>file size in bytes</td>
+							<td>355660657</td>
+							<td>Integer</td>
+						</tr>
+						<tr>
+							<td>megabytes</td>
+							<td>file size in MB</td>
+							<td>356</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>gigabytes</td>
+							<td>file size in GB</td>
+							<td>0.4</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>crc32</td>
+							<td>crc32 checksum</td>
+							<td>3E16AF40</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>media</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">general media properties</a></td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">media properties</a></td>
 							<td>&lt;media properties&gt;</td>
 							<td>[String:String]</td>
 						</tr>
@@ -475,6 +685,18 @@
 							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4285">subtitle streams</a></td>
 							<td>&lt;subtitle streams&gt;</td>
 							<td>[String:String]*</td>
+						</tr>
+						<tr>
+							<td>camera</td>
+							<td>photo camera</td>
+							<td>&lt;camera properties&gt;</td>
+							<td>[String:String]</td>
+						</tr>
+						<tr>
+							<td>location</td>
+							<td>photo location</td>
+							<td>&lt;location properties&gt;</td>
+							<td>[String:String]</td>
 						</tr>
 						<tr>
 							<td>self</td>
