@@ -13,13 +13,15 @@ pre {
 	margin: 0px;
 }
 
-code .variable {
+code .variable, table.binding td:first-child {
 	color: #7f0055;
 	font-weight: bold;
+	font-family: monospace;
 }
 
-code .method, div.documentation pre .method {
+code .method, div.documentation pre .method, table.binding td:last-child {
 	color: #0066cc;
+	font-family: monospace;
 }
 
 code .property, div.documentation pre .property {

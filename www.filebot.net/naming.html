@@ -96,291 +96,373 @@
 							<th>Name</th>
 							<th>Description</th>
 							<th>Example</th>
+							<th>Type</th>
 						</tr>
 						<tr>
 							<td>n</td>
 							<td>series/movie name</td>
 							<td>Dark Angel</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>y</td>
 							<td>series/movie year</td>
 							<td>2009</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>s</td>
 							<td>season number</td>
 							<td>3</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>e</td>
 							<td>episode number</td>
 							<td>1</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>t</td>
 							<td>episode title</td>
 							<td>Labyrinth</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>airdate</td>
 							<td>episode airdate</td>
 							<td>2009-06-01</td>
+							<td>Date</td>
 						</tr>
 						<tr>
 							<td>absolute</td>
 							<td>absolute episode number</td>
 							<td>42</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>special</td>
 							<td>special number</td>
 							<td>1</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>ny</td>
 							<td>name (year)</td>
 							<td>Avatar (2009)</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>sxe</td>
 							<td>season / episode numbers</td>
 							<td>1x01</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>s00e00</td>
 							<td>season / episode numbers</td>
 							<td>S01E01</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>plex</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?f=5&amp;t=4116" target="_blank">Plex Naming Standard</a></td>
-							<td>&lt;path&gt;</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4116" target="_blank">Plex Naming Standard</a></td>
+							<td>&lt;relative path&gt;</td>
+							<td>File</td>
 						</tr>
 						<tr>
 							<td>imdbid</td>
 							<td>imdb id</td>
 							<td>tt0756683</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>az</td>
+							<td>name initial</td>
+							<td>A</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>vc</td>
 							<td>video codec</td>
 							<td>x264</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>ac</td>
 							<td>audio codec</td>
 							<td>ac3</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>cf</td>
 							<td>container format</td>
 							<td>mkv</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>vf</td>
 							<td>standard video format</td>
-							<td>720p</td>
+							<td>1080p</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>hpi</td>
 							<td>exact video format</td>
 							<td>384p</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>af</td>
 							<td>audio channels</td>
 							<td>6ch</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>channels</td>
 							<td>audio channels</td>
 							<td>5.1</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>resolution</td>
 							<td>video size</td>
 							<td>1280x720</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>bitdepth</td>
 							<td>video bitdepth</td>
 							<td>10</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>kbps</td>
 							<td>bitrate in kb/s</td>
 							<td>320 kbps</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>khz</td>
 							<td>sampling rate</td>
 							<td>44.1 kHz</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>minutes</td>
 							<td>Duration in minutes</td>
 							<td>42</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>ws</td>
 							<td>widescreen tag</td>
 							<td>WS</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>hd</td>
 							<td>UHD/HD/SD video</td>
 							<td>HD</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>s3d</td>
 							<td>Stereoscopic 3D tag</td>
 							<td>3D SBS</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>source</td>
 							<td>source medium</td>
 							<td>BluRay</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>group</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?f=5&amp;t=4" target="_blank">release group</a></td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4" target="_blank">release group</a></td>
 							<td>ALLiANCE</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>crc32</td>
 							<td>crc32 checksum</td>
 							<td>3E16AF40</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>gigabytes</td>
 							<td>Filesize in gigabytes</td>
 							<td>4.2</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>fn</td>
 							<td>original filename</td>
 							<td>Serenity</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>ext</td>
 							<td>file extension</td>
 							<td>mkv</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>episode</td>
 							<td>episode object</td>
-							<td>&lt;default episode name&gt;</td>
+							<td>Firefly - 1x01 - Serenity</td>
+							<td>Episode</td>
 						</tr>
 						<tr>
 							<td>movie</td>
 							<td>movie object</td>
-							<td>&lt;default movie name&gt;</td>
+							<td>Avatar (2009)</td>
+							<td>Movie</td>
 						</tr>
 						<tr>
 							<td>pi</td>
 							<td>movie part index</td>
 							<td>1</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>pn</td>
 							<td>movie part count</td>
 							<td>2</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>lang</td>
 							<td>subtitle language</td>
 							<td>eng</td>
+							<td>Language</td>
 						</tr>
 						<tr>
 							<td>subt</td>
 							<td>subtitle tags</td>
 							<td>.eng.forced</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>collection</td>
-							<td>movie set</td>
+							<td>movie collection</td>
 							<td>Avatar Collection</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td>ci</td>
+							<td>movie collection index</td>
+							<td>1</td>
+							<td>Integer</td>
 						</tr>
 						<tr>
 							<td>director</td>
 							<td>movie director</td>
 							<td>James Cameron</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>actors</td>
 							<td>list of actors</td>
-							<td>[Sam Worthington, Zoe Saldana, ...]</td>
+							<td>[Zoe Saldana, ...]</td>
+							<td>List[String]</td>
 						</tr>
 						<tr>
 							<td>genre</td>
 							<td>primary genre</td>
 							<td>Science Fiction</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>genres</td>
 							<td>list of genres</td>
-							<td>[Science Fiction, Action, ...]</td>
+							<td>[Science Fiction, ...]</td>
+							<td>List[String]</td>
 						</tr>
 						<tr>
 							<td>languages</td>
 							<td>list of spoken languages</td>
 							<td>[eng]</td>
+							<td>List[Language]</td>
 						</tr>
 						<tr>
 							<td>certification</td>
 							<td>content rating</td>
 							<td>PG-13</td>
+							<td>String</td>
 						</tr>
 						<tr>
 							<td>rating</td>
 							<td>movie rating</td>
 							<td>8.5</td>
+							<td>Decimal</td>
 						</tr>
 						<tr>
 							<td>info</td>
 							<td>extended metadata</td>
-							<td>&lt;any movie / series info&gt;</td>
+							<td>&lt;any property&gt;</td>
+							<td>Map</td>
 						</tr>
 						<tr>
 							<td>omdb</td>
-							<td><a href="http://www.omdbapi.com/">OMDb</a> info</td>
-							<td>&lt;any movie / series info&gt;</td>
+							<td><a href="https://www.omdbapi.com/">OMDb</a> info</td>
+							<td>&lt;any property&gt;</td>
+							<td>Map</td>
 						</tr>
 						<tr>
 							<td>home</td>
 							<td>user home folder</td>
 							<td>/Users/Alice</td>
+							<td>File</td>
 						</tr>
 						<tr>
 							<td>file</td>
 							<td>file object</td>
 							<td>&lt;file path&gt;</td>
+							<td>File</td>
+						</tr>
+						<tr>
+							<td>folder</td>
+							<td>folder object</td>
+							<td>&lt;folder path&gt;</td>
+							<td>File</td>
 						</tr>
 						<tr>
 							<td>dim</td>
 							<td>video dimensions</td>
-							<td>&lt;width and height&gt;</td>
+							<td>[1280, 720]</td>
+							<td>List[Integer]</td>
 						</tr>
 						<tr>
 							<td>media</td>
 							<td>general media info object</td>
-							<td>&lt;any general media parameter&gt;</td>
+							<td>&lt;any property&gt;</td>
+							<td>Map</td>
 						</tr>
 						<tr>
 							<td>video</td>
 							<td>video streams</td>
-							<td>&lt;any video parameter&gt;</td>
+							<td>&lt;any property&gt;</td>
+							<td>List[Map]</td>
 						</tr>
 						<tr>
 							<td>audio</td>
 							<td>audio streams</td>
-							<td>&lt;any audio parameter&gt;</td>
+							<td>&lt;any property&gt;</td>
+							<td>List[Map]</td>
 						</tr>
 						<tr>
 							<td>text</td>
 							<td>subtitle streams</td>
-							<td>&lt;any subtitle parameter&gt;</td>
+							<td>&lt;any property&gt;</td>
+							<td>List[Map]</td>
+						</tr>
+						<tr>
+							<td>model</td>
+							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=9814" target="_blank">match context</a></td>
+							<td>&lt;all binding values&gt;</td>
+							<td>List[Map]</td>
 						</tr>
 					</table>
 
