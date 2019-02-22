@@ -94,5 +94,5 @@ table.binding td:last-child {
 	color: #0066cc;
 	font-family: monospace;
 	font-size: smaller;
-	vertical-align: middle;
+	vertical-align: baseline;
 }
