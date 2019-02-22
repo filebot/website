@@ -366,7 +366,7 @@
 							<td>actors</td>
 							<td>list of actors</td>
 							<td>[Zoe Saldana, ...]</td>
-							<td>List[String]</td>
+							<td>String*</td>
 						</tr>
 						<tr>
 							<td>genre</td>
@@ -378,13 +378,13 @@
 							<td>genres</td>
 							<td>list of genres</td>
 							<td>[Science Fiction, ...]</td>
-							<td>List[String]</td>
+							<td>String*</td>
 						</tr>
 						<tr>
 							<td>languages</td>
 							<td>list of spoken languages</td>
 							<td>[eng]</td>
-							<td>List[Language]</td>
+							<td>Language*</td>
 						</tr>
 						<tr>
 							<td>certification</td>
@@ -401,14 +401,14 @@
 						<tr>
 							<td>info</td>
 							<td>extended metadata</td>
-							<td>&lt;any property&gt;</td>
-							<td>Map</td>
+							<td>&lt;all properties&gt;</td>
+							<td>[String:Any]</td>
 						</tr>
 						<tr>
 							<td>omdb</td>
 							<td><a href="https://www.omdbapi.com/">OMDb</a> info</td>
-							<td>&lt;any property&gt;</td>
-							<td>Map</td>
+							<td>&lt;all properties&gt;</td>
+							<td>[String:Any]</td>
 						</tr>
 						<tr>
 							<td>home</td>
@@ -432,37 +432,37 @@
 							<td>dim</td>
 							<td>video dimensions</td>
 							<td>[1280, 720]</td>
-							<td>List[Integer]</td>
+							<td>Integer*</td>
 						</tr>
 						<tr>
 							<td>media</td>
 							<td>general media info object</td>
-							<td>&lt;any property&gt;</td>
-							<td>Map</td>
+							<td>&lt;media properties&gt;</td>
+							<td>[String:String]</td>
 						</tr>
 						<tr>
 							<td>video</td>
 							<td>video streams</td>
-							<td>&lt;any property&gt;</td>
-							<td>List[Map]</td>
+							<td>&lt;video streams&gt;</td>
+							<td>[String:String]*</td>
 						</tr>
 						<tr>
 							<td>audio</td>
 							<td>audio streams</td>
-							<td>&lt;any property&gt;</td>
-							<td>List[Map]</td>
+							<td>&lt;audio streams&gt;</td>
+							<td>[String:String]*</td>
 						</tr>
 						<tr>
 							<td>text</td>
 							<td>subtitle streams</td>
-							<td>&lt;any property&gt;</td>
-							<td>List[Map]</td>
+							<td>&lt;subtitle streams&gt;</td>
+							<td>[String:String]*</td>
 						</tr>
 						<tr>
 							<td>model</td>
 							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=9814" target="_blank">match context</a></td>
 							<td>&lt;all binding values&gt;</td>
-							<td>List[Map]</td>
+							<td>[String:Any]*</td>
 						</tr>
 					</table>
 

@@ -19,9 +19,8 @@ code .variable, table.binding td:first-child {
 	font-family: monospace;
 }
 
-code .method, div.documentation pre .method, table.binding td:last-child {
+code .method, div.documentation pre .method {
 	color: #0066cc;
-	font-family: monospace;
 }
 
 code .property, div.documentation pre .property {
@@ -89,4 +88,11 @@ div.documentation .return {
 
 div.documentation .property {
 	color: #225577;
+}
+
+table.binding td:last-child {
+	color: #0066cc;
+	font-family: monospace;
+	font-size: smaller;
+	vertical-align: middle;
 }
