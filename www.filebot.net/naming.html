@@ -717,64 +717,137 @@
 						<a href="https://github.com/filebot/filebot/tree/master/source/net/filebot/format/ExpressionFormatMethods.java" class="source" target="_blank">source</a>
 					</h2>
 					<p>
-					<code><span class="method">pad</span>(<span class="numeral">length</span>, <span class="string">padding</span> = <span class="string">"0"</span>)</code>Pad strings or numbers with given characters ('0' by default).
+						<code><span class="method">String.pad</span>(<span class="numeral">length</span>, <span class="string">padding</span> = <span class="string">"0"</span>)</code>
+						Pad to length using the given character.
+						<small class="comment">(e.g. &quot;1&quot; ➔ &quot;01&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">match</span>(<span class="regex">pattern</span>)</code>Get a substring matching the given pattern or break.
+						<code><span class="method">Number.round</span>(<span class="numeral">precision</span>, <span class="string">padding</span> = <span class="string">"0"</span>)</code>
+						Round decimal number to precision.
+						<small class="comment">(e.g. &quot;3.14&quot; ➔ &quot;3.1&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">matchAll</span>(<span class="regex">pattern</span>)</code>Get a list of substrings matching the given pattern or break.
+						<code><span class="method">String.match</span>(<span class="regex">pattern</span>)</code>
+						Match pattern and return or unwind if pattern cannot be found.
 					</p>
 					<p>
-					<code><span class="method">space</span>(<span class="string">replacement</span>)</code>Replace all spaces (e.g. "Doctor Who" ➔ "Doctor_Who").
+						<code><span class="method">String.matchAll</span>(<span class="regex">pattern</span>)</code>
+						Match all occurrences of the given pattern or unwind if pattern cannot be found.
 					</p>
 					<p>
-					<code><span class="method">colon</span>(<span class="string">replacement</span>)</code>Replace all colons (e.g. "Sissi: The Young Empress" ➔ "Sissi - The Young Empress").
+						<code><span class="method">String.removeAll</span>(<span class="regex">pattern</span>)</code>
+						Remove all occurrences of the given pattern.
+						<small class="comment">(e.g. &quot;Wham!&quot; ➔ &quot;Wham&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">slash</span>(<span class="string">replacement</span>)</code>Replace all slashes (e.g. "V_MPEG4/ISO/AVC" ➔ "V_MPEG4.ISO.AVC").
+						<code><span class="method">String.removeIllegalCharacters</span>()</code>
+						Strip characters which aren't allowed on Windows platforms from the given filename.
 					</p>
 					<p>
-					<code><span class="method">upperInitial</span>()</code>Upper-case all initials (e.g. "The Day a new Demon was born" ➔ "The Day A New Demon Was Born").
+						<code><span class="method">String.space</span>(<span class="string">replacement</span>)</code>
+						Replace all spaces.
+						<small class="comment">(e.g. &quot;Doctor Who&quot; ➔ &quot;Doctor_Who&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">lowerTrail</span>()</code>Lower-case all letters that are not initials (e.g. "Gundam SEED" ➔ "Gundam Seed").
+						<code><span class="method">String.colon</span>(<span class="string">replacement</span>)</code>
+						Replace all colons.
+						<small class="comment">(e.g. &quot;Sissi: The Young Empress&quot; ➔ &quot;Sissi - The Young Empress&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">acronym</span>()</code>Get acronym, i.e. first letter of each word. (e.g. "Deep Space 9" ➔ "DS9").
+						<code><span class="method">String.slash</span>(<span class="string">replacement</span>)</code>Replace all slashes.
+						<small class="comment">(e.g. &quot;V_MPEG4/ISO/AVC&quot; ➔ &quot;V_MPEG4.ISO.AVC&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">roman</span>()</code>Replace numbers 1..12 with roman numerals (e.g. "Star Wars: Episode 4" ➔ "Star Wars: Episode IV").
+						<code><span class="method">String.lower</span>()</code>
+						Convert all characters to lower case.
+						<small class="comment">(e.g. &quot;Firelfy&quot; ➔ &quot;firefly&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">before</span>(<span class="regex">pattern</span>)</code>Get the substring before the given pattern or the original value.
+						<code><span class="method">String.upper</span>()</code>
+						Convert all characters to upper case.
+						<small class="comment">(e.g. &quot;Firelfy&quot; ➔ &quot;FIREFLY&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">after</span>(<span class="regex">pattern</span>)</code>Get the substring after the given pattern or the original value.
+						<code><span class="method">String.upperInitial</span>()</code>
+						Convert all initial characters to upper case.
+						<small class="comment">(e.g. &quot;The Day a new Demon was born&quot; ➔ &quot;The Day A New Demon Was Born&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">replaceAll</span>(<span class="regex">pattern</span>, <span class="string">replacement</span> = <span class="string">""</span>)</code>Replace or remove all occurrences of the pattern.
+						<code><span class="method">String.lowerTrail</span>()</code>
+						Convert all trailing characters to lower case.
+						<small class="comment">(e.g. &quot;Gundam SEED&quot; ➔ &quot;Gundam Seed&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">replaceTrailingBrackets</span>(<span class="string">replacement</span> = <span class="string">""</span>)</code>Replace trailing parenthesis including any leading whitespace (e.g. "The IT Crowd (UK)" ➔ "The IT Crowd").
+						<code><span class="method">String.sortName</span>()</code>
+						Convert to sort name.
+						<small class="comment">(e.g. &quot;The Walking Dead&quot; ➔ &quot;Walking Dead&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">replacePart</span>(<span class="string">replacement</span> = <span class="string">""</span>)</code>Replace part identifier (e.g. "Today Is the Day (1)" ➔ "Today Is the Day, Part 1").
+						<code><span class="method">String.sortInitial</span>()</code>
+						Reduce first name to initials.
+						<small class="comment">(e.g. &quot;James Cameron&quot; ➔ &quot;J. Cameron&quot;)</small>
 					</p>
 					<p>
-					<code><span class="method">ascii</span>()</code>Convert Unicode to ASCII. (e.g. "Österreich" ➔ "Osterreich" or "カタカナ" ➔ "katakana").
+						<code><span class="method">String.before</span>(<span class="regex">pattern</span>)</code>
+						Match substring before the given pattern or return the original value.
 					</p>
 					<p>
-					<code><span class="method">transliterate</span>(<span class="regex">identifier</span>)</code>Apply any <a target="_blank" href="http://userguide.icu-project.org/transforms/general">ICU script transliteration</a>. e.g. "中国".transliterate("han-latin") ➔ "zhōng guó".
+						<code><span class="method">String.after</span>(<span class="regex">pattern</span>)</code>
+						Match substring before the given pattern or return the original value.
+					</p>
+					<p>
+						<code><span class="method">String.replaceAll</span>(<span class="regex">pattern</span>, <span class="string">replacement</span>)</code>
+						Replace all occurances of the given pattern.
+					</p>
+					<p>
+						<code><span class="method">String.replaceTrailingBrackets</span>(<span class="string">replacement</span> = <span class="string">""</span>)</code>
+						Replace trailing parenthesis.
+						<small class="comment">(e.g. &quot;The IT Crowd (UK)&quot; ➔ &quot;The IT Crowd&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.replacePart</span>(<span class="string">replacement</span> = <span class="string">""</span>)</code>
+						Replace trailing part number.
+						<small class="comment">(e.g. &quot;Today Is the Day (1)&quot; ➔ &quot;Today Is the Day, Part 1&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.acronym</span>()</code>
+						Convert to acronym.
+						<small class="comment">(e.g. &quot;Deep Space 9&quot; ➔ &quot;DS9&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.roman</span>()</code>
+						Replace numbers 1..12 with Roman numerals.
+						<small class="comment">(e.g. &quot;Star Wars: Episode 4&quot; ➔ &quot;Star Wars: Episode IV&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.ascii</span>()</code>
+						Convert Unicode characters to ASCII.
+						<small class="comment">(e.g. &quot;カタカナ&quot; ➔ &quot;katakana&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.asciiQuotes</span>()</code>
+						Convert Unicode quotation marks to ASCII.
+					</p>
+					<p>
+						<code><span class="method">String.transliterate</span>(<span class="string">identifier</span>)</code>Apply any <a href="http://userguide.icu-project.org/transforms/general">ICU script transliteration</a>.
+						<small class="comment">(e.g. &quot;中国&quot; ➔ &quot;zhōng guó&quot;)</small>
+					</p>
+					<p>
+						<code><span class="method">String.isLatin</span>()</code>
+						Check if the String contains any non-Latin characters.
+					</p>
+					<p>
+						<code><span class="method">File.derive</span>{<span class="string">closure</span>}</code>
+						Add values to the filename.
+						<small class="comment">(e.g. &quot;Avatar (2009).mp4&quot; ➔ &quot;Avatar (2009) [720p].mp4&quot;)</small>
 					</p>
 				</div>
 
 				<p class="suggestion">
-				Need some help getting started? Check the <a href="https://www.filebot.net/forums/viewforum.php?f=5">forums</a>.
+					Need some help getting started? Check the <a href="https://www.filebot.net/forums/viewforum.php?f=5">forums</a>.
 				</p>
 
-				<div class="metrics">
-				</div>
+				<div class="metrics"></div>
 
 				<div class="footer">
 					<p><a href="/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
