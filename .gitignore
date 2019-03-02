@@ -10,6 +10,7 @@ logs
 *.zip
 *.pkg
 *.deb
+*.rpm
 *.tar.xz
 *.spk
 *.qpkg
