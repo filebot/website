@@ -11,7 +11,7 @@ IndexOrderDefault Ascending Date
 
 IndexIgnore *.gif *.ico *.html *.txt
 
-AddType application/octet-stream  .msi .zip .pkg .tar .xz .deb .spk .qpkg
+AddType application/octet-stream  .msi .zip .pkg .tar .xz .deb .rpm .spk .qpkg
 AddType text/plain                KEYS .asc .sha256
 
 IndexStyleSheet https://www.filebot.net/index.css
