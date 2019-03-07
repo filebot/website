@@ -24,7 +24,7 @@ website:
 	$(ANT) website
 
 repository:
-	$(ANT) deb syno qnap
+	$(ANT) deb rpm syno qnap
 
 clean:
 	git reset --hard
