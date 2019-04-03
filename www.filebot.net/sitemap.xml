@@ -24,4 +24,8 @@
   <loc>https://www.filebot.net/forums/</loc>
   <changefreq>daily</changefreq>
 </url>
+<url>
+  <loc>https://www.filebot.net/docs/api/</loc>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
