@@ -6,12 +6,6 @@ RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=r
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 
 
-sync: clean
-	make pull-release
-	make website
-	make repository
-	make push-website purge-cache
-
 pull-release:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
@@ -34,3 +28,9 @@ clean:
 
 purge-cache:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CF_ZONE_ID)/purge_cache" -H "X-Auth-Email: $(CF_AUTH_EMAIL)" -H "X-Auth-Key: $(CF_AUTH_KEY)" -H "Content-Type: application/json" --data '{"purge_everything":true}'
+
+sync: clean
+	make pull-release
+	make website
+	make repository
+	make push-website purge-cache
