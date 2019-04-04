@@ -25,6 +25,7 @@ redirect 302 /channel.html            https://discord.gg/cKVvZ2S
 
 # Redirect to Package Links
 redirect 302 /linux/apt.html          https://www.filebot.net/forums/viewtopic.php?f=11&t=6028
+redirect 302 /linux/yum.html          https://www.filebot.net/forums/viewtopic.php?f=11&t=10631
 redirect 302 /linux/syno.html         https://www.filebot.net/forums/viewtopic.php?f=13&t=1802
 redirect 302 /linux/qnap.html         https://www.filebot.net/forums/viewtopic.php?f=13&t=6014
 redirect 302 /linux/snap.html         https://snapcraft.io/filebot
