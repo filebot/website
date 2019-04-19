@@ -94,7 +94,7 @@
 				<snapshot url="https://www.filebot.net/syno/filebot-snapshot.png" />
 			</spk>
 			<source url="https://raw.githubusercontent.com/filebot/filebot-node/master/syno.json" />
-			<source url="https://raw.githubusercontent.com/rednoah/java-installer/master/syno.json" />
+			<source url="https://raw.githubusercontent.com/rednoah/java-installer/latest/syno.json" />
 			<source url="https://raw.githubusercontent.com/rednoah/ant-installer/master/syno.json" />
 		</syno:package-source>
 	</target>
@@ -103,7 +103,7 @@
 	<target name="qnap" description="Update QNAP App Repository">
 		<property prefix="filebot" url="https://raw.githubusercontent.com/filebot/filebot/master/app.properties" />
 		<property prefix="filebot-node" url="https://raw.githubusercontent.com/filebot/filebot-node/master/package.properties" />
-		<property prefix="java-installer" url="https://raw.githubusercontent.com/rednoah/java-installer/master/package.properties" />
+		<property prefix="java-installer" url="https://raw.githubusercontent.com/rednoah/java-installer/latest/package.properties" />
 		<property prefix="ant-installer" url="https://raw.githubusercontent.com/rednoah/ant-installer/master/package.properties" />
 
 		<groovy:groovy src="build-qnap.groovy" />
