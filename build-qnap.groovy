@@ -67,8 +67,8 @@ f.withWriter('UTF-8') { writer ->
 
 		// Java Installer
 		item {
-			name('Java 8 Installer')
-			internalName('java-8-installer')
+			name('Java Installer')
+			internalName('java-installer')
 			category('Essentials')
 			type('Developer Tools')
 			icon100('https://www.filebot.net/qnap/java-installer_100.png')
@@ -81,7 +81,7 @@ f.withWriter('UTF-8') { writer ->
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/java-8-installer_${project.properties.'java-installer.version'}.qpkg")
+					location("https://get.filebot.net/qnap/packages/java-installer_${project.properties.'java-installer.version'}.qpkg")
 				}
 			}
 		}
