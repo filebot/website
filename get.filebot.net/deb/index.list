@@ -1,1 +1,1 @@
-deb https://get.filebot.net/deb/ universal main
+deb [arch=all] https://get.filebot.net/deb/ universal main
