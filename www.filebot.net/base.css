@@ -515,7 +515,7 @@ div.screencast:hover .play {
 	background-color:#F14E4E;
 }
 
-#purchase div.tag > span:after {
+#purchase div.tag span.paddle-gross:after {
 	content: " (incl. tax)";
 	font-size: xx-small;
 	position: relative;
