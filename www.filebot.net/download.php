@@ -19,7 +19,7 @@ if (!isset($type)) {
 	header("Vary: User-Agent");
 	error_log("[HTTP_USER_AGENT] ".$ua);
 
-	if (preg_match('/Windows/i', $ua)) {
+	if (preg_match('/Windows/i', $ua) && preg_match('/x64/i', $ua)) {
 		redirect($FRS.'FileBot_'.$version.'_x64.msi');
 	} else if (preg_match('/Macintosh/i', $ua)) {
 		redirect($FRS.'FileBot_'.$version.'.pkg');
