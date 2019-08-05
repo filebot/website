@@ -26,7 +26,7 @@ f.withWriter('UTF-8') { writer ->
 			type('Utilities')
 			icon100('https://www.filebot.net/qnap/filebot_100.png')
 			icon80('https://www.filebot.net/qnap/filebot_80.png')
-			description(project.properties.'filebot.package.description')
+			description(project.properties.'package.description')
 			developer('rednoah')
 			developerLink('https://www.filebot.net/')
 			fwVersion(qnap.version)
