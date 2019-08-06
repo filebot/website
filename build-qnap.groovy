@@ -1,7 +1,7 @@
 import groovy.xml.*
 
 
-def f = 'get.filebot.net/qnap/index.xml' as File
+def f = new File(project.properties.'repo.qnap', 'index.xml')
 def now = new Date()
 
 

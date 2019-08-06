@@ -17,6 +17,7 @@
 	<property name="repo.deb" location="get.filebot.net/deb" />
 	<property name="repo.rpm" location="get.filebot.net/rpm" />
 	<property name="repo.syno" location="get.filebot.net/syno" />
+	<property name="repo.qnap" location="get.filebot.net/qnap" />
 
 
 	<!-- timestamp variables -->
@@ -104,6 +105,10 @@
 		<property prefix="filebot-node" url="https://raw.githubusercontent.com/filebot/filebot-node/master/package.properties" />
 		<property prefix="java-installer" url="https://raw.githubusercontent.com/rednoah/java-installer/latest/package.properties" />
 		<property prefix="ant-installer" url="https://raw.githubusercontent.com/rednoah/ant-installer/master/package.properties" />
+
+		<get dest="${repo.qnap}/packages" usetimestamp="true" src="https://github.com/filebot/filebot-node/releases/download/${filebot-node.version}/filebot-node_${filebot-node.version}.qpkg" />
+		<get dest="${repo.qnap}/packages" usetimestamp="true" src="https://github.com/rednoah/java-installer/releases/download/${java-installer.version}/java-installer_${java-installer.version}.qpkg" />
+		<get dest="${repo.qnap}/packages" usetimestamp="true" src="https://github.com/rednoah/ant-installer/releases/download/${ant-installer.version}/apache-ant_${ant-installer.version}.qpkg" />
 
 		<groovy:groovy src="build-qnap.groovy" />
 	</target>
