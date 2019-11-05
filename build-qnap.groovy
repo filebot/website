@@ -11,6 +11,11 @@ def qnap = [
 ]
 
 
+def getSignature(qpkg) {
+	return new File(project.properties.'repo.qnap', "${qpkg}.codesigning").getText('UTF-8').trim()
+}
+
+
 f.withWriter('UTF-8') { writer ->
 	def xml = new MarkupBuilder(writer)
 
@@ -34,7 +39,8 @@ f.withWriter('UTF-8') { writer ->
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/filebot/FileBot_${project.properties.'application.version'}/FileBot_${project.properties.'application.version'}.qpkg")
+					location("https://get.filebot.net/qnap/packages/filebot_${project.properties.'application.version'}.qpkg")
+					signature(getSignature("packages/filebot_${project.properties.'application.version'}.qpkg"))
 				}
 			}
 			snapshot('https://www.filebot.net/qnap/filebot-snapshot.png')
@@ -59,6 +65,7 @@ f.withWriter('UTF-8') { writer ->
 				platform{
 					platformID(id)
 					location("https://get.filebot.net/qnap/packages/filebot-node_${project.properties.'filebot-node.version'}.qpkg")
+					signature(getSignature("packages/filebot-node_${project.properties.'filebot-node.version'}.qpkg"))
 				}
 			}
 			snapshot('https://www.filebot.net/qnap/filebot-node-snapshot.png')
@@ -82,6 +89,7 @@ f.withWriter('UTF-8') { writer ->
 				platform{
 					platformID(id)
 					location("https://get.filebot.net/qnap/packages/java-installer_${project.properties.'java-installer.version'}.qpkg")
+					signature(getSignature("packages/java-installer_${project.properties.'java-installer.version'}.qpkg"))
 				}
 			}
 		}
@@ -102,7 +110,8 @@ f.withWriter('UTF-8') { writer ->
 			qnap.platforms.each{ id ->
 				platform{
 					platformID(id)
-					location("https://get.filebot.net/qnap/packages/apache-ant_${project.properties.'ant-installer.version'}.qpkg")
+					location("https://get.filebot.net/qnap/")
+					signature(getSignature("packages/apache-ant_${project.properties.'ant-installer.version'}.qpkg"))
 				}
 			}
 		}
