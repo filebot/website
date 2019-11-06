@@ -17,6 +17,7 @@ logs
 
 # exclude verification files
 *.asc
+*.md5
 
 # exclude incremental update files
 HEAD
