@@ -1,10 +1,10 @@
 # Redirect directory root index
-RedirectMatch 302 ^/$ https://www.filebot.net/download.html
+RedirectMatch 301 ^/$ https://www.filebot.net/download.html
 
 # Redirect to Microsoft Store or Mac App Store
-Redirect 302 /windows/  https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=get
-Redirect 302 /mac/      https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=get
-Redirect 302 /license/  https://pay.paddle.com/checkout/534413?quantity_variable=0
+Redirect 301 /windows/  https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=get
+Redirect 301 /mac/      https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=get
+Redirect 301 /license/  https://pay.paddle.com/checkout/534413?quantity_variable=0
 
 # Enable Fancy Directory Index
 Options +Indexes
