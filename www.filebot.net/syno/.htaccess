@@ -1,4 +1,4 @@
 # Redirect Package Source
 RewriteEngine On
 RewriteCond %{QUERY_STRING} ^.+$
-RewriteRule ^.+$ https://get.filebot.net/syno/ [R=301, L]
+RewriteRule ^.+$ https://get.filebot.net/syno/ [R=301]
