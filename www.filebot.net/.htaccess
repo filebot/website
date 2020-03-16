@@ -37,9 +37,6 @@ redirect 301 /forums/rules.php        https://www.filebot.net/forums/viewtopic.p
 redirect 301 /forums/faq.php          https://www.filebot.net/forums/viewtopic.php?t=7
 redirect 301 /forums/help/faq         https://www.filebot.net/forums/viewtopic.php?t=7
 
-# Redirect Package Source
-redirect 301 /syno                    https://get.filebot.net/syno
-
 # Disable Directory Index
 Options -Indexes
 
