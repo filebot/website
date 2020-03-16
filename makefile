@@ -30,7 +30,7 @@ sync: clean
 	make push-website purge-cache
 
 clean:
-	rm -rv dist
+	-rm -rv dist
 	git reset --hard
 	git pull
 	git --no-pager log -1
