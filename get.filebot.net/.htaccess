@@ -9,6 +9,9 @@ Redirect 301 /license/  https://pay.paddle.com/checkout/534413?quantity_variable
 # Enable Fancy Directory Index
 Options +Indexes
 
+# Use UTF-8 as default charset for HTML files
+AddDefaultCharset UTF-8
+
 IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
 IndexOrderDefault Ascending Date
 
