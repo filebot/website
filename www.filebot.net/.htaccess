@@ -40,6 +40,9 @@ redirect 301 /forums/help/faq         https://www.filebot.net/forums/viewtopic.p
 # Disable Directory Index
 Options -Indexes
 
+# Use UTF-8 as default charset for HTML files
+AddDefaultCharset UTF-8
+
 # Cache Static Resources
 ExpiresActive on
 ExpiresByType text/plain                "access plus 1 week"
