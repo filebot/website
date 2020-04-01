@@ -9,6 +9,7 @@ redirect 301 /notes.html              https://www.filebot.net/forums/viewforum.p
 redirect 301 /report.html             https://www.filebot.net/forums/viewforum.php?f=6
 redirect 301 /help.html               https://www.filebot.net/forums/viewtopic.php?t=1868
 redirect 301 /activate.html           https://www.filebot.net/forums/viewtopic.php?t=6121
+redirect 301 /refund.html             https://www.filebot.net/forums/viewtopic.php?t=6118
 redirect 301 /support.html            https://www.filebot.net/forums/viewforum.php?f=8
 redirect 301 /windows/support.html    https://www.filebot.net/forums/viewforum.php?f=10
 redirect 301 /mac/support.html        https://www.filebot.net/forums/viewforum.php?f=12
