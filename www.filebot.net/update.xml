@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 4.9.0</name>
-	<revision>7234</revision>
+	<name>FileBot 4.9.1</name>
+	<revision>7372</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 4.9.0</b><br>
+		<b>FileBot 4.9.1</b><br>
 		This release features:<br>
 		+ Added Edit Format / Edit Match / Edit Name context menu<br>
 		+ Added Smart Mode: Attributes matcher (i.e. xattr / exif / id3 / atom)<br>
