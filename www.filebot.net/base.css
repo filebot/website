@@ -242,9 +242,8 @@ div.screencast:hover .play {
 }
 
 .section.tutorial li img {
-	vertical-align: bottom;
-	height: 17px;
-	
+	vertical-align: top;
+	height: 15px;
 }
 
 .section.first {
