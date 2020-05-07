@@ -120,7 +120,7 @@
 		<attribute name="todir" />
 		<element name="filesets" implicit="yes" />
 		<sequential>
-			<copy todir="@{todir}" verbose="yes" encoding="utf-8" overwrite="yes">
+			<copy todir="@{todir}" verbose="yes" encoding="utf-8" overwrite="yes" preservelastmodified="yes" verbose="yes">
 				<filesets />
 				<filterset begintoken="@{" endtoken="}">
 					<propertyset>
