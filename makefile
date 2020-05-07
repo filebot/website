@@ -7,6 +7,8 @@ GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 MIRROR_FILES := --delete
 
 
+update-website:
+	make website push-website purge-cache
 
 pull-release:
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
@@ -14,6 +16,8 @@ pull-release:
 
 push-website:
 	$(RSYNC) dist/filebot.net/ $(WWW_USER)@$(WWW_HOST):~/filebot.net/
+
+push-release:
 	$(RSYNC) get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
 
 push-repository:
@@ -30,10 +34,10 @@ purge-cache:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$(CF_ZONE_ID)/purge_cache" -H "X-Auth-Email: $(CF_AUTH_EMAIL)" -H "X-Auth-Key: $(CF_AUTH_KEY)" -H "Content-Type: application/json" --data '{"purge_everything":true}'
 
 sync: clean
-	make pull-release
-	make website
-	make repository
-	make push-repository push-website purge-cache
+	make pull-release push-release
+	make website push-website
+	make repository push-repository
+	make purge-cache
 
 clean:
 	-rm -rv dist
