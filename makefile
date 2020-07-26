@@ -2,7 +2,7 @@ include *.variables
 
 
 ANT := ant -lib lib
-RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude BETA --exclude .gitignore --exclude .DS_Store
+RSYNC := rsync --update --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude BETA --exclude HEAD --exclude .gitignore --exclude .DS_Store
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 MIRROR_FILES := --delete
 
@@ -18,7 +18,7 @@ push-website:
 	$(RSYNC) dist/filebot.net/ $(WWW_USER)@$(WWW_HOST):~/filebot.net/
 
 push-release:
-	$(RSYNC) --checksum --exclude '*.sha256' get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
+	$(RSYNC) --exclude 'FileBot_*' get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
 
 push-repository:
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/deb/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/deb/
