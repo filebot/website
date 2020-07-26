@@ -31,7 +31,7 @@ redirect 301 /linux/apt.html          https://www.filebot.net/forums/viewtopic.p
 redirect 301 /linux/yum.html          https://www.filebot.net/forums/viewtopic.php?t=10631
 redirect 301 /linux/syno.html         https://www.filebot.net/forums/viewtopic.php?t=1802
 redirect 301 /linux/qnap.html         https://www.filebot.net/forums/viewtopic.php?t=6014
-redirect 301 /linux/snap.html         https://snapcraft.io/filebot
+redirect 301 /linux/snap.html         https://www.filebot.net/forums/viewtopic.php?t=5984
 redirect 301 /linux/docker.html       https://hub.docker.com/r/rednoah/filebot/
 redirect 301 /linux/aur.html          https://aur.archlinux.org/packages/filebot/
 
