@@ -18,7 +18,7 @@ push-website:
 	$(RSYNC) dist/filebot.net/ $(WWW_USER)@$(WWW_HOST):~/filebot.net/
 
 push-release:
-	$(RSYNC) get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
+	$(RSYNC) --checksum --exclude '*.sha256' get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
 
 push-repository:
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/deb/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/deb/
