@@ -1,6 +1,6 @@
 [filebot]
 name=filebot
-baseurl=https://get.filebot.net/rpm/universal-jdk8/noarch
+baseurl=https://get.filebot.net/rpm/main/x86_64
 skip_if_unavailable=True
 gpgcheck=1
 gpgkey=https://get.filebot.net/filebot/KEYS
