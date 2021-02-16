@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 4.9.2</name>
+	<name>FileBot 4.9.3</name>
 	<revision>8040</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 4.9.2</b><br>
+		<b>FileBot 4.9.3</b><br>
 		This release features:<br>
-		+ Enable Dark Mode<br>
-		+ Enhanced Progress Monitor and Dialog UI<br>
-		+ Enhanced native Desktop integration<br>
-		+ Enhanced configuration options for Presets<br>
-		+ Improved support for Export and Restore of User Data<br>
-		+ Improved support for multi-monitor environments<br>
+		+ Enhanced Dark Mode<br>
+		+ Enhanced File Dialog and Progress Monitor<br>
+		+ Adaptive cache updates<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
-	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=52231#52231]]></discussion>
+	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=p53824#p53824]]></discussion>
 	<download><![CDATA[https://www.filebot.net/download.html]]></download>
 </update>
