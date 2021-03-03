@@ -85,26 +85,5 @@ f.withWriter('UTF-8') { writer ->
 				}
 			}
 		}
-
-		// Ant Installer
-		item {
-			name('Apache Ant')
-			internalName('apache-ant')
-			category('Build Tools')
-			type('Developer Tools')
-			icon100('https://www.filebot.net/qnap/apache-ant_100.png')
-			icon80('https://www.filebot.net/qnap/apache-ant_80.png')
-			description(project.properties.'ant-installer.description')
-			developer('rednoah')
-			developerLink('https://github.com/rednoah/ant-installer')
-			fwVersion(qnap.version)
-			version(project.properties.'ant-installer.version')
-			qnap.platforms.each{ id ->
-				platform{
-					platformID(id)
-					location("https://get.filebot.net/qnap/packages/apache-ant_${project.properties.'ant-installer.version'}.qpkg")
-				}
-			}
-		}
 	}
 }
