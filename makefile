@@ -23,6 +23,8 @@ push-release:
 push-repository:
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/deb/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/deb/
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/rpm/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/rpm/
+	$(RSYNC) $(MIRROR_FILES) get.filebot.net/syno/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/syno/
+	$(RSYNC) $(MIRROR_FILES) get.filebot.net/qnap/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/qnap/
 
 website:
 	$(ANT) website
