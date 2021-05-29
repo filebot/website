@@ -27,8 +27,9 @@ redirect 301 /contact/paddle.html     https://paddle.com/support/contact/
 redirect 301 /channel.html            https://discord.gg/cKVvZ2S
 
 # Redirect to Package Links
-redirect 301 /windows/chocolatey.html https://chocolatey.org/packages/filebot/
+redirect 301 /windows/winget.html     https://www.filebot.net/forums/viewtopic.php?t=12620
 redirect 301 /windows/scoop.html      https://www.filebot.net/forums/viewtopic.php?t=12163
+redirect 301 /windows/chocolatey.html https://chocolatey.org/packages/filebot/
 redirect 301 /mac/brew.html           https://www.filebot.net/forums/viewtopic.php?t=2049
 redirect 301 /linux/apt.html          https://www.filebot.net/forums/viewtopic.php?t=6028
 redirect 301 /linux/yum.html          https://www.filebot.net/forums/viewtopic.php?t=10631
