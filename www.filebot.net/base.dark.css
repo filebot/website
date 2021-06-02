@@ -57,15 +57,20 @@ table.reference > * > * > td {
 	border-top: none
 }
 
-.suggestion {
+p.suggestion {
 	border: thin dotted #99C79422;
 	background-color: #2A3139;
+}
+
+div.message.box {
+	background-color: #F5F5F5;
+	box-shadow: 0px 2px 5px #2a3139;
 }
 
 span.note.mediainfo, span.note.anime {
 	opacity: 0.7;
 }
 
-div.screenshot, div.video, a.green, img.logo, img.icon {
+div.screenshot, div.video, a.green, img.logo, img.icon, div.message.box {
 	opacity: 0.9;
 }
