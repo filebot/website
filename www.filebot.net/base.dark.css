@@ -1,0 +1,61 @@
+h1, h2, p, ul, ol, table {
+	color: #CCC;
+}
+
+a, acronym {
+	color: #99C794;
+}
+
+.navigation a {
+	color: #D6DCE7;
+}
+
+.navigation a:hover, .navigation a:focus {
+	color: #F9AE58;
+}
+
+h1 .description {
+	color: #AAA;
+}
+
+.section .quote, .comment, a.source {
+	color: #777;
+}
+
+body {
+	background-color: #292D32;
+}
+
+.page {
+	background: #303841;
+	border: thin solid #606265;
+}
+
+.page, .screenshot, .video iframe, .main-section-screenshot img {
+	box-shadow: 0px 2px 5px #2a3139;
+}
+
+.section.tutorial ol, .section.tutorial ul {
+	background-color: #4F547C;
+}
+
+.section.features > ul.next {
+	border-top: thin dotted #99C79422;
+}
+
+table.reference > * > * > td {
+	border-top: none
+}
+
+.suggestion {
+	border: thin dotted #99C79422;
+	background-color: #2A3139;
+}
+
+span.note.mediainfo, span.note.anime {
+	opacity: 0.7;
+}
+
+div.screenshot, div.video {
+	opacity: 0.9;
+}

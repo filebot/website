@@ -1,0 +1,30 @@
+code {
+	color: #CCC;
+	background-color: #2A3139;
+	border: thin solid #2A3139;
+}
+
+code .variable, table.binding td:first-child {
+	color: #5DB0B0;
+	
+}
+
+code .method, div.documentation pre .method {
+	color: #9A74DF;
+}
+
+code .string, code .numeral, code .regex {
+	color: #F3AB57;
+}
+
+code .block {
+	color: #1F7EA7;
+}
+
+code .type, table.binding td:last-child {
+	color: #6598CA;
+}
+
+table.binding tr:hover {
+	background-color: #2A3139;
+}

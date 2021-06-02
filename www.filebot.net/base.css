@@ -343,8 +343,8 @@ div.screencast:hover .play {
 }
 
 .suggestion {
-	border: thin lightgray dotted;
-	background: GhostWhite;
+	border: thin dotted lightgray;
+	background-color: GhostWhite;
 	padding: 8px;
 	margin: 25px 10px 45px 10px;
 }
