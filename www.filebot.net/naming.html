@@ -11,11 +11,11 @@
 		<meta itemprop="description" content="Define your own naming scheme and customize it to your liking. FileBot format expressions give you ultimate control over how FileBot will rename and move your media files. Anything is possible." />
 		<meta itemprop="image" content="@{link.image.logo}" />
 
+		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 		<link rel="stylesheet" href="base.css" type="text/css" />
 		<link rel="stylesheet" href="code.css" type="text/css" />
 		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
 		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
-		<link rel="icon" href="favicon.png" />
 	</head>
 	<body>
 		<div class="page">
@@ -38,18 +38,22 @@
 			</div>
 
 			<div class="content">
-				<div class="screenshot">
-					<a href="screenshots/format.png" title="Format Dialog" target="_blank">
-						<img alt="Edit Format Dialog" width="230" height="162" src="screenshots/format.png" />
-					</a>
+				<div class="main-section-screenshot">
+					<a target="_blank" title="Format Dialog" href="screenshots/format.png"><img alt="Edit Format Dialog" width="330" src="screenshots/format.png" /></a>
 				</div>
 				<div class="section about">
 					<h2>About</h2>
-					<p>
-					You can easily define your own episode and movie naming schemes. It uses <a href="http://groovy-lang.org/">Groovy</a> expressions, 
-					which means that you can do pretty much anything, especially if you know a little bit about programming. 
-					You even get media info bindings. You can find <a href="https://www.filebot.net/forums/viewtopic.php?t=2">predefined format expressions</a> for all kinds of scenarios in the forums. Ready for you to just copy &amp; paste.
-					</p>
+					<div class="main-section-paragraph">
+						<p>
+						You can define your own episode and movie naming schemes. Built-in bindings such as <a href="https://www.filebot.net/forums/viewtopic.php?t=4116">{plex}</a> can be used unmodified, or as a starting point for your own custom format.
+						</p>
+						<p>
+						Simple things are easy. Complex things are just as easy, if you're familiar with <a href="http://groovy-lang.org/">Groovy</a> scripting. There are <a href="#bindings">many bindings</a> that can serve as building blocks for you to write your own custom format tailored to your liking with ease.
+						</p>
+						<p>
+						You will find <a href="https://www.filebot.net/forums/viewtopic.php?t=2">many examples</a> for all kinds of custom use cases. Ready for you to just copy &amp; paste,<br> and (optionally) customize to your needs.
+						</p>
+					</div>
 					<h2 id="examples">Examples</h2>
 					<p>
 					<code><span class="block start">{</span><span class="variable">n</span><span class="block end">}</span> - <span class="block start">{</span><span class="variable">s00e00</span><span class="block end">}</span> - <span class="block start">{</span><span class="variable">t</span><span class="block end">}</span></code>Dark Angel - S03E01 - Labyrinth
@@ -899,7 +903,7 @@
 				</div>
 
 				<p class="suggestion">
-					Need some help getting started? Check the <a href="https://www.filebot.net/forums/viewforum.php?f=5">forums</a>.
+					Need help getting started? Join the <a href="https://www.filebot.net/forums/viewforum.php?f=5">Forum</a> or <a href="https://www.filebot.net/channel.html">Discord</a>.
 				</p>
 
 				<div class="metrics"></div>

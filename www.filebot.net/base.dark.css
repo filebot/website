@@ -1,4 +1,4 @@
-h1, h2, p, ul, ol, table {
+h1, h2, h3, p, ul, ol, table {
 	color: #CCC;
 }
 
@@ -11,7 +11,7 @@ a, acronym {
 }
 
 .navigation a:hover, .navigation a:focus {
-	color: #F9AE58;
+	color: #FA9B58;
 }
 
 h1 .description {
@@ -28,7 +28,7 @@ body {
 
 .page {
 	background: #303841;
-	border: thin solid #606265;
+	border: thin solid #4F565E;
 }
 
 .page, .screenshot, .video iframe, .main-section-screenshot img {
@@ -36,7 +36,7 @@ body {
 }
 
 .section.tutorial ol, .section.tutorial ul {
-	background-color: #4F547C;
+	background-color: #4B5D7C;
 }
 
 .section.features > ul.next {
@@ -56,6 +56,6 @@ span.note.mediainfo, span.note.anime {
 	opacity: 0.7;
 }
 
-div.screenshot, div.video {
+div.screenshot, div.video, a.green, img.logo, img.icon {
 	opacity: 0.9;
 }

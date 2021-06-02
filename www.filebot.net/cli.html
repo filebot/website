@@ -11,9 +11,11 @@
 		<meta itemprop="description" content="The FileBot command-line interface will allow you to rename tv shows, download subtitles and do lots of other nifty things directly directly from the console. Running on an headless server is fully supported. Make sure to check out FileBot scripting as well for a new level of automation." />
 		<meta itemprop="image" content="@{link.image.logo}" />
 
+		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 		<link rel="stylesheet" href="base.css" type="text/css" />
 		<link rel="stylesheet" href="code.css" type="text/css" />
-		<link rel="icon" href="favicon.png" />
+		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
+		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
 	</head>
 	<body>
 		<div class="page">
@@ -37,20 +39,22 @@
 
 			<div class="content">
 				<div class="main-section-screenshot">
-					<a target="_blank" href="screenshots/cli.png"><img alt="FileBot command-line tools" width="330" height="221" src="screenshots/cli.png" /></a>
+					<a target="_blank" href="screenshots/cli.png"><img alt="FileBot command-line tools" width="330" src="screenshots/cli.png" /></a>
 				</div>
 				<div class="section about">
 					<h2>About</h2>
-					<p style="width: 420px">
-					FileBot can be called with a set of command-line arguments directly from the console 
-					or in scripts for automation, running tasks like renaming TV shows and movies, fetching subtitles or checking SFV files.
-					</p>
-					<p style="width: 420px">
-					The CLI is designed for <a href="https://www.filebot.net/forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
-					</p>
-					<p style="width: 420px">
-					Please have a look at <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours and find scripts for many common tasks <a href="https://www.filebot.net/forums/viewtopic.php?t=5">here</a>.
-					</p>
+					<div class="main-section-paragraph">
+						<p>
+						FileBot can be called with a set of command-line arguments directly from the console 
+						or in scripts for automation, running tasks like renaming TV shows and movies, fetching subtitles or checking SFV files.
+						</p>
+						<p>
+						The CLI is designed for <a href="https://www.filebot.net/forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
+						</p>
+						<p>
+						Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="https://www.filebot.net/forums/viewtopic.php?t=5">Script Repository</a>.
+						</p>
+					</div>
 					<h2 id="examples">Examples</h2>
 					<h3 id="rename">Rename</h3>
 					<p>
@@ -116,7 +120,7 @@
 					Execute a given <a href="script.html">Groovy script</a> and pass along input arguments and script parameters.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">fn:amc</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span> <span class="option">--action</span> <span class="argument">duplicate</span> <span class="cmd">\</span><br><span class="argument">-non-strict</span> <span class="option">--log-file</span> <span class="argument">amc.log</span> <span class="option">--def</span> <span class="argument">excludeList="amc.txt"</span></code>
+					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">fn:amc</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span> <span class="option">--action</span> <span class="argument">duplicate</span> <span class="cmd">\</span><br><span class="option">-non-strict</span> <span class="option">--log-file</span> <span class="argument">amc.log</span> <span class="option">--def</span> <span class="argument">excludeList="amc.txt"</span></code>
 					Execute the <a href="amc.html">amc script</a> with the given input arguments, options and script parameters.
 					</p>
 
@@ -125,7 +129,7 @@
 						Argument Reference
 						<a href="docs/api/net/filebot/cli/ArgumentBean.html" class="source" target="_blank">source</a>
 					</h2>
-					<table class="reference cli">
+					<table class="reference options">
 						<tr>
 							<th>Name</th>
 							<th>Description</th>
@@ -357,7 +361,7 @@
 				</div>
 
 				<p class="suggestion">
-				Need some help getting started? Check the <a href="https://www.filebot.net/forums/viewforum.php?f=4">forums</a>.
+					Need help getting started? Join the <a href="https://www.filebot.net/forums/viewforum.php?f=5">Forum</a> or <a href="https://www.filebot.net/channel.html">Discord</a>.
 				</p>
 
 				<div class="metrics">

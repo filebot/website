@@ -92,8 +92,6 @@ hr {
 	background-image:url(nav-a-bg-h.png);
 }
 
-
-
 .section h2.reference {
 	padding-top: 25px;
 }
@@ -109,25 +107,6 @@ table.reference > * > * > th, table.reference > * > * > td {
 
 table.reference > * > * > td {
 	border-top: thin dotted lavender;
-}
-
-table.reference.cli > * > * > td:first-child {
-	color: #225577;
-	font-family: Andale Mono, monospace;
-	font-size: 10.5pt;
-	font-weight: bold;
-}
-
-span.cmd {
-	color: #5C7684;
-	font-family: Andale Mono, monospace;
-	font-weight: bold;
-}
-
-span.option {
-	color: #225577;
-	font-family: Andale Mono, monospace;
-	font-weight: bold;
 }
 
 .page {
@@ -183,8 +162,13 @@ h1 .description {
 	box-shadow: 0px 2px 5px #a2a2a2;
 }
 
+.main-section-paragraph {
+	width: 390px;
+}
+
 .main-section-screenshot {
 	float: right;
+	min-height: 300px;
 	margin-top: 30px;
 	margin-left: 20px;
 	margin-right: 5px;

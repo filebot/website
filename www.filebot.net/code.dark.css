@@ -4,12 +4,11 @@ code {
 	border: thin solid #2A3139;
 }
 
-code .variable, table.binding td:first-child {
+code .option, code .variable, table.binding td:first-child, table.options > * > * > td:first-child {
 	color: #5DB0B0;
-	
 }
 
-code .method, div.documentation pre .method {
+code .argument, code .method, div.documentation pre .method {
 	color: #9A74DF;
 }
 
@@ -21,7 +20,7 @@ code .block {
 	color: #1F7EA7;
 }
 
-code .type, table.binding td:last-child {
+code .cmd, code .type, table.binding td:last-child {
 	color: #6598CA;
 }
 
