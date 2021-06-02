@@ -54,71 +54,70 @@
 					<h2 id="examples">Examples</h2>
 					<h3 id="rename">Rename</h3>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">path/to/episodes</span></code>
-					Rename given episodes or movies.
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span></code>
+					Rename given episode files or movie files.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"One Piece"</span> <span class="option">--db</span> <span class="argument">anidb</span> <span class="option">-non-strict</span></code>
-					Rename given episodes using AniDB episode info. Enable comprehensive Episode/File matching.
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span> <span class="option">--db</span> <span class="argument">AniDB</span> <span class="option">-non-strict</span></code>
+					Rename given episode files using AniDB episode listing.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"Generation Kill"</span> <span class="option">--format</span> <span class="argument">"{n} E{e} [{t}]"</span> <span class="option">-non-strict</span></code>
-					Rename given episodes according to the given format. Enable comprehensive Episode/File matching.
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">--format</span> <span class="argument">"{s} - {s00e00} - {t}"</span></code>
+					Rename given episode files using the given <a href="naming.html">custom format</a>.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"1x01.avi"</span> <span class="option">--q</span> <span class="argument">"Dexter"</span> <span class="option">--db</span> <span class="argument">TheTVDB</span> <span class="option">--lang</span> <span class="argument">de</span></code>
-					Rename a single episode forcing the series name. Use German language episode info.
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"1x01.mkv"</span> <span class="option">--q</span> <span class="argument">"Firefly"</span> <span class="option">--db</span> <span class="argument">TheMovieDB::TV</span> <span class="option">--lang</span> <span class="argument">German</span></code>
+					Rename a given episode file forcing a given series based on German language episode listing.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"movie.avi"</span> <span class="option">--q</span> <span class="argument">"Avatar"</span> <span class="option">--db</span> <span class="argument">TheMovieDB</span></code>
-					Rename a single movie looking up movie info via file hash or using the given movie title.
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">A.mkv</span> <span class="option">--q</span> <span class="argument">19995</span> <span class="option">--db</span> <span class="argument">TheMovieDB</span></code>
+					Rename a given movie file using the numeric ID to lookup the movie information.
 					</p>
 					<p class="suggestion">
 					Keep in mind that the CLI is <strong>strict by default</strong> so it will never mess up your files. In some cases you may need to enable <strong>-non-strict</strong> for more opportunistic matching like the GUI does.
 					</p>
 					<h3 id="subtitles">Fetch Subtitles</h3>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="argument">path/to/episodes</span></code>
-					Fetch subtitles that are missing for the given files. Lookup matching subtitles via file hash only.
+					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span></code>
+					Fetch missing subtitles for the given episode files or movie files.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="argument">path/to/movie</span> <span class="option">--q</span> <span class="argument">"Avatar"</span> <span class="option">--lang</span> <span class="argument">zh</span> <span class="option">--output</span> <span class="argument">srt</span> <span class="option">--encoding</span> <span class="argument">utf8</span> <span class="option">-non-strict</span></code>
-					Fetch subtitles and force output format. Lookup subtitles via file hash or given search query.
+					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span> <span class="cmd">\</span><br><span class="option">--lang</span> <span class="argument">zh</span> <span class="option">--output</span> <span class="argument">srt</span> <span class="option">--encoding</span> <span class="argument">utf-8</span></code>
+					Fetch missing Chinese language subtitles and convert them to <a href="https://en.wikipedia.org/wiki/SubRip">SubRip</a> format and <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a> encoding.
 					</p>
 					<h3 id="verification">File Verification</h3>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">path/to/files</span></code>
-					Compute SFV file and automatically determine output file.
+					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">"/path/to/files"</span></code>
+					Compute CRC32 checksums and create an <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">path/to/files</span> <span class="option">--output</span> <span class="argument">checksum.md5</span></code>
-					Compute checksums and write to the given output file.
+					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">"/path/to/files"</span> <span class="option">--format</span> <span class="argument">SHA-256</span></code>
+					Compute SHA-256 hashes and create an <a href="https://en.wikipedia.org/wiki/Sha1sum">sha256sum</a> file.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">path/to/checksum.md5</span></code>
-					Check file integrity using the given checksum file.
+					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">*.sfv</span></code>
+					Check file integrity for all the files listed in the given <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
 					</p>
 					<h3 id="scripting">Scripting</h3>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-extract</span> <span class="argument">"300.part01.rar"</span> <span class="option">--output</span> <span class="argument">path/to/folder</span></code></code>
-					Extract files from single-volume or multi-volume archives (e.g. rar).
+					<code><span class="cmd">filebot</span> <span class="option">-extract</span> <span class="option">-r</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span></code></code>
+					Extract all archives from the given input folder to the given output folder.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-list</span> <span class="option">--db</span> <span class="argument">thetvdb</span> <span class="option">--q</span> <span class="argument">Dexter</span> <span class="option">--format</span> <span class="argument">"{s}x{e.pad(2)} {t}"</span></code>
-					Fetch episode list and print to console.
+					<code><span class="cmd">filebot</span> <span class="option">-list</span> <span class="option">--q</span> <span class="argument">"Firefly"</span> <span class="option">--db</span> <span class="argument">TheMovieDB::TV</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"s == 1"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{id} | {s} | {y} | {sxe} | {t}"</span></code>
+					Fetch episode list and print episode information for the <a href="https://www.filebot.net/forums/viewtopic.php?t=2127">selected episodes</a>.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-mediainfo</span> <span class="argument">path/to/files</span> <span class="option">--format</span> <span class="argument">"{fn} {resolution} {vc} {af}"</span></code>
-					Read media info and print to console.
+					<code><span class="cmd">filebot</span> <span class="option">-mediainfo</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"f.video && minutes > 15"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}"</span></code>
+					Read <a href="https://www.filebot.net/forums/viewtopic.php?t=4285">media info</a> and print to console.
 					</p>
 					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">"path/to/script.groovy"</span> <span class="argument">args...</span></code>
-					Execute a given Groovy script. Find the manual on scripting <a href="script.html">here</a>.
+					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">*.groovy</span> <span class="argument">"/input"</span> <span class="option">--def</span> <span class="argument">a=1</span> <span class="argument">b=2</span> <span class="argument">c=3</span> <span class="argument">...</span></code>
+					Execute a given <a href="script.html">Groovy script</a> and pass along input arguments and script parameters.
 					</p>
-					<h3 id="advanced">Advanced Usage</h3>
 					<p>
-					Check out the <a href="https://www.filebot.net/forums/viewtopic.php?t=4788">FileBot Command-Line Usage Examples</a>
-					on how to use <span class="cmd">find</span> and <span class="cmd">xargs</span> in combination with <span class="cmd">filebot</span> and advanced options such as <span class="option">--db xattr</span> and <span class="option">--filter</span> for querying and offline processing of media files and photos.
+					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">fn:amc</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span> <span class="option">--action</span> <span class="argument">duplicate</span> <span class="cmd">\</span><br><span class="argument">-non-strict</span> <span class="option">--log-file</span> <span class="argument">amc.log</span> <span class="option">--def</span> <span class="argument">excludeList="amc.txt"</span></code>
+					Execute the <a href="amc.html">amc script</a> with the given input arguments, options and script parameters.
 					</p>
 
 
