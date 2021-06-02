@@ -3,28 +3,26 @@ redirect 301 /windows/purchase.html   https://www.microsoft.com/en-us/store/p/fi
 redirect 301 /mac/purchase.html       https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
 
 # Redirect to Support Pages
-redirect 301 /amc.html                https://www.filebot.net/forums/viewtopic.php?t=215
 redirect 301 /manual.html             https://www.filebot.net/forums/viewtopic.php?t=7
-redirect 301 /notes.html              https://www.filebot.net/forums/viewforum.php?f=7
 redirect 301 /report.html             https://www.filebot.net/forums/viewforum.php?f=6
+redirect 301 /amc.html                https://www.filebot.net/forums/viewtopic.php?t=215
 redirect 301 /help.html               https://www.filebot.net/forums/viewtopic.php?t=1868
 redirect 301 /activate.html           https://www.filebot.net/forums/viewtopic.php?t=6121
 redirect 301 /refund.html             https://www.filebot.net/forums/viewtopic.php?t=6118
 redirect 301 /support.html            https://www.filebot.net/forums/viewforum.php?f=8
 redirect 301 /windows/support.html    https://www.filebot.net/forums/viewforum.php?f=10
 redirect 301 /mac/support.html        https://www.filebot.net/forums/viewforum.php?f=12
-redirect 301 /mac/subtitles.html      https://www.filebot.net/forums/viewtopic.php?t=3350
 redirect 301 /linux/support.html      https://www.filebot.net/forums/viewforum.php?f=11
 redirect 301 /syno/support.html       https://www.filebot.net/forums/viewforum.php?f=13
 redirect 301 /qnap/support.html       https://www.filebot.net/forums/viewforum.php?f=13
-redirect 301 /syno/manual.html        https://www.filebot.net/forums/viewtopic.php?t=1802
 redirect 301 /error/429.html          https://www.filebot.net/forums/viewtopic.php?t=9594
 redirect 301 /help/args.html          https://www.filebot.net/forums/viewtopic.php?t=1899
 redirect 301 /help/xattr.html         https://www.filebot.net/forums/viewtopic.php?t=324
 redirect 301 /help/presets.html       https://www.filebot.net/forums/viewtopic.php?t=3228
 redirect 301 /help/apply.html         https://www.filebot.net/forums/viewtopic.php?t=11079
+redirect 301 /channel.html            https://www.filebot.net/forums/viewtopic.php?t=4179
+redirect 301 /manpage.html            https://www.filebot.net/cli.html#arguments
 redirect 301 /contact/paddle.html     https://paddle.com/support/contact/
-redirect 301 /channel.html            https://discord.gg/cKVvZ2S
 
 # Redirect to Package Links
 redirect 301 /windows/winget.html     https://www.filebot.net/forums/viewtopic.php?t=12620
