@@ -4,11 +4,11 @@ code {
 	border: thin solid #2A3139;
 }
 
-code .option, code .variable, table.binding td:first-child, table.options > * > * > td:first-child {
+code .option, code .variable, code .property, div.documentation span.property, table.binding td:first-child, table.options > * > * > td:first-child {
 	color: #5DB0B0;
 }
 
-code .argument, code .method, div.documentation pre .method {
+code .method, div.documentation span.method {
 	color: #9A74DF;
 }
 
@@ -16,14 +16,28 @@ code .string, code .numeral, code .regex {
 	color: #F3AB57;
 }
 
-code .block {
+code .cmd, code .block {
 	color: #1F7EA7;
 }
 
-code .cmd, code .type, table.binding td:last-child {
+code .argument, code .type, div.documentation span.return, table.binding td:last-child {
 	color: #6598CA;
 }
 
 table.binding tr:hover {
 	background-color: #2A3139;
+}
+
+div.documentation {
+	background-color: #2A3139;
+	border: thin dotted #99C79422;
+}
+
+div.documentation dt {
+	color: #CCC;
+}
+
+div.documentation h4 {
+	background-color: #2A3139;
+	border-bottom: thin dotted #99C79422;
 }

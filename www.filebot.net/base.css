@@ -168,7 +168,7 @@ h1 .description {
 
 .main-section-screenshot {
 	float: right;
-	min-height: 300px;
+	min-height: 250px;
 	margin-top: 30px;
 	margin-left: 20px;
 	margin-right: 5px;
@@ -418,6 +418,16 @@ div.screencast:hover .play {
 	border: 4px black solid;
 	box-shadow: 2px 2px 5px #a2a2a2;
 	border-radius: 4px;
+}
+
+ul.repository {
+	background-color: #FDFDFF;
+	border: thin dotted lavender;
+	margin: 15px 20px 40px 20px;
+	padding: 10px 20px;
+	width: 680px;
+	columns: 2;
+	list-style-position: inside;
 }
 
 #download li.macosx, #download li.windows {

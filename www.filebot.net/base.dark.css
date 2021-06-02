@@ -1,4 +1,4 @@
-h1, h2, h3, p, ul, ol, table {
+body, h1, h2, h3, h4, p, ul, ol, table {
 	color: #CCC;
 }
 
@@ -41,6 +41,16 @@ body {
 
 .section.features > ul.next {
 	border-top: thin dotted #99C79422;
+}
+
+hr {
+	border-style: dotted; 
+	border-color: #99C79422;
+}
+
+ul.repository {
+	background-color: #2A3139;
+	border: thin solid #2A3139;
 }
 
 table.reference > * > * > td {
