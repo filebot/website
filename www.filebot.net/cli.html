@@ -22,15 +22,15 @@
 			<div class="navigation">
 				<div>
 				<ul>
-					<li><a href="https://www.filebot.net/forums/">Forums</a></li>
-					<li><a href="https://www.filebot.net/manual.html">FAQ</a></li>
-					<li><a href="https://www.filebot.net/#download">Download</a></li>
+					<li><a href="forums/">Forums</a></li>
+					<li><a href="manual.html">FAQ</a></li>
+					<li><a href="#download">Download</a></li>
 				</ul>
 				</div>
 			</div>
 
 			<div class="header">
-				<a href="https://www.filebot.net/"><img class="logo" alt="logo" src="images/filebot.logo.svg" width="64" height="64" /></a>
+				<a href="/"><img class="logo" alt="logo" src="images/filebot.logo.svg" width="64" height="64" /></a>
 				<h1>
 					FileBot CLI
 					<span class="description">Command-line interface usage manual</span>
@@ -49,10 +49,10 @@
 						or in scripts for automation, running tasks like renaming TV shows and movies, fetching subtitles or checking SFV files.
 						</p>
 						<p>
-						The CLI is designed for <a href="https://www.filebot.net/forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
+						The CLI is designed for <a href="forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
 						</p>
 						<p>
-						Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="https://www.filebot.net/forums/viewtopic.php?t=5">Script Repository</a>.
+						Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
 						</p>
 					</div>
 					<h2 id="examples">Examples</h2>
@@ -109,11 +109,11 @@
 					</p>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-list</span> <span class="option">--q</span> <span class="argument">"Firefly"</span> <span class="option">--db</span> <span class="argument">TheMovieDB::TV</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"s == 1"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{id} | {s} | {y} | {sxe} | {t}"</span></code>
-					Fetch episode list and print episode information for the <a href="https://www.filebot.net/forums/viewtopic.php?t=2127">selected episodes</a>.
+					Fetch episode list and print episode information for the <a href="forums/viewtopic.php?t=2127">selected episodes</a>.
 					</p>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-mediainfo</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"f.video && minutes > 15"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}"</span></code>
-					Read <a href="https://www.filebot.net/forums/viewtopic.php?t=4285">media info</a> and print to console.
+					Read <a href="forums/viewtopic.php?t=4285">media info</a> and print to console.
 					</p>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">*.groovy</span> <span class="argument">"/input"</span> <span class="option">--def</span> <span class="argument">a=1</span> <span class="argument">b=2</span> <span class="argument">c=3</span> <span class="argument">...</span></code>
@@ -155,7 +155,7 @@
 									<td>AcoustID | ID3 <small class="comment">(Music Mode)</small></td>
 								</tr>
 								<tr>
-									<td><a href="https://www.filebot.net/forums/viewtopic.php?t=2072">File | Exif | Xattr</a> <small class="comment">(Plain File Mode)</small></td>
+									<td><a href="forums/viewtopic.php?t=2072">File | Exif | Xattr</a> <small class="comment">(Plain File Mode)</small></td>
 								</tr>
 							</table>
 							</td>
@@ -168,12 +168,12 @@
 						<tr>
 							<td>--format</td>
 							<td><a href="naming.html">naming scheme</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3244">format expression</a></td>
+							<td><a href="forums/viewtopic.php?t=3244">format expression</a></td>
 						</tr>
 						<tr>
 							<td>--action</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4915">rename action</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4915">move | copy | symlink | hardlink | test</a></td>
+							<td><a href="forums/viewtopic.php?t=4915">rename action</a></td>
+							<td><a href="forums/viewtopic.php?t=4915">move | copy | symlink | hardlink | test</a></td>
 						</tr>
 						<tr>
 							<td>--conflict</td>
@@ -182,18 +182,18 @@
 						</tr>
 						<tr>
 							<td>--filter</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=2127">match filter</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3244">filter expression</a></td>
+							<td><a href="forums/viewtopic.php?t=2127">match filter</a></td>
+							<td><a href="forums/viewtopic.php?t=3244">filter expression</a></td>
 						</tr>
 						<tr>
 							<td>--mapper</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=10996">episode mapper</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3244">mapper expression</a></td>
+							<td><a href="forums/viewtopic.php?t=10996">episode mapper</a></td>
+							<td><a href="forums/viewtopic.php?t=3244">mapper expression</a></td>
 						</tr>
 						<tr>
 							<td>--q</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12043">manual lookup</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12043">query expression</a></td>
+							<td><a href="forums/viewtopic.php?t=12043">manual lookup</a></td>
+							<td><a href="forums/viewtopic.php?t=12043">query expression</a></td>
 						</tr>
 						<tr>
 							<td>--lang</td>
@@ -202,14 +202,14 @@
 						</tr>
 						<tr>
 							<td>-non-strict</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4695">opportunistic match mode</a></td>
+							<td><a href="forums/viewtopic.php?t=4695">opportunistic match mode</a></td>
 							<td>
 								<table>
 								<tr>
-									<td>enable <a href="https://www.filebot.net/forums/viewtopic.php?t=4695">opportunistic matching</a> <small class="comment">(Rename Mode)</small></td>
+									<td>enable <a href="forums/viewtopic.php?t=4695">opportunistic matching</a> <small class="comment">(Rename Mode)</small></td>
 								</tr>
 								<tr>
-									<td>enable <a href="https://www.filebot.net/forums/viewtopic.php?t=2615">fuzzy subtitle search</a> <small class="comment">(Subtitle Mode)</small></td>
+									<td>enable <a href="forums/viewtopic.php?t=2615">fuzzy subtitle search</a> <small class="comment">(Subtitle Mode)</small></td>
 								</tr>
 							</table>
 							</td>
@@ -221,13 +221,13 @@
 						</tr>
 						<tr>
 							<td>-d</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12263">rename folders</a></td>
+							<td><a href="forums/viewtopic.php?t=12263">rename folders</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>--file-filter</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4222">input file filter</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3244">file filter expression</a></td>
+							<td><a href="forums/viewtopic.php?t=4222">input file filter</a></td>
+							<td><a href="forums/viewtopic.php?t=3244">file filter expression</a></td>
 						</tr>
 						<tr>
 							<td>--output</td>
@@ -248,13 +248,13 @@
 						</tr>
 						<tr>
 							<td>--apply</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=11079">apply post-processing</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=11079">artwork | nfo | date | import | prune</a></td>
+							<td><a href="forums/viewtopic.php?t=11079">apply post-processing</a></td>
+							<td><a href="forums/viewtopic.php?t=11079">artwork | nfo | date | import | prune</a></td>
 						</tr>
 						<tr>
 							<td>-exec</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=11078">execute command</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=11078">exec expression</a></td>
+							<td><a href="forums/viewtopic.php?t=11078">execute command</a></td>
+							<td><a href="forums/viewtopic.php?t=11078">exec expression</a></td>
 						</tr>
 						<tr>
 							<td>-extract</td>
@@ -279,12 +279,12 @@
 						<tr>
 							<td>-list</td>
 							<td>print episode list</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12553">-rename</a> <small class="comment">(Linear Rename Mode)</small></td>
+							<td><a href="forums/viewtopic.php?t=12553">-rename</a> <small class="comment">(Linear Rename Mode)</small></td>
 						</tr>
 						<tr>
 							<td>-find</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12622">print file paths</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12622">-exec</a> <small class="comment">(Find Exec Mode)</small></td>
+							<td><a href="forums/viewtopic.php?t=12622">print file paths</a></td>
+							<td><a href="forums/viewtopic.php?t=12622">-exec</a> <small class="comment">(Find Exec Mode)</small></td>
 						</tr>
 						<tr>
 							<td>-mediainfo</td>
@@ -299,47 +299,47 @@
 
 						<tr>
 							<td>-revert</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12133">undo rename operations</a></td>
+							<td><a href="forums/viewtopic.php?t=12133">undo rename operations</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>--mode</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4398">interactive</a></td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4398">enable console-interactive mode</a></td>
+							<td><a href="forums/viewtopic.php?t=4398">interactive</a></td>
+							<td><a href="forums/viewtopic.php?t=4398">enable console-interactive mode</a></td>
 						</tr>
 						<tr>
 							<td>--log</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=3913">log level</a></td>
+							<td><a href="forums/viewtopic.php?t=3913">log level</a></td>
 							<td>all | fine | info | warning</td>
 						</tr>
 						<tr>
 							<td>-clear-cache</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=1996">clear cache</a></td>
+							<td><a href="forums/viewtopic.php?t=1996">clear cache</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>-clear-prefs</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=4205">reset application settings</a></td>
+							<td><a href="forums/viewtopic.php?t=4205">reset application settings</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>-clear-history</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12133">reset history</a></td>
+							<td><a href="forums/viewtopic.php?t=12133">reset history</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>-unixfs</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12627">disable file path validation</a></td>
+							<td><a href="forums/viewtopic.php?t=12627">disable file path validation</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>-no-xattr</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=324">disable extended attributes</a></td>
+							<td><a href="forums/viewtopic.php?t=324">disable extended attributes</a></td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>-no-probe</td>
-							<td><a href="https://www.filebot.net/forums/viewtopic.php?t=12022">disable media parser</a></td>
+							<td><a href="forums/viewtopic.php?t=12022">disable media parser</a></td>
 							<td></td>
 						</tr>
 						<tr>
@@ -360,15 +360,14 @@
 					</table>
 				</div>
 
+				<div class="metrics"></div>
+
 				<p class="suggestion">
-					Need help getting started? Join the <a href="https://www.filebot.net/forums/viewforum.php?f=5">Forum</a> or <a href="https://www.filebot.net/channel.html">Discord</a>.
+					Need help getting started? Join the <a href="forums/viewforum.php?f=4">Forum</a> or <a href="channel.html">Discord</a>.
 				</p>
 
-				<div class="metrics">
-				</div>
-
 				<div class="footer">
-					<p><a href="https://www.filebot.net/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
+					<p><a href="/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
 				</div>
 			</div>
 		</div>

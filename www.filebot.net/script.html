@@ -11,24 +11,26 @@
 		<meta itemprop="description" content="FileBot scripting allows to easily write scripts for any kind of automation in Groovy. There is no limits. Extract archives, download subtitles, rename episodes, fetch artwork and banners and delete left-behind clutter. All in one go." />
 		<meta itemprop="image" content="@{link.image.logo}" />
 
+		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 		<link rel="stylesheet" href="base.css" type="text/css" />
 		<link rel="stylesheet" href="code.css" type="text/css" />
-		<link rel="icon" href="favicon.png" />
+		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
+		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
 	</head>
 	<body>
 		<div class="page">
 			<div class="navigation">
 				<div>
 				<ul>
-					<li><a href="https://www.filebot.net/forums/">Forums</a></li>
-					<li><a href="https://www.filebot.net/manual.html">FAQ</a></li>
-					<li><a href="https://www.filebot.net/#download">Download</a></li>
+					<li><a href="forums/">Forums</a></li>
+					<li><a href="manual.html">FAQ</a></li>
+					<li><a href="download.html">Download</a></li>
 				</ul>
 				</div>
 			</div>
 
 			<div class="header">
-				<a href="https://www.filebot.net/"><img class="logo" alt="logo" src="images/filebot.logo.svg" width="64" height="64" /></a>
+				<a href="/"><img class="logo" alt="logo" src="images/filebot.logo.svg" width="64" height="64" /></a>
 				<h1>
 					Scripts and Automation
 					<span class="description">Scripting interface usage manual</span>
@@ -42,12 +44,14 @@
 				</div>
 				<div class="section about">
 					<h2>About</h2>
-					<p>
-					FileBot makes scripting and automation as easy as it gets. Just script everything in <a href="http://groovy-lang.org/">Groovy</a> 
-					instead of bothering with cumbersome cmd and bash scripts. It's the same on all platforms and much more powerful. 
-					The provided <a href="#functions">functions</a> are the same as in the <a href="cli.html">CLI</a> and <a href="cli.html#arguments">parameter usage</a> 
-					is also exactly the same.
-					</p>
+					<div class="main-section-paragraph">
+						<p>
+						FileBot makes scripting and automation as easy as it gets. Just script everything in <a href="http://groovy-lang.org/">Groovy</a> 
+						instead of bothering with cumbersome cmd and bash scripts. It's the same on all platforms and much more powerful. 
+						The provided <a href="#functions">functions</a> are the same as in the <a href="cli.html">CLI</a> and <a href="cli.html#arguments">parameter usage</a> 
+						is also exactly the same.
+						</p>
+					</div>
 					<h2 id="overview">Examples</h2>
 					<h3 id="usage">Running Scripts</h3>
 					<p>
@@ -58,25 +62,25 @@
 
 					<h3 id="repository">Script Repository</h3>
 					<p class="description">
-					Find scripts for common tasks <a href="https://www.filebot.net/forums/viewtopic.php?t=5">here</a>. You can just use these scripts straight 
+					Find scripts for common tasks <a href="forums/viewtopic.php?t=5">here</a>. You can just use these scripts straight 
 					away or as a reference for building your own more advanced scripts. If you wrote a really useful script 
-					please <a href="https://www.filebot.net/forums/viewforum.php?f=4">share it with us</a>.
+					please <a href="forums/viewforum.php?f=4">share it with us</a>.
 					</p>
 					<div style="margin: 12px 300px 20px 25px; padding: 5px; border: thin dotted lavender; background: #FDFDFF">
 						<span style="text-decoration: underline">Script Index:</span>
 						<ul style="margin: 3px">
-							<li><a href="https://www.filebot.net/amc.html">Automated Media Center</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=204#p204">Fetch artwork and nfo files for TV Shows</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=205#p205">Fetch artwork and nfo files for Movies</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=8871#p8871">Fetch subtitles for all files</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=1341#p1341">Delete left behind clutter files and empty folders</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=2459#p2459">Query Rename History</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=5394#p5394">View or Clear Extended Attributes</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=53#p53">Export Media Index to CSV file</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=12396#p12396">Calculate CRC32 and Verify File Integrity</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=19132#p19132">Find Missing Episodes</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=23171#p23171">Find Duplicate Movie or Episode files</a></li>
-							<li><a href="https://www.filebot.net/forums/viewtopic.php?p=44992#p44992">Write Embedded Tags</a></li>
+							<li><a href="amc.html">Automated Media Center</a></li>
+							<li><a href="forums/viewtopic.php?p=204#p204">Fetch artwork and nfo files for TV Shows</a></li>
+							<li><a href="forums/viewtopic.php?p=205#p205">Fetch artwork and nfo files for Movies</a></li>
+							<li><a href="forums/viewtopic.php?p=8871#p8871">Fetch subtitles for all files</a></li>
+							<li><a href="forums/viewtopic.php?p=1341#p1341">Delete left behind clutter files and empty folders</a></li>
+							<li><a href="forums/viewtopic.php?p=2459#p2459">Query Rename History</a></li>
+							<li><a href="forums/viewtopic.php?p=5394#p5394">View or Clear Extended Attributes</a></li>
+							<li><a href="forums/viewtopic.php?p=53#p53">Export Media Index to CSV file</a></li>
+							<li><a href="forums/viewtopic.php?p=12396#p12396">Calculate CRC32 and Verify File Integrity</a></li>
+							<li><a href="forums/viewtopic.php?p=19132#p19132">Find Missing Episodes</a></li>
+							<li><a href="forums/viewtopic.php?p=23171#p23171">Find Duplicate Movie or Episode files</a></li>
+							<li><a href="forums/viewtopic.php?p=44992#p44992">Write Embedded Tags</a></li>
 						</ul>
 					</div>
 
@@ -201,18 +205,16 @@
 					<div class="documentation">
 					<h4>Extras</h4>
 					<div>
-						<a href="https://www.filebot.net/docs/api/net/filebot/cli/ScriptShellMethods.html">ScriptShellMethods</a> also defines lots of extra useful functions 
-						and there is example code in the <a href="https://github.com/filebot/scripts">script repository</a>.
+						<a href="docs/api/net/filebot/cli/ScriptShellMethods.html">ScriptShellMethods</a> also defines lots of extra useful functions and there is example code in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
 					</div>
 					</div>
 				</div>
+
+				<div class="metrics"></div>
 
 				<p class="suggestion">
-				Need some help getting started? Check the <a href="https://www.filebot.net/forums/viewforum.php?f=4">forums</a>.
+					Need help getting started? Join the <a href="forums/viewforum.php?f=4">Forum</a> or <a href="channel.html">Discord</a>.
 				</p>
-
-				<div class="metrics">
-				</div>
 
 				<div class="footer">
 					<p><a href="/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
