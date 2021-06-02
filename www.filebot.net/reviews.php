@@ -3,8 +3,8 @@
 		<meta charset="UTF-8" />
 		<title>FileBot Reviews</title>
 		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-		<link rel="stylesheet" href="base.css" type="text/css" />
-		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)" />
+		<link rel="stylesheet" href="base.css" type="text/css">
+		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
 		<link href='https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
