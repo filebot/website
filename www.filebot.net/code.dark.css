@@ -4,23 +4,23 @@ code {
 	border: thin solid #2A3139;
 }
 
-code .option, code .variable, code .property, div.documentation span.property, table.binding td:first-child, table.options > * > * > td:first-child {
+code span.option, code span.variable, code span.property, div.documentation span.property, table.binding td:first-child, table.options > tbody > tr > td:first-child {
 	color: #5DB0B0;
 }
 
-code .method, div.documentation span.method {
+code span.method, div.documentation span.method {
 	color: #9A74DF;
 }
 
-code .cmd, code .string, code .numeral, code .regex {
+code span.cmd, code span.string, code span.numeral, code span.regex {
 	color: #F3AB57;
 }
 
-code .block {
+code span.block {
 	color: #3A8DAF;
 }
 
-code .argument, code .type, div.documentation span.return, table.binding td:last-child {
+code span.argument, code span.type, div.documentation span.return, table.binding td:last-child {
 	color: #6598CA;
 }
 
