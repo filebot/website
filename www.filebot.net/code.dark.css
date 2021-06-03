@@ -12,12 +12,12 @@ code .method, div.documentation span.method {
 	color: #9A74DF;
 }
 
-code .string, code .numeral, code .regex {
+code .cmd, code .string, code .numeral, code .regex {
 	color: #F3AB57;
 }
 
-code .cmd, code .block {
-	color: #1F7EA7;
+code .block {
+	color: #3A8DAF;
 }
 
 code .argument, code .type, div.documentation span.return, table.binding td:last-child {

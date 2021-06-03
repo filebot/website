@@ -33,6 +33,7 @@ code .string, code .numeral, code .regex {
 
 code .block {
 	color: #225577;
+	font-size: larger;
 	font-weight: bold;
 }
 
