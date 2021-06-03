@@ -6,19 +6,19 @@ a, acronym {
 	color: #99C794;
 }
 
-.navigation a {
+div.navigation a {
 	color: #D6DCE7;
 }
 
-.navigation a:hover, .navigation a:focus {
+div.navigation a:hover, div.navigation a:focus {
 	color: #FA9B58;
 }
 
-h1 .description {
+h1 span.description {
 	color: #AAA;
 }
 
-.section .quote, .comment, a.source {
+div.section span.quote, div.comment, a.source {
 	color: #8888;
 }
 
@@ -26,20 +26,20 @@ body {
 	background-color: #292D32;
 }
 
-.page {
+div.page {
 	background: #303841;
 	border: thin solid #4F565E;
 }
 
-.page, .screenshot, .video iframe, .main-section-screenshot img {
+div.page, div.screenshot, div.video iframe, div.main-section-screenshot img {
 	box-shadow: 0px 2px 5px #2a3139;
 }
 
-.section.tutorial ol, .section.tutorial ul {
+div.section.tutorial ol, div.section.tutorial ul {
 	background-color: #4B5D7C;
 }
 
-.section.features > ul.next {
+div.section.features > ul.next {
 	border-top: thin dotted #99C79422;
 }
 
@@ -53,7 +53,7 @@ ul.repository {
 	border: thin solid #2A3139;
 }
 
-table.reference > * > * > td {
+table.reference > tbody > tr > td {
 	border-top: none
 }
 
@@ -62,7 +62,7 @@ p.suggestion {
 	background-color: #2A3139;
 }
 
-div.message.box {
+a.message.box, div.message.box {
 	background-color: #F5F5F5;
 	box-shadow: 0px 2px 5px #2a3139;
 }
@@ -71,6 +71,6 @@ span.note.mediainfo, span.note.anime {
 	opacity: 0.7;
 }
 
-div.screenshot, div.video, a.green, img.logo, img.icon, div.message.box {
+div.screenshot, div.video, a.green, img.logo, img.icon, a.message.box, div.message.box {
 	opacity: 0.9;
 }
