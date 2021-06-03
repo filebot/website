@@ -28,9 +28,7 @@ img, video {
 
 h3 {
 	font-size: 14px;
-	margin-top: 25px;
-	margin-left: 15px;
-	margin-bottom: -8px;
+	margin: 25px 15px -8px 15px;
 }
 
 hr {
@@ -258,7 +256,7 @@ div.screencast:hover .play {
 }
 
 .section p, .section .description {
-	margin: 16px 0 0 10px;
+	margin: 16px 0px 0px 10px;
 }
 
 .section .quote {
@@ -433,6 +431,10 @@ ul.repository {
 	width: 680px;
 	columns: 2;
 	list-style-position: inside;
+}
+
+ul.repository li {
+	padding: 5px
 }
 
 #download li.macosx, #download li.windows {

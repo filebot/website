@@ -9,45 +9,48 @@ code {
 }
 
 pre {
+	font-family: 'Andale Mono', monospace;
 	margin: 0px;
 }
 
-code .variable {
+code span.variable {
 	color: #7f0055;
 	font-weight: bold;
 }
 
-code .method, div.documentation pre .method {
+code span.method, div.documentation span.method {
 	color: #0066cc;
+	font-family: 'Andale Mono', monospace;
 }
 
-code .property, div.documentation pre .property {
+code span.property, div.documentation span.property {
 	color: #225577;
+	font-family: 'Andale Mono', monospace;
 	font-size: 11pt;
 	font-weight: bold;
 }
 
-code .string, code .numeral, code .regex {
+code span.string, code span.numeral, code span.regex {
 	color: #008800;
 }
 
-code .block {
+code span.block {
 	color: #225577;
 	font-size: larger;
 	font-weight: bold;
 }
 
-code .cmd {
+code span.cmd {
 	color: #5C7684;
 	font-weight: bold;
 }
 
-code .option {
+code span.option {
 	color: #225577;
 	font-weight: bold;
 }
 
-code .argument {
+code span.argument {
 	color: #008800;
 }
 
@@ -79,24 +82,24 @@ div.documentation dt {
 	font-weight: bold;
 }
 
-div.documentation .return {
-	color: #4C6B87;
-	font-size: 10pt;
-}
-
-div.documentation .property {
+div.documentation span.property {
 	color: #225577;
 }
 
 table.binding td:first-child {
 	color: #7f0055;
-	font-family: Andale Mono, monospace;
+	font-family: 'Andale Mono', monospace;
 	font-weight: bold;
 }
 
-table.binding td:last-child {
+div.documentation span.type {
 	color: #0066cc;
-	font-family: Andale Mono, monospace;
+	font-family: 'Andale Mono', monospace;
+}
+
+div.documentation span.return, table.binding td:last-child {
+	color: #0066cc;
+	font-family: 'Andale Mono', monospace;
 	font-size: smaller;
 	vertical-align: baseline;
 }
@@ -105,9 +108,9 @@ table.binding tr:hover {
 	background-color: GhostWhite;
 }
 
-table.options > * > * > td:first-child {
+table.options > tbody > tr > td:first-child {
 	color: #225577;
-	font-family: Andale Mono, monospace;
+	font-family: 'Andale Mono', monospace;
 	font-weight: bold;
 	font-size: 11pt;
 }

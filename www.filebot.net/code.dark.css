@@ -20,7 +20,7 @@ code span.block {
 	color: #3A8DAF;
 }
 
-code span.argument, code span.type, div.documentation span.return, table.binding td:last-child {
+code span.argument, code span.type, div.documentation span.return, div.documentation span.type, table.binding td:last-child {
 	color: #6598CA;
 }
 

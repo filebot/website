@@ -39,11 +39,12 @@
 					<h2>About</h2>
 					<div class="main-section-paragraph">
 						<p>
-							FileBot makes scripting and automation as easy as it gets. Just script everything in <a href="http://groovy-lang.org/">Groovy</a> 
-							instead of bothering with cumbersome cmd and bash scripts. It's the same on all platforms and much more powerful.
+							FileBot makes scripting and automation as easy as it gets. Write modern <a href="http://groovy-lang.org/">Groovy</a> code
+							instead of bothering with cumbersome <acronym title="Windows CMD">*.cmd</acronym> or <acronym title="Unix shell script">*.sh</acronym> scripts.
+							It's much more powerful and works the same on all operating systems.
 						</p>
 						<p>
-							The provided <a href="#functions">functions</a> are the same as in the <a href="cli.html">CLI</a> and <a href="cli.html#arguments">parameter usage</a> 
+							The built-in <a href="#functions">functions</a> are the same as in the <a href="cli.html">CLI</a> and <a href="manpage.html">parameter usage</a> 
 							is also exactly the same.
 						</p>
 					</div>
@@ -51,8 +52,8 @@
 					<h3 id="usage">Running Scripts</h3>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">"path/to/script.groovy"</span> <span class="argument">args...</span></code>
-					Execute a given Groovy script. Parameters defined on the cmdline when starting a script will serve as default parameters
-					while running that script.
+					Execute a given Groovy script. <a href="manpage.html">Parameters</a> passed on the command-line when starting a script
+					will serve as default parameters for <a href="#functions">internal function calls</a>.
 					</p>
 
 					<h3 id="repository">Script Repository</h3>
@@ -95,109 +96,99 @@
 <pre><code>args.<span class="method">getFiles</span>{ it.<span class="method">isVideo</span>() }
 .<span class="method">sort</span>{ a, b -> a.name.<span class="method">compareTo</span>(b.name) }
 .<span class="method">each</span>{ println <span class="method">getMediaInfo</span>(<span class="property">file</span>:it, <span class="property">format</span>:<span class="string">'{fn} [{vf} {vc} {af}]'</span>) }
-</code></pre>Print media info for all video files using the given format pattern.</div>
+</code></pre>Print media info for all video files in alphabetical order using the given format pattern.</div>
 
 
 					<h2 class="reference" id="functions">Function Reference</h2>
 					<div class="documentation">
 					<h4>Rename media files</h4>
-					<pre><span class="return">File[]</span> <span class="method">rename</span>(<span class="property">folder</span>|<span class="property">file</span>, <span class="property">query</span>, <span class="property">output</span>, <span class="property">format</span>, <span class="property">db</span>, <span class="property">lang</span>, <span class="property">strict</span>)</pre>
-					<div class="text">Match files with episode/movie data and rename according to given naming scheme.</div>
+					<pre><span class="return">File[]</span> <span class="method">rename</span>(<span class="property">folder</span> | <span class="property">file</span>, <span class="property">db</span>, <span class="property">...</span>)</pre>
+					<div class="text">Match files with episode / movie information and rename those matches using the given custom format.</div>
 					<dl>
 						<dt>Parameters:</dt>
 						<dd><span class="property">folder</span> - process media files in this folder</dd>
 						<dd><span class="property">file</span> - process these media files</dd>
-						<dd><span class="property">action</span> - rename action name or closure</dd>
-						<dd><span class="property">conflict</span> - define conflict handling</dd>
-						<dd><span class="property">output</span> - output folder, if format expression is not absolute</dd>
-						<dd><span class="property">format</span> - episode/movie naming scheme</dd>
-						<dd><span class="property">db</span> - episode/movie database</dd>
-						<dd><span class="property">query</span> - force series/movie name, auto-detect if not set</dd>
-						<dd><span class="property">sortOrder</span> - episode sort order</dd>
-						<dd><span class="property">filter</span> - episode filter expression</dd>
-						<dd><span class="property">lang</span> - preferred language for episode/movie titles</dd>
-						<dd><span class="property">strict</span> - turn on/off strict matching</dd>
+						<dd><span class="property">db</span> - series / movie database</dd>
+						<dd><span class="property">order</span> - episode sort order</dd>
+						<dd><span class="property">format</span> - format expression</dd>
+						<dd><span class="property">action</span> - standard file operation or custom <span class="type">Closure</span></dd>
+						<dd><span class="property">conflict</span> - conflict behavior</dd>
+						<dd><span class="property">filter</span> - filter expression</dd>
+						<dd><span class="property">mapper</span> - mapper expression</dd>
+						<dd><span class="property">query</span> - force series / movie lookup</dd>
+						<dd><span class="property">lang</span> - preferred language</dd>
+						<dd><span class="property">strict</span> - use <a href="manpage.html">opportunistic matching</a> or <a href="manpage.html">strict matching</a></dd>
+						<dd><span class="property">output</span> - output folder</dd>
+						<dd><span class="property">apply</span> - standard post-processing action or custom <span class="type">Closure</span></dd>
+						<dd><span class="property">exec</span> - exec expression</dd>
 					</dl>
 					</div>
 
 					<div class="documentation">
 					<h4>Fetch subtitles for media files</h4>
-					<pre><span class="return">File[]</span> <span class="method">getSubtitles</span>(<span class="property">folder</span>|<span class="property">file</span>, <span class="property">query</span>, <span class="property">lang</span>, <span class="property">output</span>, <span class="property">encoding</span>, <span class="property">strict</span>)</pre>
+					<pre><span class="return">File[]</span> <span class="method">getMissingSubtitles</span>(<span class="property">folder</span> | <span class="property">file</span>, <span class="property">lang</span>, <span class="property">output</span>, <span class="property">encoding</span>, <span class="property">...</span>)</pre>
 					<div class="text">
-						Download subtitles for the given files. Lookup subtitles via hash or match by filename. If you only want to download 
-						missing subtitles you should use <pre style="font-size:inherit;display:inline"><span class="method">getMissingSubtitles</span></pre>
-						so subtitles that have already been downloaded will not be downloaded again overridding existing subtitle files.
+						Fetch missing subtitles for the given files.
 					</div>
 					<dl>
 						<dt>Parameters:</dt>
 						<dd><span class="property">folder</span> - process media files in this folder</dd>
 						<dd><span class="property">file</span> - process these media files</dd>
-						<dd><span class="property">db</span> - database filter expression (e.g. opensubtitles|subscene)</dd>
-						<dd><span class="property">query</span> - lookup subtitles by series/movie name</dd>
+						<dd><span class="property">query</span> - force series / movie lookup</dd>
 						<dd><span class="property">lang</span> - subtitle language</dd>
-						<dd><span class="property">output</span> - force output format (e.g. srt)</dd>
-						<dd><span class="property">encoding</span> - force output charset</dd>
-						<dd><span class="property">strict</span> - enable matching subtitles via filename</dd>
+						<dd><span class="property">output</span> - force subtitle output format (e.g. <a href="manpage.html">srt</a>)</dd>
+						<dd><span class="property">encoding</span> - force output character encoding (e.g. <a href="manpage.html">UTF-8</a>)</dd>
+						<dd><span class="property">format</span> - subtitle file naming format (e.g. <a href="manpage.html">Match Video</a>)</dd>
+						<dd><span class="property">strict</span> - use <a href="manpage.html">lookup-by-hash</a> or <a href="manpage.html">search-by-name</a></dd>
 					</dl>
 					</div>
 
 					<div class="documentation">
 					<h4>File verification</h4>
-					<pre><span class="return">boolean</span> <span class="method">check</span>(<span class="property">folder</span>|<span class="property">file</span>)</pre>
-					<div class="text">Check given sfv/md5/sha1 files.</div>
+					<pre><span class="return">boolean</span> <span class="method">check</span>(<span class="property">folder</span> | <span class="property">file</span>)</pre>
+					<div class="text">Verify file integrity based on the given verification file.</div>
 					<dl>
 						<dt>Parameters:</dt>
-						<dd><span class="property">folder</span> - check the sfv/md5/sha1 files in this folder</dd>
-						<dd><span class="property">file</span> - check these sfv/md5/sha1</dd>
+						<dd><span class="property">folder</span> - check all the verification files in this folder</dd>
+						<dd><span class="property">file</span> - check these verification files</dd>
 					</dl>
 					<hr/>
 					<pre><span class="return">File</span> <span class="method">compute</span>(<span class="property">folder</span>|<span class="property">file</span>, <span class="property">output</span>, <span class="property">encoding</span>)</pre>
-					<div class="text">Compute sfv/md5/sha1 for the given files.</div>
+					<div class="text">Compute checksums and hashes for the given files and write them to a verification file.</div>
 					<dl>
 						<dt>Parameters:</dt>
-						<dd><span class="property">folder</span> - compute checksums for files in this folder</dd>
+						<dd><span class="property">folder</span> - compute checksums for all the files in this folder</dd>
 						<dd><span class="property">file</span> - compute checksums for these files</dd>
-						<dd><span class="property">output</span> - absolute or relative output file or just output format (sfv, md5 or sha1)</dd>
-						<dd><span class="property">encoding</span> - output charset, defaults to UTF-8</dd>
+						<dd><span class="property">output</span> - output file</dd>
+						<dd><span class="property">format</span> - output format  (e.g. <a href="manpage.html">SFV</a>)</dd>
+						<dd><span class="property">encoding</span> - force output character encoding (e.g. <a href="manpage.html">UTF-8</a>)</dd>
 					</dl>
 					</div>
 
 					<div class="documentation">
-					<h4>Other</h4>
-					<pre><span class="return">File[]</span> <span class="method">extract</span>(<span class="property">folder</span>|<span class="property">file</span>, <span class="property">output</span>)</pre>
-					<div class="text">Extract files from single-volume or multi-volume archives (.zip, .rar, .7z, etc).</div>
+					<h4>Utilities</h4>
+					<pre><span class="return">File[]</span> <span class="method">extract</span>(<span class="property">folder</span> | <span class="property">file</span>, <span class="property">output</span>)</pre>
+					<div class="text">Extract the given archives.</div>
 					<dl>
 						<dt>Parameters:</dt>
-						<dd><span class="property">folder</span> - extract all archives that are in this folder</dd>
-						<dd><span class="property">file</span> - extract this archive</dd>
-						<dd><span class="property">output</span> - output folder, defaults to archive path</dd>
-						<dd><span class="property">conflict</span> - define conflict handling</dd>
-					</dl>
-					<hr/>
-					<pre><span class="return">String[]</span> <span class="method">fetchEpisodeList</span>(<span class="property">query</span>, <span class="property">format</span>, <span class="property">db</span>, <span class="property">lang</span>)</pre>
-					<div class="text">Fetch episode data for the given tv show and format episode names.</div>
-					<dl>
-						<dt>Parameters:</dt>
-						<dd><span class="property">query</span> - tv series name</dd>
-						<dd><span class="property">format</span> - episode naming scheme</dd>
-						<dd><span class="property">db</span> - episode database</dd>
-						<dd><span class="property">sortOrder</span> - episode sort order</dd>
-						<dd><span class="property">lang</span> - preferred language for episode titles</dd>
+						<dd><span class="property">folder</span> - extract all the archives in this folder</dd>
+						<dd><span class="property">file</span> - extract this archive file</dd>
+						<dd><span class="property">output</span> - output folder</dd>
 					</dl>
 					<hr/>
 					<pre><span class="return">String</span> <span class="method">getMediaInfo</span>(<span class="property">file</span>, <span class="property">format</span>)</pre>
-					<div class="text">Get mediainfo as defined by the given format.</div>
+					<div class="text">Apply custom format to the given media file and return the result.</div>
 					<dl>
 						<dt>Parameters:</dt>
-						<dd><span class="property">file</span> - get info for this file</dd>
-						<dd><span class="property">format</span> - media naming scheme</dd>
+						<dd><span class="property">file</span> - apply custom format on this file</dd>
+						<dd><span class="property">format</span> - custom format</dd>
 					</dl>
 					</div>
 
 					<div class="documentation">
-					<h4>Extras</h4>
+					<h4>Extension Methods</h4>
 					<div>
-						<a href="docs/api/net/filebot/cli/ScriptShellMethods.html">ScriptShellMethods</a> also defines lots of extra useful functions and there is example code in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
+						<a href="docs/api/net/filebot/cli/ScriptShellMethods.html">ScriptShellMethods</a> defines additional helper functions. Please refer to the <a href="https://github.com/filebot/scripts">Script Repository</a> for example code.
 					</div>
 					</div>
 				</div>
