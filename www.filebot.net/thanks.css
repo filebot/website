@@ -1,0 +1,48 @@
+div.screenshot.mail  {
+	margin: 10px 0px 0px 40px;
+}
+
+div.message.box > img {
+	float: left;
+	margin: 0px 5px 50px 0px;
+}
+
+div.section.about > h2 {
+	margin-top: 80px;
+	text-align: center;
+}
+
+div.section.tutorial {
+	margin-top: 70px;
+}
+
+div.section.tutorial > div.screenshot {
+	position: relative;
+	float: left;
+	margin: 25px 35px;
+	border-radius: 10px;
+}
+
+div.section.tutorial > div.screenshot > img {
+	border-radius: 10px;
+}
+
+div.section.tutorial > div.screenshot > div.step {
+	position: absolute;
+	text-align: center;
+	top: 75px;
+	left: -25px;	
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 14pt;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+	color: ghostwhite;
+	background-color: crimson;
+}
+
+p.suggestion {
+	margin-top: 600px;
+	margin-bottom: 60px;
+}
