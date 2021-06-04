@@ -81,22 +81,28 @@
 <h3 id="examples">Example Scripts</h3>
 <div class="description">
 <pre><code>args.<span class="method">eachMediaFolder</span> {
-	<span class="method">getMissingSubtitles</span>(<span class="property">folder</span>:it)
-	<span class="method">rename</span>(<span class="property">folder</span>:it)
-	<span class="method">compute</span>(<span class="property">file</span>:it.<span class="method">listFiles</span>{ it.<span class="method">video</span> })
-}</code></pre>Fetch subtitles, rename and compute checksums for all media folders in the file hierarchy.</div>
+  <span class="method">getMissingSubtitles</span>(<span class="property">folder</span>:it)
+  <span class="method">rename</span>(<span class="property">folder</span>:it)
+  <span class="method">compute</span>(<span class="property">file</span>:it.<span class="method">listFiles</span>{ it.<span class="method">video</span> })
+}</code></pre>
+Fetch subtitles, rename and compute checksums for all media folders in the given folder structure.
+</div>
 
 <div class="description">
-<pre><code>[<span class="string">'E:/TV Shows'</span> as File].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'TheTVDB'</span>) }
-[<span class="string">'E:/Anime'</span> as File].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'AniDB'</span>) }
-[<span class="string">'E:/Movies'</span> as File].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'TheMovieDB'</span>) }
-</code></pre>Run rename on different folder hierarchies using different episode/movie datasources.</div>
+<pre><code>[<span class="string">'E:/TV Shows'</span> as <span class="type">File</span>].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'TheTVDB'</span>) }
+[<span class="string">'E:/Anime'</span> as <span class="type">File</span>].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'AniDB'</span>) }
+[<span class="string">'E:/Movies'</span> as <span class="type">File</span>].<span class="method">eachMediaFolder</span>{ <span class="method">rename</span>(<span class="property">folder</span>:it, <span class="property">db</span>:<span class="string">'TheMovieDB'</span>) }
+</code></pre>
+Run rename on each media folder in each folder structure using different databases.
+</div>
 
 <div class="description">
 <pre><code>args.<span class="method">getFiles</span>{ it.<span class="method">video</span> }
-.<span class="method">sort</span>{ a, b -> a.name <span class="method">&lt;=&gt;</span> b.name }
-.<span class="method">each</span>{ println <span class="method">getMediaInfo</span>(it, <span class="string">'{fn} [{vf} {vc} {af}]'</span>) }
-</code></pre>Print media info for all video files in alphabetical order using the given format pattern.</div>
+    .<span class="method">sort</span>{ it.<span class="method">name</span> }
+    .<span class="method">each</span>{ println <span class="method">getMediaInfo</span>(it, <span class="string">'{fn} [{vf} {vc} {af}]'</span>) }
+</code></pre>
+Print media info for all video files in alphabetical order using the given format pattern.
+</div>
 
 
 					<h2 class="reference" id="functions">Function Reference</h2>
