@@ -2,6 +2,12 @@ body, h1, h2, h3, h4, p, ul, ol, table {
 	color: #CCC;
 }
 
+strong {
+	font-weight: normal;
+	color: #FF8C00;
+	opacity: 0.9;
+}
+
 a, acronym {
 	color: #99C794;
 }
@@ -11,7 +17,8 @@ div.navigation a {
 }
 
 div.navigation a:hover, div.navigation a:focus {
-	color: #FA9B58;
+	color: #FF8C00;
+	opacity: 0.9;
 }
 
 h1 span.description {
