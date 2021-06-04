@@ -95,7 +95,7 @@
 <div class="description">
 <pre><code>args.<span class="method">getFiles</span>{ it.<span class="method">isVideo</span>() }
 .<span class="method">sort</span>{ a, b -> a.name.<span class="method">compareTo</span>(b.name) }
-.<span class="method">each</span>{ println <span class="method">getMediaInfo</span>(<span class="property">file</span>:it, <span class="property">format</span>:<span class="string">'{fn} [{vf} {vc} {af}]'</span>) }
+.<span class="method">each</span>{ println <span class="method">getMediaInfo</span>(it, <span class="string">'{fn} [{vf} {vc} {af}]'</span>) }
 </code></pre>Print media info for all video files in alphabetical order using the given format pattern.</div>
 
 
