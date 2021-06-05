@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Icon';
+	src: url('fonts/icon.ttf');
+}
+
+#purchase li.note {
+	font-size: 80%;
+	font-style: italic;
+
+	list-style: none;
+	background: url('images/accept.png') left center no-repeat;
+
+	padding: 0.1em 1.7em;
+	margin-left: 1.5em;
+}
+
+#purchase {
+	margin-bottom: 55px;
+}
+
+#purchase > ul > li.purchase {
+	position: relative;
+}
+
+#purchase > ul > li.purchase div.tag {
+	position: absolute;
+	right: 2em;
+	bottom: -1em;
+
+	padding: 0.3em;
+	border: 0.1em solid rgba(255,255,255,0);
+	border-radius: 0.4em;
+
+	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+	text-align: center;
+	font-size: 13px;
+
+	color: white;
+	background-color:#F14E4E;
+}
+
+#purchase div.tag span.paddle-gross:after {
+	content: " (incl. tax)";
+	font-size: xx-small;
+	position: relative;
+	bottom: 0.12em;
+	left: 0.1em;
+}
+
+#purchase > a.paddle_button {
+	position: relative;
+	display: block;
+	margin: 30px 250px 50px 80px;
+	padding: 17px 24px 17px 48px;
+	font-size: larger;
+	vertical-align: middle;
+	text-align: left;
+	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+}
+
+#purchase > a.paddle_button em {
+	font-style: normal;
+	color: gold;
+}
+
+#purchase > a.paddle_button:before {
+	font-family: 'Icon';
+	content: '\e900';
+	position: absolute;
+	padding: 3px;
+	left: 0px;
+	opacity: 0.0;
+	transition: all 100ms ease;
+}
+
+#purchase > a.paddle_button:hover:before {
+	left: 10px;
+	opacity: 1.0;
+}
+
+#purchase > a.paddle_button div.tag {
+	position: absolute;
+	left: 250px;
+	bottom: -1.6em;
+
+	padding: 4px;
+	border: 0.1em solid rgba(255,255,255,0);
+	border-radius: 0.4em;
+
+	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+	text-align: center;
+	font-size: 13px;
+
+	color: white;
+	background-color: #F14E4E;
+}
+
+#purchase p.paddle {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 9pt;
+	margin: 30px 20px;
+}

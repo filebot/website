@@ -25,7 +25,7 @@ h1 span.description {
 	color: #AAA;
 }
 
-div.section span.quote, div.comment, a.source {
+div.section span.quote, small.comment, a.source {
 	color: #8888;
 }
 

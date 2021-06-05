@@ -49,8 +49,11 @@
 						Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
 						</p>
 					</div>
-					<h2 id="examples">Examples</h2>
-					<h3 id="rename">Rename</h3>
+				</div>
+
+				<div class="section examples first" id="examples">
+					<h2>Examples</h2>
+					<h3>Rename</h3>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span></code>
 					Rename given episode files or movie files.
@@ -74,7 +77,7 @@
 					<p class="suggestion">
 					Keep in mind that the CLI is <strong>strict by default</strong> so it will never mess up your files. In some cases you may need to enable <strong>-non-strict</strong> for more opportunistic matching like the GUI does.
 					</p>
-					<h3 id="subtitles">Fetch Subtitles</h3>
+					<h3>Fetch Subtitles</h3>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span></code>
 					Fetch missing subtitles for the given episode files or movie files.
@@ -83,7 +86,7 @@
 					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span> <span class="cmd">\</span><br><span class="option">--lang</span> <span class="argument">zh</span> <span class="option">--output</span> <span class="argument">srt</span> <span class="option">--encoding</span> <span class="argument">utf-8</span></code>
 					Fetch missing Chinese language subtitles and convert them to <a href="https://en.wikipedia.org/wiki/SubRip">SubRip</a> format and <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a> encoding.
 					</p>
-					<h3 id="verification">File Verification</h3>
+					<h3>File Verification</h3>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">"/path/to/files"</span></code>
 					Compute CRC32 checksums and create an <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
@@ -96,7 +99,7 @@
 					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">*.sfv</span></code>
 					Check file integrity for all the files listed in the given <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
 					</p>
-					<h3 id="scripting">Scripting</h3>
+					<h3>Scripting</h3>
 					<p>
 					<code><span class="cmd">filebot</span> <span class="option">-extract</span> <span class="option">-r</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span></code></code>
 					Extract all archives from the given input folder to the given output folder.
@@ -117,9 +120,10 @@
 					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">fn:amc</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span> <span class="option">--action</span> <span class="argument">duplicate</span> <span class="cmd">\</span><br><span class="option">-non-strict</span> <span class="option">--log-file</span> <span class="argument">amc.log</span> <span class="option">--def</span> <span class="argument">excludeList="amc.txt"</span></code>
 					Execute the <a href="amc.html">amc script</a> with the given input arguments, options and script parameters.
 					</p>
+				</div>
 
-
-					<h2 class="reference" id="arguments">
+				<div class="section reference" id="arguments">
+					<h2>
 						Argument Reference
 						<a href="docs/api/net/filebot/cli/ArgumentBean.html" class="source">source</a>
 					</h2>

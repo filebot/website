@@ -7,6 +7,7 @@
 		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 		<link rel="stylesheet" href="base.css" type="text/css">
 		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="review.css" type="text/css">
 	</head>
 	<body>
 		<?
