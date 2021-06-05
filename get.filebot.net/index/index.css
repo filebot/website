@@ -1,5 +1,5 @@
 body {
-	font-family: arial, dejavu sans, freesans;
+	font-family: Arial, DejaVu Sans, FreeSans;
 	font-size: 16px;
 	background-color: #e6e6e6;
 	margin-top: 0;
@@ -48,7 +48,7 @@ body > h1 {
 	padding: 20px 80px;
 	margin: 20px 40px;
 
-	background: url(images/filebot.logo.svg);
+	background: url(filebot.logo.svg);
 	background-repeat: no-repeat;
 	background-size: 64px 64px;
 	background-position: left center;

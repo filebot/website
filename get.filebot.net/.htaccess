@@ -20,15 +20,15 @@ IndexIgnore *.gif *.ico *.html *.txt
 AddType application/octet-stream  .msi .zip .pkg .tar .xz .deb .rpm .spk .qpkg
 AddType text/plain                KEYS .asc .sha256
 
-IndexStyleSheet https://www.filebot.net/index.css
+IndexStyleSheet /index/index.css
 
-DefaultIcon https://www.filebot.net/icons/page.green.png
+DefaultIcon /index/page.green.png
 
-AddIcon https://www.filebot.net/icons/folder.png  ^^DIRECTORY^^
-AddIcon https://www.filebot.net/icons/keys.png    KEYS
+AddIcon /index/folder.png  ^^DIRECTORY^^
+AddIcon /index/keys.png    KEYS
 
-AddIcon https://www.filebot.net/icons/download.windows.png  .msi .zip
-AddIcon https://www.filebot.net/icons/download.mac.png      .pkg .app.tar.xz
-AddIcon https://www.filebot.net/icons/download.linux.png    .deb .rpm
-AddIcon https://www.filebot.net/icons/page.zip.png          .gz .xz .spk .qpkg
-AddIcon https://www.filebot.net/icons/page.key.png          .asc .gpg
+AddIcon /index/download.windows.png  .msi .zip
+AddIcon /index/download.mac.png      .pkg .app.tar.xz
+AddIcon /index/download.linux.png    .deb .rpm
+AddIcon /index/page.zip.png          .gz .xz .spk .qpkg
+AddIcon /index/page.key.png          .asc .gpg
