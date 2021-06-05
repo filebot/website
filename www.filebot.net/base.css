@@ -203,7 +203,7 @@ div.screencast:hover .play {
 	opacity: 1.0;
 }
 
-.content>.screenshot {
+.content > .screenshot {
 	margin-top: 37px;
 	margin-left: 20px;
 }
@@ -226,6 +226,13 @@ div.screencast:hover .play {
 	font-size: 13px;
 	margin: 12px 25px 15px 25px;
 	padding: 8px 30px 9px 30px;
+	border-radius: 7px;
+}
+
+.section.tutorial code {
+	background-color: #EFEFEF;
+	margin: 12px 25px 15px 25px;
+	padding: 8px 15px 9px 15px;
 	border-radius: 7px;
 }
 
@@ -274,12 +281,20 @@ div.screencast:hover .play {
 	content: close-quote;
 }
 
-.section>ul.list>li {
+span.label:before {
+	content: open-quote;
+}
+
+span.label:after {
+	content: close-quote;
+}
+
+.section > ul.list > li {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.section>ul.list>li li {
+.section > ul.list > li li {
 	margin-top: 2px;
 }
 

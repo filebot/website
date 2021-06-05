@@ -1,4 +1,5 @@
-code {
+code, div.section.tutorial code
+{
 	color: #CCC;
 	background-color: #2A3139;
 	border: thin solid #2A3139;

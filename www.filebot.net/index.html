@@ -21,6 +21,8 @@
 		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 		<link rel="stylesheet" href="base.css" type="text/css">
 		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="code.css" type="text/css">
+		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
@@ -59,7 +61,7 @@
 				<div class="section about">
 					<img class="icon" src="images/information.png" alt="about" width="48" height="48" />
 					<h2>About</h2>
-					<p><strong>FileBot</strong> is the ultimate tool for organizing and renaming your Movies, TV Shows and Anime as well as fetching subtitles and artwork. It's smart and just works.</p>
+					<p><strong>FileBot</strong> is the ultimate tool for renaming and organizing your movies, TV shows and Anime. Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds. It's smart and just works.</p>
 				</div>
 
 				<a id="review" class="review message box" style="display:none" href="reviews.php">
@@ -75,34 +77,31 @@
 				<div class="section first tutorial">
 					<img class="icon" src="images/starthere.png" alt="start" width="48" height="48" />
 					<h2>Getting Started</h2>
-					<p><strong>FileBot makes organizing your movies and TV shows a breeze!</strong> We'll automatically match your files with information 
-					from various online databases. How you want your media files to be named and organized is completely up to you. Our 
-					groovy <a href="naming.html">format engine</a> supports pretty much anything!</p>
+					<p>
+						<strong>FileBot makes renaming and organizing media files a breeze.</strong> FileBot will automatically match your files with information 
+						from your preferred online database, and then rename and organize everything perfectly for you. You can customize your <a href="naming.html">naming scheme</a>
+						to your specific needs and preferences, or keep things simple and stick to the <a href="forums/viewtopic.php?t=4116">{plex}</a> naming standard.
+					</p>
 					<ol>
-						<li>Drag movie or episode files into the &quot;Original Files&quot; list area</li>
-						<li>Right-click &quot;New Names&quot; list area and select your preferred datasource</li>
-						<li>Hit &quot;Rename&quot;!</li>
+						<li>Drag movie or episode files into the <span class="label">Original Files</span> list area</li>
+						<li>Right-click <span class="label">New Names</span> list area and select your preferred datasource</li>
+						<li>Hit <span class="label">Rename</span></li>
 					</ol>
-					<p><strong>Fetching subtitles is just as easy, just drop it in!</strong> Besides automatic lookup you'll also be able to 
-					manually search and download subtitles, preview subtitles and fix encoding problems.</p>
+					<p>
+						<strong>Fetching subtitles is just as easy, just drop it in.</strong> Besides automatic lookup you'll also be able to 
+						manually search and download subtitles, preview subtitles and fix encoding problems.
+					</p>
 					<ol>
-						<li>Drag your movie or episode files onto the top-right <img alt="===" src="images/droparea.png" /> drop area</li>
-						<li>Hit &quot;Download&quot;!</li>
+						<li>Drag your movie or episode files onto the <img alt="===" src="images/droparea.png" /> drop area</li>
+						<li>Hit <span class="label">Download</span></li>
 					</ol>
-					<p><strong>Use FileBot on the command-line!</strong> There is a simple <acronym title="command-line interface"><a href="cli.html">CLI</a></acronym> for core tasks like renaming media files and fetching subtitles 
-					as well as checking or creating SFV files. On top of that you can use our <a href="script.html">scripting engine</a> to define more complex 
-					automated processing. There's already <a href="forums/viewtopic.php?t=5#p5">shared scripts</a> for
-					various tasks that you can just run right away or further customize to your needs.</p>
-					<ul>
-						<li>Watch media folders and organize new files automatically</li>
-						<li>Extract files from multi-volume rar archives</li>
-						<li>Fetch artwork and create nfo files for TV shows or movies</li>
-						<li>Export your media files including media info as CSV text file</li>
-						<li>Update your Kodi or Plex library</li>
-						... and more!
-					</ul>
-					<p>Setting up a <strong>fully automated media center</strong> – extract archives, organize tv shows and movies, download subtitles, fetch artwork and metadata, update Kodi – with FileBot it's <a href="forums/viewtopic.php?t=215#p1561">that</a> easy!</p>
-
+					<p>
+						<strong>Run FileBot on unattended automated systems.</strong> FileBot offers a simple <acronym title="Command-line Interface"><a href="cli.html">CLI</a></acronym> for common use cases, and a built-in <a href="script.html">scripting engine</a> for more complex tasks.
+					</p>
+					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span></code>
+					<p>
+						Your <strong>fully automated media center</strong> is one <a href="script.html">filebot</a> command away – extract archives, identify and organize media files, fetch additional artwork and metadata, update Plex, and more – the <a href="amc.html">amc script</a> does it all.
+					</p>
 					<div class="video">
 						<iframe src="getting-started/index.html" frameborder="0" allowfullscreen="true"></iframe>
 					</div>
