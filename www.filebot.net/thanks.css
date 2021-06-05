@@ -2,30 +2,14 @@ div.screenshot.mail  {
 	margin: 10px 0px 0px 80px;
 }
 
-div.message.box {
-	background-color: #F5F5F5;
-	border-radius: 4px;
-	box-shadow: 0 2px 5px #A2A2A2;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
-}
-
-div.message.box {
+a.box {
 	margin: 30px 25px;
-	display: block;
-	text-decoration: none !important;
-	padding: 10px;
-	min-height: 44px;
-	max-width: 380px;
-}
-
-div.message.box p {
 	font-size: 11px;
 	line-height: 18px;
 	color: #555555;
-	margin: 0 0 0 48px
 }
 
-div.message.box img {
+a.box img {
 	float: left;
 	margin: 0px 5px 50px 0px;
 }

@@ -136,6 +136,21 @@ div.footer p {
 	left: 2em;
 }
 
+a.box {
+	display: block;
+	padding: 10px;
+	min-height: 45px;
+	max-width: 380px;
+	background-color: #F5F5F5;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px #A2A2A2;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+}
+
+a.box:link {
+	text-decoration: none;
+}
+
 /* -------------------- MEDIA -------------------- */
 
 

@@ -3,7 +3,7 @@ Paddle.Setup({
 });
 
 
-$(window).on('load', function() {
+$(document).ready(function() {
 	// display random review
 	$.ajax({
 		url: 'reviews.json',

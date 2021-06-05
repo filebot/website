@@ -69,20 +69,20 @@ p.suggestion {
 	background-color: #2A3139;
 }
 
-a.message.box, div.message.box {
+a.box {
 	background-color: #F5F5F5;
 	box-shadow: 0px 2px 5px #2a3139;
 }
 
-span.note.mediainfo, span.note.anime {
+span.light {
 	opacity: 0.7;
 }
 
-div.screenshot, div.video, a.green, img.logo, img.icon, a.message.box, div.message.box {
+div.light, a.light, img.light {
 	opacity: 0.9;
 }
 
-div.screenshot:hover, div.video:hover, a.green:hover, img.logo:hover, img.icon:hover, a.message.box:hover, div.message.box:hover {
+div.light:hover, a.light:hover, img.light:hover {
 	opacity: 1.0;
 	transition: opacity 0.1s ease;
 }

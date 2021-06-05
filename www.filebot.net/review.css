@@ -3,32 +3,30 @@
 	src: url('fonts/handwriting.ttf');
 }
 
-div.message.box {
-	background-color: #F5F5F5;
-	border-radius: 4px;
-	box-shadow: 0 2px 5px #A2A2A2;
-	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 div.review {
 	margin: 30px 25px;
-	display: block;
-	text-decoration: none !important;
-	padding: 10px;
-	min-height: 44px;
-	max-width: 380px;
+}
+
+div.review a.box {
+	animation: fadeIn 0.2s ease-in;
 }
 
 div.review p {
+	margin: 0px 0px 0px 48px;
 	font-size: 11px;
 	line-height: 18px;
 	color: #555555;
-	margin: 0px 0px 0px 48px
 }
 
 div.review p.text {
 	font-family: 'Handwriting', cursive;
 	font-size: 24px;
+	line-height: 20px;
 }
 
 div.review span.user {
@@ -38,7 +36,7 @@ div.review span.user {
 	vertical-align: baseline;
 }
 
-div.thumbs {
+div.review div.thumbs {
 	float: left;
 	border-radius: 4px 4px 4px 4px;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -49,7 +47,7 @@ div.thumbs {
 	width: 42px;
 }
 
-div.thumbs img {
+div.review div.thumbs img {
 	position: relative;
 	top: 8px;
 }
