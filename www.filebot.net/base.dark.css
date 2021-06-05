@@ -81,3 +81,8 @@ span.note.mediainfo, span.note.anime {
 div.screenshot, div.video, a.green, img.logo, img.icon, a.message.box, div.message.box {
 	opacity: 0.9;
 }
+
+div.screenshot:hover, div.video:hover, a.green:hover, img.logo:hover, img.icon:hover, a.message.box:hover, div.message.box:hover {
+	opacity: 1.0;
+	transition: opacity 0.1s ease;
+}
