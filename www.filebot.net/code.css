@@ -1,6 +1,11 @@
+@font-face {
+	font-family: 'SourceCode';
+	src: url('fonts/SourceCodePro.ttf');
+}
+
 code {
 	display: block;
-	font-family: Andale Mono, monospace;
+	font-family: 'SourceCode', monospace;
 	line-height: 1.2em;
 	background-color: #f5f5f5;
 	border: thin dashed #a2a2a2;
@@ -9,7 +14,7 @@ code {
 }
 
 pre {
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 	margin: 0px;
 }
 
@@ -20,12 +25,12 @@ code span.variable {
 
 code span.method, div.documentation span.method {
 	color: #0066cc;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 }
 
 code span.property, div.documentation span.property {
 	color: #225577;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 	font-size: 11pt;
 	font-weight: bold;
 }
@@ -88,18 +93,18 @@ div.documentation span.property {
 
 table.binding td:first-child {
 	color: #7f0055;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 	font-weight: bold;
 }
 
 div.documentation span.type {
 	color: #0066cc;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 }
 
 div.documentation span.return, table.binding td:last-child {
 	color: #0066cc;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 	font-size: smaller;
 	vertical-align: baseline;
 }
@@ -110,7 +115,7 @@ table.binding tr:hover {
 
 table.options > tbody > tr > td:first-child {
 	color: #225577;
-	font-family: 'Andale Mono', monospace;
+	font-family: 'SourceCode', monospace;
 	font-weight: bold;
 	font-size: 11pt;
 }
