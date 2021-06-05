@@ -1,6 +1,11 @@
 @font-face {
-	font-family: 'Dawning of a New Day';
-	src: url('fonts/Dawning_of_a_New_Day.ttf');
+	font-family: 'Handwriting';
+	src: url('fonts/handwriting.ttf');
+}
+
+@font-face {
+	font-family: 'Icon';
+	src: url('fonts/icon.ttf');
 }
 
 body {
@@ -396,7 +401,7 @@ span.label:after {
 }
 
 .review .text {
-	font-family: 'Dawning of a New Day', cursive;
+	font-family: 'Handwriting', cursive;
 	font-size: 24px;
 }
 
@@ -542,9 +547,8 @@ ul.repository li {
 }
 
 #purchase > a.paddle_button:before {
-	font-family: FontAwesome;
-	content:"\f07a";
-
+	font-family: 'Icon';
+	content: '\e900';
 	position: absolute;
 	padding: 3px;
 	left: 0px;
