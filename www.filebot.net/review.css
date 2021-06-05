@@ -10,6 +10,7 @@
 
 div.review {
 	margin: 30px 25px;
+	min-height: 100px;
 }
 
 div.review a.box {
