@@ -151,6 +151,11 @@ a.box:link {
 	text-decoration: none;
 }
 
+a.box:focus {
+	outline: none;
+	background-color: #FAFAD2;
+}
+
 /* -------------------- MEDIA -------------------- */
 
 
