@@ -20,7 +20,7 @@ kbd.block {
 	color: #3A8DAF;
 }
 
-kbd.argument, kbd.type, kbd.return {
+kbd.argument, kbd.type {
 	color: #6598CA;
 }
 

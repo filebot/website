@@ -22,7 +22,7 @@ kbd.variable {
 	font-weight: bold;
 }
 
-kbd.type, kbd.method, kbd.return {
+kbd.type, kbd.method {
 	color: #0066cc;
 }
 
@@ -56,6 +56,19 @@ kbd.argument {
 	color: #008800;
 }
 
+table.options kbd.option {
+	font-size: 11pt;
+}
+
+table.binding kbd.type {
+	font-size: smaller;
+	vertical-align: baseline;
+}
+
+table.binding tr:hover {
+	background-color: GhostWhite;
+}
+
 div.documentation {
 	font-size: 11pt;
 	padding: 5px;
@@ -82,17 +95,4 @@ div.documentation dt {
 	color: #4E4E4E;
 	font-size: 10pt;
 	font-weight: bold;
-}
-
-div.binding kbd.return {
-	font-size: smaller;
-	vertical-align: baseline;
-}
-
-table.binding tr:hover {
-	background-color: GhostWhite;
-}
-
-table.options kbd.option {
-	font-size: 11pt;
 }
