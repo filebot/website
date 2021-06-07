@@ -56,13 +56,16 @@ kbd.argument {
 	color: #008800;
 }
 
-table.options kbd.option {
-	font-size: 11pt;
+kbd.return {
+	font-size: smaller;
 }
 
 table.binding kbd.type {
-	font-size: smaller;
-	vertical-align: baseline;
+	font-size: 10pt;
+}
+
+table.options kbd.option {
+	font-size: 11pt;
 }
 
 table.binding tr:hover {
@@ -84,10 +87,20 @@ div.documentation h4 {
 	padding: 2px 5px;
 }
 
-div.documentation pre {
-	font-size: 13pt;
-	margin-top: 5px;
-	margin-bottom: 5px;
+div.documentation code {
+	font-size: larger;
+	padding: 0px;
+	margin: 0px 0px;
+}
+
+div.documentation code {
+	font-size: larger;
+	padding: 0px;
+	margin: 0px 0px;
+}
+
+div.documentation p {
+	margin: 1px 0px;
 }
 
 div.documentation dt {

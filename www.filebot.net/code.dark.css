@@ -4,7 +4,7 @@ code {
 	border: thin solid #2A3139;
 }
 
-kbd.option, kbd.variable, kbd.property {
+kbd.option, kbd.variable, kbd.function {
 	color: #5DB0B0;
 }
 
@@ -20,7 +20,7 @@ kbd.block {
 	color: #3A8DAF;
 }
 
-kbd.argument, kbd.type {
+kbd.argument, kbd.type, kbd.property {
 	color: #6598CA;
 }
 
