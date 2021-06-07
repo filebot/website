@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<base href="@{link.site.index}">
@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="header">
-				<a href="/"><img class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
+				<a href="/"><img alt="FileBot" class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
 				<h1>
 					Scripts and Automation
 					<span class="description">Scripting interface usage manual</span>
@@ -39,7 +39,7 @@
 					<h2>About</h2>
 					<p>
 						FileBot makes scripting and automation as easy as it gets. Write modern <a href="http://groovy-lang.org/">Groovy</a> code
-						instead of bothering with cumbersome <acronym title="Windows batch script">*.cmd</acronym> or <acronym title="Unix shell script">*.sh</acronym> scripts.
+						instead of bothering with cumbersome <abbr title="Windows batch script">*.cmd</abbr> or <abbr title="Unix shell script">*.sh</abbr> scripts.
 						It's much more powerful and works the same on all operating systems.
 					</p>
 					<p>
@@ -78,7 +78,7 @@
 						<li><a href="forums/viewtopic.php?p=44992#p44992">Write Embedded Tags</a></li>
 					</ul>
 
-					<h3 id="examples">Example Scripts</h3>
+					<h3>Example Scripts</h3>
 					<div class="description">
 <pre><code>args.<span class="method">eachMediaFolder</span> {
   <span class="method">getMissingSubtitles</span>(<span class="property">folder</span>:it)
@@ -113,9 +113,9 @@
 						<div class="text">Rename the given files.</div>
 						<dl>
 							<dt>Variants:</dt>
-							<dd><span class="method">rename</span>(<span class="property">folder</span> | <span class="property">file</span>) ... match files with episode / movie information and then rename</li></dd>
-							<dd><span class="method">rename</span>(<span class="property">list</span>) ... match files with episode information in <a href="manpage.html">linear order</a> and then rename</li></dd>
-							<dd><span class="method">rename</span>(<span class="property">map</span>) ... rename files according to the given <span class="type">Map</span></li></dd>
+							<dd><span class="method">rename</span>(<span class="property">folder</span> | <span class="property">file</span>) ... match files with episode / movie information and then rename</dd>
+							<dd><span class="method">rename</span>(<span class="property">list</span>) ... match files with episode information in <a href="manpage.html">linear order</a> and then rename</dd>
+							<dd><span class="method">rename</span>(<span class="property">map</span>) ... rename files according to the given <span class="type">Map</span></dd>
 						</dl>
 						<dl>
 							<dt>Parameters:</dt>
