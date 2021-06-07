@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<base href="@{link.site.index}">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<base href="@{link.site.index}">
 
-		<meta name="description" content="@{package.description}" />
-		<meta name="keywords" content="@{package.tags}" />
-		<meta name="author" content="@{package.company}" />
+	<meta name="description" content="@{package.description}" />
+	<meta name="keywords" content="@{package.tags}" />
+	<meta name="author" content="@{package.company}" />
 
-		<meta itemprop="name" content="@{application.name} - @{package.synopsis}" />
-		<meta itemprop="description" content="@{package.description}" />
-		<meta itemprop="image" content="@{link.image.logo}" />
+	<meta itemprop="name" content="@{application.name} - @{package.synopsis}" />
+	<meta itemprop="description" content="@{package.description}" />
+	<meta itemprop="image" content="@{link.image.logo}" />
 
-		<meta property="og:title" content="@{application.name}" />
-		<meta property="og:type" content="product" />
-		<meta property="og:url" content="@{link.site.index}" />
-		<meta property="og:image" content="@{link.image.logo}" />
+	<meta property="og:title" content="@{application.name}" />
+	<meta property="og:type" content="product" />
+	<meta property="og:url" content="@{link.site.index}" />
+	<meta property="og:image" content="@{link.image.logo}" />
 
-		<title>@{application.name} - @{package.synopsis}</title>
-		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-		<link rel="stylesheet" href="base.css" type="text/css">
-		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
-		<link rel="stylesheet" href="code.css" type="text/css">
-		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
-		<link rel="stylesheet" href="review.css" type="text/css">
-		<link rel="stylesheet" href="purchase.css" type="text/css">
+	<title>@{application.name} - @{package.synopsis}</title>
+	<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+	<link rel="stylesheet" href="base.css" type="text/css">
+	<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="code.css" type="text/css">
+	<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="review.css" type="text/css">
+	<link rel="stylesheet" href="purchase.css" type="text/css">
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-		<script src="index.js"></script>
-	</head>
-	<body>
-		<div class="page">
-			<div class="navigation">
-				<div>
-					<ul>
-						<li><a href="forums/">Forums</a></li>
-						<li><a href="manual.html">FAQ</a></li>
-						<li><a href="#download">Download</a></li>
-					</ul>
-				</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="page">
+		<div class="navigation">
+			<div>
+				<ul>
+					<li><a href="forums/">Forums</a></li>
+					<li><a href="manual.html">FAQ</a></li>
+					<li><a href="#download">Download</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header">
+			<a href="/"><img class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
+			<h1>
+				FileBot
+				<a href="forums/viewforum.php?f=7" class="source">v@{application.version}</a>
+				<span class="description">@{package.synopsis}</span>
+			</h1>
+		</div>
+
+		<div class="content">
+			<div class="screenshot screencast light">
+				<a href="getting-started/index.html" title="How to use FileBot">
+					<img class="play" alt="play" src="images/play.png" width="8" height="8" />
+					<img alt="screenshot" src="screenshots/rename.png" width="300" height="219" />
+				</a>
 			</div>
 
-			<div class="header">
-				<a href="/"><img class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
-				<h1>
-					FileBot
-					<a href="forums/viewforum.php?f=7" class="source">v@{application.version}</a>
-					<span class="description">@{package.synopsis}</span>
-				</h1>
+			<div class="section about">
+				<img class="icon light" src="images/information.png" alt="about" width="48" height="48" />
+				<h2>About</h2>
+				<p><strong>FileBot</strong> is the ultimate tool for renaming and organizing your movies, TV shows and Anime. Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds. It's smart and just works.</p>
 			</div>
 
-			<div class="content">
-				<div class="screenshot screencast light">
-					<a href="getting-started/index.html" title="How to use FileBot">
-						<img class="play" alt="play" src="images/play.png" width="8" height="8" />
-						<img alt="screenshot" src="screenshots/rename.png" width="300" height="219" />
-					</a>
-				</div>
-
-				<div class="section about">
-					<img class="icon light" src="images/information.png" alt="about" width="48" height="48" />
-					<h2>About</h2>
-					<p><strong>FileBot</strong> is the ultimate tool for renaming and organizing your movies, TV shows and Anime. Match and rename media files against online databases, download artwork and cover images, fetch subtitles, write metadata, and more, all at once in matter of seconds. It's smart and just works.</p>
-				</div>
-
-				<div class="review light">
-					<a class="box" href="reviews.html" id="review" style="display: none">
+			<div class="review light">
+				<a class="box" href="reviews.html" id="review" style="display: none">
 					<div class="thumbs up">
 						<img src="images/thumbs_up.png" />
 					</div>
@@ -74,171 +74,171 @@
 						<p class="head">Posted by <span class="user"></span> on <span class="date"></span></p>
 						<p class="text"></p>
 					</div>
-					</a>
-				</div>
+				</a>
+			</div>
 
-				<div class="section first tutorial">
-					<img class="icon light" src="images/starthere.png" alt="start" width="48" height="48" />
-					<h2>Getting Started</h2>
-					<p>
-						<strong>FileBot makes renaming and organizing media files a breeze.</strong> FileBot will automatically match your files with information 
-						from your preferred online database, and then rename and organize everything perfectly for you. You can customize your <a href="naming.html">naming scheme</a>
-						to your specific needs and preferences, or keep things simple and stick to the <a href="forums/viewtopic.php?t=4116">{plex}</a> naming standard.
-					</p>
-					<ol>
-						<li>Drag movie or episode files into the <span class="label">Original Files</span> list area</li>
-						<li>Right-click <span class="label">New Names</span> list area and select your preferred datasource</li>
-						<li>Hit <span class="label">Rename</span></li>
-					</ol>
-					<p>
-						<strong>Fetching subtitles is just as easy, just drop it in.</strong> Besides automatic lookup you'll also be able to 
-						manually search and download subtitles, preview subtitles and fix encoding problems.
-					</p>
-					<ol>
-						<li>Drag your movie or episode files onto the <img alt="===" width="15" height="15" src="images/droparea.png" /> drop area</li>
-						<li>Hit <span class="label">Download</span></li>
-					</ol>
-					<p>
-						<strong>Run FileBot on unattended automated systems.</strong> FileBot offers a simple <acronym title="Command-line Interface"><a href="cli.html">CLI</a></acronym> for common use cases, and a built-in <a href="script.html">scripting engine</a> for more complex tasks.
-					</p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span></code>
-					<p>
-						Your <strong>fully automated media center</strong> is one <a href="script.html">filebot</a> command away – extract archives, identify and organize media files, fetch additional artwork and metadata, update Plex, and more – the <a href="amc.html">amc script</a> does it all.
-					</p>
-					<div class="video light">
-						<iframe src="getting-started/index.html" frameborder="0" allowfullscreen="true"></iframe>
-					</div>
-				</div>
-
-				<div class="section features" id="features">
-					<img class="icon light" src="images/lists.png" alt="features" width="48" height="48" />
-					<span class="quote light">Automatic for the people</span>
-					<h2>Some Features</h2>
-					<ul class="list">
-						<li>A simple user-interface tuned for drag-n-drop</li>
-						<li>Platform-independent and straight-forward application deployment</li>
-						<li>Powerful and full-featured <a class="important" href="cli.html">cmdline interface</a> and <a class="important" href="script.html">scripting interface</a> for any kind of <a href="forums/viewtopic.php?t=5">automation</a></li>
-					</ul>
-					<ul class="list next" id="rename">
-						<li>
-							<div class="screenshot light">
-								<a href="getting-started/index.html">
-									<img class="screenshot dialog" style="top: 29px; right: 20px" width="75" height="55" src="screenshots/small/dialog.format.png" alt="Episode naming scheme" />
-								</a>
-								<a href="getting-started/index.html">
-									<img width="150" height="118" src="screenshots/small/panel.rename.png" alt="Rename files" />
-								</a>
-							</div>
-							Rename and move hundreds of media files in a matter of seconds
-						</li>
-						<li>Fetch episode info from <a href="https://thetvdb.com/">TheTVDB</a>, <a href="https://anidb.net/">AniDB</a> or <a href="https://www.tvmaze.com/">TVmaze</a></li>
-						<li>Accurate and robust and simply awesome file / episode matching logic</li>
-						<li>Series / Anime / Movie name auto-detection</li>
-						<li>Powerful and highly customizable <a class="important" href="naming.html">episode naming scheme</a><br/><span class="note light mediainfo">MediaInfo optional</span></li>
-						<li>Supports language preferences for series and episode titles</li>
-						<li>Supports movie identification and renaming via <a href="https://www.themoviedb.org/">TheMovieDB</a></li>
-						<li>Reverse rename files using internal history or the original torrent file</li>
-					</ul>
-					<ul class="list next" id="subtitles">
-						<li>
-							<div class="screenshot light">
-								<a href="getting-started/index.html">
-									<img width="150" height="118" src="screenshots/small/panel.subtitle.png" alt="Download subtitles" />
-								</a>
-							</div>
-							Download subtitles from <a href="https://www.opensubtitles.org/">OpenSubtitles</a>
-						</li>
-						<li>Advanced logic for matching files to most suitable subtitles</li>
-						<li>Find <dfn>exact</dfn> subtitles on OpenSubtitles</li>
-						<li>Upload subtitles with movie hash to OpenSubtitles</li>
-						<li>Integrated subtitle viewer for <acronym title="SubRip">srt</acronym>, <acronym title="Advanced SubStation Alpha">ass</acronym> and <acronym title="MicroDVD and SubViewer">sub</acronym> files</li>
-						<li>Transcode any subtitle as UTF-8 encoded <acronym title="SubRip">srt</acronym></li>
-					</ul>
-					<ul class="list next" id="sfv">
-						<li>
-							<div class="screenshot light">
-								<a href="getting-started/index.html">
-									<img width="150" height="118" src="screenshots/small/panel.sfv.png" alt="Verify SFV files" />
-								</a>
-							</div>
-							Easily create and verify <acronym title="simple file verification">sfv</acronym>, <acronym title="md5sum">md5</acronym>, <acronym title="sha1sum">sha1</acronym> and <acronym title="sha256sum">sha256</acronym> files
-						</li>
-						<li>Aware of checksums that are embedded in the filename<br/><span class="note light anime">common in anime releases</span></li>
-						<li>Directly compare two or more directory trees</li>
-						<li>Auto-lookup of any existing file verification</li>
-					</ul>
-					<ul class="list next" id="tools">
-						<li>
-							Identify and rename music using <a href="https://acoustid.org/">AcoustID</a> audio-fingerprints and <a href="https://musicbrainz.org/">MusicBrainz</a> info.
-						</li>
-						<li>
-							Extract files from <acronym title=".zip files">zip</acronym>, multi-volume <acronym title=".rar files">rar</acronym> and <acronym title=".7z files">7zip</acronym> archives as well as <acronym title=".ISO files">ISO images</acronym>.
-						</li>
-					</ul>
-				</div>
-
-				<div class="section download" id="download">
-					<img class="icon light" src="images/package.png" alt="download" width="48" height="48" />
-					<span class="quote">Today is the day</span>
-					<h2>Download</h2>
-					<ul class="list">
-						<li>Windows Installer: <a href="@{link.release.prefix}_x64.msi">@{release}_x64.msi</a></li>
-						<li>macOS installer: <a href="@{link.release.prefix}.pkg">@{release}.pkg</a></li>
-						<li>Ubuntu / Debian package: <a href="@{link.release.prefix}_amd64.deb">@{release}_amd64.deb</a></li>
-						<li>Ubuntu / Debian package is available <a href="linux/apt.html">via APT</a></li>
-						<li>Fedora / openSUSE / CentOS package: <a href="@{link.release.prefix}_amd64.rpm">@{release}_amd64.rpm</a>
-						<li>Fedora / openSUSE / CentOS package is available <a href="linux/yum.html">via DNF and YUM</a></li>
-						<li>POSIX portable tarball: <a href="@{link.release.prefix}-portable.tar.xz">@{release}-portable.tar.xz</a> <small class="comment">for other Linux and FreeBSD devices</small></li>
-						<li>Windows packages are available <a href="windows/winget.html">via winget</a> and <a href="windows/scoop.html">via scoop</a></li>
-						<li>macOS package is available <a href="mac/brew.html">via brew cask</a></li>
-						<li>Synology NAS package is available <a href="linux/syno.html">via Package Center</a></li>
-						<li>QNAP NAS package is available <a href="linux/qnap.html">via App Center</a></li>
-						<li>Arch Linux package is available <a href="linux/aur.html">via AUR</a></li>
-						<li>Universal Linux package is available <a href="linux/snap.html">via Snapcraft</a></li>
-						<li>Docker images are available <a href="linux/docker.html">on Docker Hub</a></li>
-						<li>All packages are available on our <a href="https://get.filebot.net/filebot/">Release Index</a></li>
-					</ul>
-				</div>
-
-				<div class="section purchase" id="purchase">
-					<img class="icon light" src="images/coin.png" alt="download" width="48" height="48" />
-					<span class="quote">We work to better ourselves</span>
-					<h2>Buy a License</h2>
-					<a id="year" href="#!" class="paddle_button light" data-allow-quantity="false" data-referrer="index" data-product="532439">
-						Purchase <em>1 year</em> universal license
-						<div class="tag"><span class="paddle-gross" data-product="532439">US$6.00</span></div>
-					</a>
-
-					<a id="life" href="#!" class="paddle_button light" data-allow-quantity="false" data-referrer="index" data-product="534413">
-						Purchase <em>life-time</em> universal license
-						<div class="tag"><span class="paddle-gross" data-product="534413">US$60.00</span></div>
-					</a>
-
-					<ul class="list">
-						<li class="note">Please <a href="forums/viewtopic.php?t=11131">type your email address correctly</a> when purchasing a license.</li>
-						<li class="note">Please download and <a href="forums/viewtopic.php?t=11790">evaluate FileBot</a> before purchasing a license.</li>
-						<li class="note">A single per-user license is valid on all platforms and can be used on multiple machines.</li>
-						<li class="note"><a href="forums/viewtopic.php?t=6265">Microsoft Store</a> and <a href="forums/viewtopic.php?t=6265">Mac App Store</a> purchases neither include nor require a <a href="forums/viewtopic.php?t=6265">universal license</a>.</li>
-					</ul>
-				</div>
-
-				<div class="section contact">
-					<img class="icon light" src="images/contact.png" alt="contact" width="48" height="48" />
-					<span class="quote">Will you join us?</span>
-					<h2>Contact</h2>
-					<p>
-						The project is continuously seeking for improvements, so any kind of <a href="forums/viewforum.php?f=8">feedback</a> is more than welcome 
-						and if there's any questions or problems just start posting in the <a href="forums/">forums</a> or check the <a href="manual.html"><acronym title="frequently asked questions">FAQ</acronym></a>.
-						We're social as well. Follow us on <a href="https://twitter.com/filebot_renamer">twitter</a>, become a fan on <a href="https://www.facebook.com/filebot">facebook</a> or join our <a href="channel.html">Discord </a> channel.
-					</p>
+			<div class="section first tutorial">
+				<img class="icon light" src="images/starthere.png" alt="start" width="48" height="48" />
+				<h2>Getting Started</h2>
+				<p>
+					<strong>FileBot makes renaming and organizing media files a breeze.</strong> FileBot will automatically match your files with information 
+					from your preferred online database, and then rename and organize everything perfectly for you. You can customize your <a href="naming.html">naming scheme</a>
+					to your specific needs and preferences, or keep things simple and stick to the <a href="forums/viewtopic.php?t=4116">{plex}</a> naming standard.
+				</p>
+				<ol>
+					<li>Drag movie or episode files into the <span class="label">Original Files</span> list area</li>
+					<li>Right-click <span class="label">New Names</span> list area and select your preferred datasource</li>
+					<li>Hit <span class="label">Rename</span></li>
+				</ol>
+				<p>
+					<strong>Fetching subtitles is just as easy, just drop it in.</strong> Besides automatic lookup you'll also be able to 
+					manually search and download subtitles, preview subtitles and fix encoding problems.
+				</p>
+				<ol>
+					<li>Drag your movie or episode files onto the <img alt="===" width="15" height="15" src="images/droparea.png" /> drop area</li>
+					<li>Hit <span class="label">Download</span></li>
+				</ol>
+				<p>
+					<strong>Run FileBot on unattended automated systems.</strong> FileBot offers a simple <acronym title="Command-line Interface"><a href="cli.html">CLI</a></acronym> for common use cases, and a built-in <a href="script.html">scripting engine</a> for more complex tasks.
+				</p>
+				<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">*.mkv</kbd></code>
+				<p>
+					Your <strong>fully automated media center</strong> is one <a href="script.html">filebot</a> command away – extract archives, identify and organize media files, fetch additional artwork and metadata, update Plex, and more – the <a href="amc.html">amc script</a> does it all.
+				</p>
+				<div class="video light">
+					<iframe src="getting-started/index.html" frameborder="0" allowfullscreen="true"></iframe>
 				</div>
 			</div>
 
-			<div class="metrics"></div>
+			<div class="section features" id="features">
+				<img class="icon light" src="images/lists.png" alt="features" width="48" height="48" />
+				<span class="quote light">Automatic for the people</span>
+				<h2>Some Features</h2>
+				<ul class="list">
+					<li>A simple user-interface tuned for drag-n-drop</li>
+					<li>Platform-independent and straight-forward application deployment</li>
+					<li>Powerful and full-featured <a class="important" href="cli.html">cmdline interface</a> and <a class="important" href="script.html">scripting interface</a> for any kind of <a href="forums/viewtopic.php?t=5">automation</a></li>
+				</ul>
+				<ul class="list next" id="rename">
+					<li>
+						<div class="screenshot light">
+							<a href="getting-started/index.html">
+								<img class="screenshot dialog" style="top: 29px; right: 20px" width="75" height="55" src="screenshots/small/dialog.format.png" alt="Episode naming scheme" />
+							</a>
+							<a href="getting-started/index.html">
+								<img width="150" height="118" src="screenshots/small/panel.rename.png" alt="Rename files" />
+							</a>
+						</div>
+						Rename and move hundreds of media files in a matter of seconds
+					</li>
+					<li>Fetch episode info from <a href="https://thetvdb.com/">TheTVDB</a>, <a href="https://anidb.net/">AniDB</a> or <a href="https://www.tvmaze.com/">TVmaze</a></li>
+					<li>Accurate and robust and simply awesome file / episode matching logic</li>
+					<li>Series / Anime / Movie name auto-detection</li>
+					<li>Powerful and highly customizable <a class="important" href="naming.html">episode naming scheme</a><br/><span class="note light mediainfo">MediaInfo optional</span></li>
+					<li>Supports language preferences for series and episode titles</li>
+					<li>Supports movie identification and renaming via <a href="https://www.themoviedb.org/">TheMovieDB</a></li>
+					<li>Reverse rename files using internal history or the original torrent file</li>
+				</ul>
+				<ul class="list next" id="subtitles">
+					<li>
+						<div class="screenshot light">
+							<a href="getting-started/index.html">
+								<img width="150" height="118" src="screenshots/small/panel.subtitle.png" alt="Download subtitles" />
+							</a>
+						</div>
+						Download subtitles from <a href="https://www.opensubtitles.org/">OpenSubtitles</a>
+					</li>
+					<li>Advanced logic for matching files to most suitable subtitles</li>
+					<li>Find <dfn>exact</dfn> subtitles on OpenSubtitles</li>
+					<li>Upload subtitles with movie hash to OpenSubtitles</li>
+					<li>Integrated subtitle viewer for <acronym title="SubRip">srt</acronym>, <acronym title="Advanced SubStation Alpha">ass</acronym> and <acronym title="MicroDVD and SubViewer">sub</acronym> files</li>
+					<li>Transcode any subtitle as UTF-8 encoded <acronym title="SubRip">srt</acronym></li>
+				</ul>
+				<ul class="list next" id="sfv">
+					<li>
+						<div class="screenshot light">
+							<a href="getting-started/index.html">
+								<img width="150" height="118" src="screenshots/small/panel.sfv.png" alt="Verify SFV files" />
+							</a>
+						</div>
+						Easily create and verify <acronym title="simple file verification">sfv</acronym>, <acronym title="md5sum">md5</acronym>, <acronym title="sha1sum">sha1</acronym> and <acronym title="sha256sum">sha256</acronym> files
+					</li>
+					<li>Aware of checksums that are embedded in the filename<br/><span class="note light anime">common in anime releases</span></li>
+					<li>Directly compare two or more directory trees</li>
+					<li>Auto-lookup of any existing file verification</li>
+				</ul>
+				<ul class="list next" id="tools">
+					<li>
+						Identify and rename music using <a href="https://acoustid.org/">AcoustID</a> audio-fingerprints and <a href="https://musicbrainz.org/">MusicBrainz</a> info.
+					</li>
+					<li>
+						Extract files from <acronym title=".zip files">zip</acronym>, multi-volume <acronym title=".rar files">rar</acronym> and <acronym title=".7z files">7zip</acronym> archives as well as <acronym title=".ISO files">ISO images</acronym>.
+					</li>
+				</ul>
+			</div>
 
-			<div class="footer">
-				<p><a href="/">FileBot Media Renamer</a> | <a href="eula.html">License Agreement</a> | <a href="privacy.txt">Privacy Policy</a> | Copyright @{tstamp.year} @{package.company}</p>
+			<div class="section download" id="download">
+				<img class="icon light" src="images/package.png" alt="download" width="48" height="48" />
+				<span class="quote">Today is the day</span>
+				<h2>Download</h2>
+				<ul class="list">
+					<li>Windows Installer: <a href="@{link.release.prefix}_x64.msi">@{release}_x64.msi</a></li>
+					<li>macOS installer: <a href="@{link.release.prefix}.pkg">@{release}.pkg</a></li>
+					<li>Ubuntu / Debian package: <a href="@{link.release.prefix}_amd64.deb">@{release}_amd64.deb</a></li>
+					<li>Ubuntu / Debian package is available <a href="linux/apt.html">via APT</a></li>
+					<li>Fedora / openSUSE / CentOS package: <a href="@{link.release.prefix}_amd64.rpm">@{release}_amd64.rpm</a></li>
+					<li>Fedora / openSUSE / CentOS package is available <a href="linux/yum.html">via DNF and YUM</a></li>
+					<li>POSIX portable tarball: <a href="@{link.release.prefix}-portable.tar.xz">@{release}-portable.tar.xz</a> <small class="comment">for other Linux and FreeBSD devices</small></li>
+					<li>Windows packages are available <a href="windows/winget.html">via winget</a> and <a href="windows/scoop.html">via scoop</a></li>
+					<li>macOS package is available <a href="mac/brew.html">via brew cask</a></li>
+					<li>Synology NAS package is available <a href="linux/syno.html">via Package Center</a></li>
+					<li>QNAP NAS package is available <a href="linux/qnap.html">via App Center</a></li>
+					<li>Arch Linux package is available <a href="linux/aur.html">via AUR</a></li>
+					<li>Universal Linux package is available <a href="linux/snap.html">via Snapcraft</a></li>
+					<li>Docker images are available <a href="linux/docker.html">on Docker Hub</a></li>
+					<li>All packages are available on our <a href="https://get.filebot.net/filebot/">Release Index</a></li>
+				</ul>
+			</div>
+
+			<div class="section purchase" id="purchase">
+				<img class="icon light" src="images/coin.png" alt="download" width="48" height="48" />
+				<span class="quote">We work to better ourselves</span>
+				<h2>Buy a License</h2>
+				<a id="year" href="#!" class="paddle_button light" data-allow-quantity="false" data-referrer="index" data-product="532439">
+					Purchase <em>1 year</em> universal license
+					<div class="tag"><span class="paddle-gross" data-product="532439">US$6.00</span></div>
+				</a>
+
+				<a id="life" href="#!" class="paddle_button light" data-allow-quantity="false" data-referrer="index" data-product="534413">
+					Purchase <em>life-time</em> universal license
+					<div class="tag"><span class="paddle-gross" data-product="534413">US$60.00</span></div>
+				</a>
+
+				<ul class="list">
+					<li class="note">Please <a href="forums/viewtopic.php?t=11131">type your email address correctly</a> when purchasing a license.</li>
+					<li class="note">Please download and <a href="forums/viewtopic.php?t=11790">evaluate FileBot</a> before purchasing a license.</li>
+					<li class="note">A single per-user license is valid on all platforms and can be used on multiple machines.</li>
+					<li class="note"><a href="forums/viewtopic.php?t=6265">Microsoft Store</a> and <a href="forums/viewtopic.php?t=6265">Mac App Store</a> purchases neither include nor require a <a href="forums/viewtopic.php?t=6265">universal license</a>.</li>
+				</ul>
+			</div>
+
+			<div class="section contact">
+				<img class="icon light" src="images/contact.png" alt="contact" width="48" height="48" />
+				<span class="quote">Will you join us?</span>
+				<h2>Contact</h2>
+				<p>
+					The project is continuously seeking for improvements, so any kind of <a href="forums/viewforum.php?f=8">feedback</a> is more than welcome 
+					and if there's any questions or problems just start posting in the <a href="forums/">forums</a> or check the <a href="manual.html"><acronym title="frequently asked questions">FAQ</acronym></a>.
+					We're social as well. Follow us on <a href="https://twitter.com/filebot_renamer">twitter</a>, become a fan on <a href="https://www.facebook.com/filebot">facebook</a> or join our <a href="channel.html">Discord </a> channel.
+				</p>
 			</div>
 		</div>
-	</body>
+
+		<div class="metrics"></div>
+
+		<div class="footer">
+			<p><a href="/">FileBot Media Renamer</a> | <a href="eula.html">License Agreement</a> | <a href="privacy.txt">Privacy Policy</a> | Copyright @{tstamp.year} @{package.company}</p>
+		</div>
+	</div>
+</body>
 </html>

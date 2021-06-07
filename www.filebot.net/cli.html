@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<base href="@{link.site.index}">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<base href="@{link.site.index}">
 
-		<title>FileBot Command-line Interface</title>
-		<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-		<link rel="stylesheet" href="base.css" type="text/css">
-		<link rel="stylesheet" href="code.css" type="text/css">
-		<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
-		<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
-	</head>
-	<body>
-		<div class="page">
-			<div class="navigation">
-				<div>
+	<title>FileBot Command-line Interface</title>
+	<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+	<link rel="stylesheet" href="base.css" type="text/css">
+	<link rel="stylesheet" href="code.css" type="text/css">
+	<link rel="stylesheet" href="base.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+	<div class="page">
+		<div class="navigation">
+			<div>
 				<ul>
 					<li><a href="forums/">Forums</a></li>
 					<li><a href="manual.html">FAQ</a></li>
 					<li><a href="#download">Download</a></li>
 				</ul>
-				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<a href="/"><img class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
+			<h1>
+				FileBot CLI
+				<span class="description">Command-line interface usage manual</span>
+			</h1>
+		</div>
+
+		<div class="content">
+			<div class="screenshot column">
+				<a href="screenshots/cli.png"><img alt="FileBot command-line tools" width="330" src="screenshots/cli.png" /></a>
+			</div>
+			<div class="section about column">
+				<h2>About</h2>
+				<p>
+					FileBot can be called with a set of command-line arguments directly from the console 
+					or in scripts for automation, running tasks like renaming TV shows and movies, fetching subtitles or checking SFV files.
+				</p>
+				<p>
+					The CLI is designed for <a href="forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
+				</p>
+				<p>
+					Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
+				</p>
 			</div>
 
-			<div class="header">
-				<a href="/"><img class="logo light" src="images/filebot.logo.svg" width="64" height="64" /></a>
-				<h1>
-					FileBot CLI
-					<span class="description">Command-line interface usage manual</span>
-				</h1>
-			</div>
-
-			<div class="content">
-				<div class="screenshot column">
-					<a href="screenshots/cli.png"><img alt="FileBot command-line tools" width="330" src="screenshots/cli.png" /></a>
-				</div>
-				<div class="section about column">
-					<h2>About</h2>
-					<p>
-						FileBot can be called with a set of command-line arguments directly from the console 
-						or in scripts for automation, running tasks like renaming TV shows and movies, fetching subtitles or checking SFV files.
-					</p>
-					<p>
-						The CLI is designed for <a href="forums/viewtopic.php?t=4788">simple commands</a> that do one thing and do it well.
-					</p>
-					<p>
-						Please read <a href="script.html">Scripts and Automation</a> if you need more advanced behaviours. Find shared scripts for many common tasks in the <a href="forums/viewtopic.php?t=5">Script Repository</a>.
-					</p>
-				</div>
-
-				<div class="section examples first" id="examples">
-					<h2>Examples</h2>
-					<h3>Rename</h3>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span></code>
+			<div class="section examples first" id="examples">
+				<h2>Examples</h2>
+				<h3>Rename</h3>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">*.mkv</kbd></code>
 					Rename given episode files or movie files.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">*.mkv</span> <span class="option">--db</span> <span class="argument">AniDB</span> <span class="option">-non-strict</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">*.mkv</kbd> <kbd class="option">--db</kbd> <kbd class="argument">AniDB</kbd> <kbd class="option">-non-strict</kbd></code>
 					Rename given episode files using AniDB episode listing.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">--format</span> <span class="argument">"{s} - {s00e00} - {t}"</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{s} - {s00e00} - {t}"</kbd></code>
 					Rename given episode files using the given <a href="naming.html">custom format</a>.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">"1x01.mkv"</span> <span class="option">--q</span> <span class="argument">"Firefly"</span> <span class="option">--db</span> <span class="argument">TheMovieDB::TV</span> <span class="option">--lang</span> <span class="argument">German</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">"1x01.mkv"</kbd> <kbd class="option">--q</kbd> <kbd class="argument">"Firefly"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">--lang</kbd> <kbd class="argument">German</kbd></code>
 					Rename a given episode file forcing a given series based on German language episode listing.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-rename</span> <span class="argument">A.mkv</span> <span class="option">--q</span> <span class="argument">19995</span> <span class="option">--db</span> <span class="argument">TheMovieDB</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">A.mkv</kbd> <kbd class="option">--q</kbd> <kbd class="argument">19995</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB</kbd></code>
 					Rename a given movie file using the numeric ID to lookup the movie information.
-					</p>
-					<p class="suggestion">
-					Keep in mind that the CLI is <strong>strict by default</strong> so it will never mess up your files. In some cases you may need to enable <strong>-non-strict</strong> for more opportunistic matching like the GUI does.
-					</p>
-					<h3>Fetch Subtitles</h3>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span></code>
+				</p>
+				<p class="suggestion">
+					The GUI uses <a href="forums/viewtopic.php?t=4695">opportunistic matching</a> by default. However, the <kbd class="cmd">filebot</kbd> command is <a href="forums/viewtopic.php?t=4695">strict by default</a> to avoid mismatches. You may need to set <kbd class="option">-non-strict</kbd> depending on the files at hand.
+				</p>
+				<h3>Fetch Subtitles</h3>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">-non-strict</kbd></code>
 					Fetch missing subtitles for the given episode files or movie files.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-get-subtitles</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="option">-non-strict</span> <span class="cmd">\</span><br><span class="option">--lang</span> <span class="argument">zh</span> <span class="option">--output</span> <span class="argument">srt</span> <span class="option">--encoding</span> <span class="argument">utf-8</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--lang</kbd> <kbd class="argument">zh</kbd> <kbd class="option">--output</kbd> <kbd class="argument">srt</kbd> <kbd class="option">--encoding</kbd> <kbd class="argument">utf-8</kbd></code>
 					Fetch missing Chinese language subtitles and convert them to <a href="https://en.wikipedia.org/wiki/SubRip">SubRip</a> format and <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a> encoding.
-					</p>
-					<h3>File Verification</h3>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">"/path/to/files"</span></code>
+				</p>
+				<h3>File Verification</h3>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">"/path/to/files"</kbd></code>
 					Compute CRC32 checksums and create an <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">"/path/to/files"</span> <span class="option">--format</span> <span class="argument">SHA-256</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">--format</kbd> <kbd class="argument">SHA-256</kbd></code>
 					Compute SHA-256 hashes and create an <a href="https://en.wikipedia.org/wiki/Sha1sum">sha256sum</a> file.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-check</span> <span class="argument">*.sfv</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">*.sfv</kbd></code>
 					Check file integrity for all the files listed in the given <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
-					</p>
-					<h3>Scripting</h3>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-extract</span> <span class="option">-r</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span></code></code>
+				</p>
+				<h3>Scripting</h3>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-extract</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--output</kbd> <kbd class="argument">"/output"</kbd></code>
 					Extract all archives from the given input folder to the given output folder.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-list</span> <span class="option">--q</span> <span class="argument">"Firefly"</span> <span class="option">--db</span> <span class="argument">TheMovieDB::TV</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"s == 1"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{id} | {s} | {y} | {sxe} | {t}"</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-list</kbd> <kbd class="option">--q</kbd> <kbd class="argument">"Firefly"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">"s == 1"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">"{id} | {s} | {y} | {sxe} | {t}"</kbd></code>
 					Fetch episode list and print episode information for the <a href="forums/viewtopic.php?t=2127">selected episodes</a>.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-mediainfo</span> <span class="option">-r</span> <span class="argument">"/path/to/files"</span> <span class="cmd">\</span><br><span class="option">--filter</span> <span class="argument">"f.video && minutes > 15"</span> <span class="cmd">\</span><br><span class="option">--format</span> <span class="argument">"{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}"</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-mediainfo</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">"f.video && minutes > 15"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">"{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}"</kbd></code>
 					Read <a href="forums/viewtopic.php?t=4285">media info</a> and print to console.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">*.groovy</span> <span class="argument">"/input"</span> <span class="option">--def</span> <span class="argument">a=1</span> <span class="argument">b=2</span> <span class="argument">c=3</span> <span class="argument">...</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">*.groovy</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--def</kbd> <kbd class="argument">a=1</kbd> <kbd class="argument">b=2</kbd> <kbd class="argument">c=3</kbd> <kbd class="argument">...</kbd></code>
 					Execute a given <a href="script.html">Groovy script</a> and pass along input arguments and script parameters.
-					</p>
-					<p>
-					<code><span class="cmd">filebot</span> <span class="option">-script</span> <span class="argument">fn:amc</span> <span class="argument">"/input"</span> <span class="option">--output</span> <span class="argument">"/output"</span> <span class="option">--action</span> <span class="argument">duplicate</span> <span class="cmd">\</span><br><span class="option">-non-strict</span> <span class="option">--log-file</span> <span class="argument">amc.log</span> <span class="option">--def</span> <span class="argument">excludeList="amc.txt"</span></code>
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">fn:amc</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--output</kbd> <kbd class="argument">"/output"</kbd> <kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">-non-strict</kbd> <kbd class="option">--log-file</kbd> <kbd class="argument">amc.log</kbd> <kbd class="option">--def</kbd> <kbd class="argument">excludeList="amc.txt"</kbd></code>
 					Execute the <a href="amc.html">amc script</a> with the given input arguments, options and script parameters.
-					</p>
-				</div>
+				</p>
+			</div>
 
-				<div class="section reference" id="arguments">
-					<h2>
-						Argument Reference
-						<a href="docs/api/net/filebot/cli/ArgumentBean.html" class="source">source</a>
-					</h2>
-					<table class="reference options">
-						<tr>
-							<th>Name</th>
-							<th>Description</th>
-							<th>Usage</th>
-						</tr>
-						<tr>
-							<td>-rename</td>
-							<td>rename media files</td>
-							<td>media folder or media file</td>
-						</tr>
-						<tr>
-							<td>--db</td>
-							<td>database</td>
-							<td>
+			<div class="section reference" id="arguments">
+				<h2>
+					Argument Reference
+					<a href="docs/api/net/filebot/cli/ArgumentBean.html" class="source">source</a>
+				</h2>
+				<table class="reference options">
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Usage</th>
+					</tr>
+					<tr>
+						<td><kbd class="option">-rename</kbd></td>
+						<td>rename media files</td>
+						<td>media folder or media file</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--db</kbd></td>
+						<td>database</td>
+						<td>
 							<table>
 								<tr>
 									<td>TheTVDB | AniDB | TheMovieDB::TV <small class="comment">(Series Mode)</small></td>
@@ -154,53 +154,53 @@
 									<td><a href="forums/viewtopic.php?t=2072">File | Exif | Xattr</a> <small class="comment">(Plain File Mode)</small></td>
 								</tr>
 							</table>
-							</td>
-						</tr>
-						<tr>
-							<td>--order</td>
-							<td>episode numbering</td>
-							<td>Airdate | Absolute | DVD</td>
-						</tr>
-						<tr>
-							<td>--format</td>
-							<td><a href="naming.html">naming scheme</a></td>
-							<td><a href="forums/viewtopic.php?t=3244">format expression</a></td>
-						</tr>
-						<tr>
-							<td>--action</td>
-							<td><a href="forums/viewtopic.php?t=4915">rename action</a></td>
-							<td><a href="forums/viewtopic.php?t=4915">move | copy | symlink | hardlink | test</a></td>
-						</tr>
-						<tr>
-							<td>--conflict</td>
-							<td>conflict resolution</td>
-							<td>override | skip | auto | index | fail</td>
-						</tr>
-						<tr>
-							<td>--filter</td>
-							<td><a href="forums/viewtopic.php?t=2127">match filter</a></td>
-							<td><a href="forums/viewtopic.php?t=3244">filter expression</a></td>
-						</tr>
-						<tr>
-							<td>--mapper</td>
-							<td><a href="forums/viewtopic.php?t=10996">episode mapper</a></td>
-							<td><a href="forums/viewtopic.php?t=3244">mapper expression</a></td>
-						</tr>
-						<tr>
-							<td>--q</td>
-							<td><a href="forums/viewtopic.php?t=12043">manual lookup</a></td>
-							<td><a href="forums/viewtopic.php?t=12043">query expression</a></td>
-						</tr>
-						<tr>
-							<td>--lang</td>
-							<td>language code</td>
-							<td>English | French | German | Chinese | etc</td>
-						</tr>
-						<tr>
-							<td>-non-strict</td>
-							<td><a href="forums/viewtopic.php?t=4695">opportunistic match mode</a></td>
-							<td>
-								<table>
+						</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--order</kbd></td>
+						<td>episode numbering</td>
+						<td>Airdate | Absolute | DVD</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--format</kbd></td>
+						<td><a href="naming.html">naming scheme</a></td>
+						<td><a href="forums/viewtopic.php?t=3244">format expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--action</kbd></td>
+						<td><a href="forums/viewtopic.php?t=4915">rename action</a></td>
+						<td><a href="forums/viewtopic.php?t=4915">move | copy | symlink | hardlink | test</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--conflict</kbd></td>
+						<td>conflict resolution</td>
+						<td>override | skip | auto | index | fail</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--filter</kbd></td>
+						<td><a href="forums/viewtopic.php?t=2127">match filter</a></td>
+						<td><a href="forums/viewtopic.php?t=3244">filter expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--mapper</kbd></td>
+						<td><a href="forums/viewtopic.php?t=10996">episode mapper</a></td>
+						<td><a href="forums/viewtopic.php?t=3244">mapper expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--q</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12043">manual lookup</a></td>
+						<td><a href="forums/viewtopic.php?t=12043">query expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--lang</kbd></td>
+						<td>language code</td>
+						<td>English | French | German | Chinese | etc</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-non-strict</kbd></td>
+						<td><a href="forums/viewtopic.php?t=4695">opportunistic match mode</a></td>
+						<td>
+							<table>
 								<tr>
 									<td>enable <a href="forums/viewtopic.php?t=4695">opportunistic matching</a> <small class="comment">(Rename Mode)</small></td>
 								</tr>
@@ -208,27 +208,27 @@
 									<td>enable <a href="forums/viewtopic.php?t=2615">fuzzy subtitle search</a> <small class="comment">(Subtitle Mode)</small></td>
 								</tr>
 							</table>
-							</td>
-						</tr>
-						<tr>
-							<td>-r</td>
-							<td>traverse folders recursively</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-d</td>
-							<td><a href="forums/viewtopic.php?t=12263">rename folders</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>--file-filter</td>
-							<td><a href="forums/viewtopic.php?t=4222">input file filter</a></td>
-							<td><a href="forums/viewtopic.php?t=3244">file filter expression</a></td>
-						</tr>
-						<tr>
-							<td>--output</td>
-							<td>output path</td>
-							<td>
+						</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-r</kbd></td>
+						<td>traverse folders recursively</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-d</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12263">rename folders</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--file-filter</kbd></td>
+						<td><a href="forums/viewtopic.php?t=4222">input file filter</a></td>
+						<td><a href="forums/viewtopic.php?t=3244">file filter expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--output</kbd></td>
+						<td>output path</td>
+						<td>
 							<table>
 								<tr>
 									<td>output folder <small class="comment">(Rename Mode)</small></td>
@@ -240,132 +240,132 @@
 									<td>verification file <small class="comment">(Checksum Mode)</small></td>
 								</tr>
 							</table>
-							</td>
-						</tr>
-						<tr>
-							<td>--apply</td>
-							<td><a href="forums/viewtopic.php?t=11079">apply post-processing</a></td>
-							<td><a href="forums/viewtopic.php?t=11079">artwork | nfo | date | import | prune</a></td>
-						</tr>
-						<tr>
-							<td>-exec</td>
-							<td><a href="forums/viewtopic.php?t=11078">execute command</a></td>
-							<td><a href="forums/viewtopic.php?t=11078">exec expression</a></td>
-						</tr>
-						<tr>
-							<td>-extract</td>
-							<td>extract archives</td>
-							<td>folder or archive file</td>
-						</tr>
-						<tr>
-							<td>-check</td>
-							<td>compute or verify hashes</td>
-							<td>folder or verification file</td>
-						</tr>
-						<tr>
-							<td>-get-subtitles</td>
-							<td>fetch missing subtitles</td>
-							<td>media folder or video file</td>
-						</tr>
-						<tr>
-							<td>--encoding</td>
-							<td>output charset</td>
-							<td>UTF-8 | Windows-1252 | GB18030 | etc</td>
-						</tr>
-						<tr>
-							<td>-list</td>
-							<td>print episode list</td>
-							<td><a href="forums/viewtopic.php?t=12553">-rename</a> <small class="comment">(Linear Rename Mode)</small></td>
-						</tr>
-						<tr>
-							<td>-find</td>
-							<td><a href="forums/viewtopic.php?t=12622">print file paths</a></td>
-							<td><a href="forums/viewtopic.php?t=12622">-exec</a> <small class="comment">(Find Exec Mode)</small></td>
-						</tr>
-						<tr>
-							<td>-mediainfo</td>
-							<td>print media info</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-script</td>
-							<td><a href="script.html">run script</a></td>
-							<td></td>
-						</tr>
+						</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--apply</kbd></td>
+						<td><a href="forums/viewtopic.php?t=11079">apply post-processing</a></td>
+						<td><a href="forums/viewtopic.php?t=11079">artwork | nfo | date | import | prune</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-exec</kbd></td>
+						<td><a href="forums/viewtopic.php?t=11078">execute command</a></td>
+						<td><a href="forums/viewtopic.php?t=11078">exec expression</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-extract</kbd></td>
+						<td>extract archives</td>
+						<td>folder or archive file</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-check</kbd></td>
+						<td>compute or verify hashes</td>
+						<td>folder or verification file</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-get-subtitles</kbd></td>
+						<td>fetch missing subtitles</td>
+						<td>media folder or video file</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--encoding</kbd></td>
+						<td>output charset</td>
+						<td>UTF-8 | Windows-1252 | GB18030 | etc</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-list</kbd></td>
+						<td>print episode list</td>
+						<td><a href="forums/viewtopic.php?t=12553">-rename</a> <small class="comment">(Linear Rename Mode)</small></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-find</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12622">print file paths</a></td>
+						<td><a href="forums/viewtopic.php?t=12622">-exec</a> <small class="comment">(Find Exec Mode)</small></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-mediainfo</kbd></td>
+						<td>print media info</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-script</kbd></td>
+						<td><a href="script.html">run script</a></td>
+						<td></td>
+					</tr>
 
-						<tr>
-							<td>-revert</td>
-							<td><a href="forums/viewtopic.php?t=12133">undo rename operations</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>--mode</td>
-							<td><a href="forums/viewtopic.php?t=4398">interactive</a></td>
-							<td><a href="forums/viewtopic.php?t=4398">enable console-interactive mode</a></td>
-						</tr>
-						<tr>
-							<td>--log</td>
-							<td><a href="forums/viewtopic.php?t=3913">log level</a></td>
-							<td>all | fine | info | warning</td>
-						</tr>
-						<tr>
-							<td>-clear-cache</td>
-							<td><a href="forums/viewtopic.php?t=1996">clear cache</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-clear-prefs</td>
-							<td><a href="forums/viewtopic.php?t=4205">reset application settings</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-clear-history</td>
-							<td><a href="forums/viewtopic.php?t=12133">reset history</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-unixfs</td>
-							<td><a href="forums/viewtopic.php?t=12627">disable file path validation</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-no-xattr</td>
-							<td><a href="forums/viewtopic.php?t=324">disable extended attributes</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-no-probe</td>
-							<td><a href="forums/viewtopic.php?t=12022">disable media parser</a></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-no-history</td>
-							<td>disable history</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-version</td>
-							<td>print version</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>-help</td>
-							<td>print usage</td>
-							<td></td>
-						</tr>
-					</table>
-				</div>
+					<tr>
+						<td><kbd class="option">-revert</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12133">undo rename operations</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--mode</kbd></td>
+						<td><a href="forums/viewtopic.php?t=4398">interactive</a></td>
+						<td><a href="forums/viewtopic.php?t=4398">enable console-interactive mode</a></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">--log</kbd></td>
+						<td><a href="forums/viewtopic.php?t=3913">log level</a></td>
+						<td>all | fine | info | warning</td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-clear-cache</kbd></td>
+						<td><a href="forums/viewtopic.php?t=1996">clear cache</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-clear-prefs</kbd></td>
+						<td><a href="forums/viewtopic.php?t=4205">reset application settings</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-clear-history</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12133">reset history</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-unixfs</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12627">disable file path validation</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-no-xattr</kbd></td>
+						<td><a href="forums/viewtopic.php?t=324">disable extended attributes</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-no-probe</kbd></td>
+						<td><a href="forums/viewtopic.php?t=12022">disable media parser</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-no-history</kbd></td>
+						<td>disable history</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-version</kbd></td>
+						<td>print version</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><kbd class="option">-help</kbd></td>
+						<td>print usage</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
 
-				<div class="metrics"></div>
+			<div class="metrics"></div>
 
-				<p class="suggestion">
-					Need help getting started? Join the <a href="forums/viewforum.php?f=4">Forum</a> or <a href="channel.html">Discord</a>.
-				</p>
+			<p class="suggestion">
+				Need help getting started? Join the <a href="forums/viewforum.php?f=4">Forum</a> or <a href="channel.html">Discord</a>.
+			</p>
 
-				<div class="footer">
-					<p><a href="/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
-				</div>
+			<div class="footer">
+				<p><a href="/">FileBot Media Renamer</a> | Copyright @{tstamp.year} @{package.company}</p>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
 </html>

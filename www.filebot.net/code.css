@@ -7,55 +7,52 @@ code {
 	display: block;
 	font-family: 'SourceCode', monospace;
 	line-height: 1.2em;
-	background-color: #f5f5f5;
-	border: thin dashed #a2a2a2;
 	padding: 5px;
 	margin: 5px 0px;
+	background-color: #f5f5f5;
+	border: thin dashed #a2a2a2;
 }
 
-pre {
+kbd {
 	font-family: 'SourceCode', monospace;
-	margin: 0px;
 }
 
-code span.variable {
+kbd.variable {
 	color: #7f0055;
 	font-weight: bold;
 }
 
-code span.method, div.documentation span.method {
+kbd.type, kbd.method, kbd.return {
 	color: #0066cc;
-	font-family: 'SourceCode', monospace;
 }
 
-code span.property, div.documentation span.property {
+kbd.property {
 	color: #225577;
-	font-family: 'SourceCode', monospace;
 	font-size: 11pt;
 	font-weight: bold;
 }
 
-code span.string, code span.numeral, code span.regex {
+kbd.string, kbd.numeral, kbd.regex {
 	color: #008800;
 }
 
-code span.block {
+kbd.block {
 	color: #225577;
 	font-size: larger;
 	font-weight: bold;
 }
 
-code span.cmd {
+kbd.cmd {
 	color: #5C7684;
 	font-weight: bold;
 }
 
-code span.option {
+kbd.option {
 	color: #225577;
 	font-weight: bold;
 }
 
-code span.argument {
+kbd.argument {
 	color: #008800;
 }
 
@@ -87,24 +84,7 @@ div.documentation dt {
 	font-weight: bold;
 }
 
-div.documentation span.property {
-	color: #225577;
-}
-
-table.binding td:first-child {
-	color: #7f0055;
-	font-family: 'SourceCode', monospace;
-	font-weight: bold;
-}
-
-div.documentation span.type {
-	color: #0066cc;
-	font-family: 'SourceCode', monospace;
-}
-
-div.documentation span.return, table.binding td:last-child {
-	color: #0066cc;
-	font-family: 'SourceCode', monospace;
+div.binding kbd.return {
 	font-size: smaller;
 	vertical-align: baseline;
 }
@@ -113,9 +93,6 @@ table.binding tr:hover {
 	background-color: GhostWhite;
 }
 
-table.options > tbody > tr > td:first-child {
-	color: #225577;
-	font-family: 'SourceCode', monospace;
-	font-weight: bold;
+table.options kbd.option {
 	font-size: 11pt;
 }

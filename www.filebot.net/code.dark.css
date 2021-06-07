@@ -1,27 +1,26 @@
-code, div.section.tutorial code
-{
+code {
 	color: #CCC;
 	background-color: #2A3139;
 	border: thin solid #2A3139;
 }
 
-code span.option, code span.variable, code span.property, div.documentation span.property, table.binding td:first-child, table.options > tbody > tr > td:first-child {
+kbd.option, kbd.variable, kbd.property {
 	color: #5DB0B0;
 }
 
-code span.method, div.documentation span.method {
+kbd.method {
 	color: #9A74DF;
 }
 
-code span.cmd, code span.string, code span.numeral, code span.regex {
+kbd.cmd, kbd.string, kbd.numeral, kbd.regex {
 	color: #F3AB57;
 }
 
-code span.block {
+kbd.block {
 	color: #3A8DAF;
 }
 
-code span.argument, code span.type, div.documentation span.return, div.documentation span.type, table.binding td:last-child {
+kbd.argument, kbd.type, kbd.return {
 	color: #6598CA;
 }
 
