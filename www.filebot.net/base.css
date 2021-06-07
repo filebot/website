@@ -12,7 +12,7 @@ h1 {
 	letter-spacing: 0.03em;
 }
 
-a, acronym {
+a, abbr {
 	color: #5c7684;
 	text-decoration: none;
 	border: none;
