@@ -3,6 +3,10 @@
 	src: url('fonts/icon.ttf');
 }
 
+div.screenshot.column {
+	margin-left: 36px;
+}
+
 #purchase li.note {
 	font-size: 80%;
 	font-style: italic;
