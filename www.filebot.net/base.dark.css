@@ -38,7 +38,7 @@ div.page {
 	border: thin solid #4F565E;
 }
 
-div.page, div.screenshot, div.video iframe, div.screenshot.column img {
+div.page, div.video iframe, img.screenshot {
 	box-shadow: 0px 2px 5px #2a3139;
 }
 

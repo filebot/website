@@ -159,9 +159,11 @@ a.box:focus {
 /* -------------------- MEDIA -------------------- */
 
 
-div.screenshot, img.screenshot.dialog {
+div.screenshot {
 	float: right;
-	background-color: #E6E6E6;
+}
+
+img.screenshot, img.dialog {
 	box-shadow: 0px 2px 5px #a2a2a2;
 }
 
@@ -309,10 +311,6 @@ div.section.features div.screenshot {
 	margin-bottom: 10px;
 }
 
-div.section.features div.screenshot img.screenshot.dialog {
-	position: absolute;
-}
-
 
 /* -------------------- DOCUMENTATION -------------------- */
 
@@ -330,7 +328,6 @@ div.screenshot.column {
 }
 
 div.screenshot.column img {
-	box-shadow: 0px 2px 5px #a2a2a2;
 	border-radius: 4px;
 }
 
