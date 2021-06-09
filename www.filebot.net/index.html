@@ -53,9 +53,9 @@
 
 		<div class="content">
 			<div class="screenshot screencast light">
-				<a href="getting-started/index.html" title="How to use FileBot">
+				<a href="getting-started/index.html" title="Getting Started">
 					<img class="play" alt="play" src="images/play.png" width="8" height="8" />
-					<img alt="screenshot" src="screenshots/rename.png" width="300" height="219" />
+					<img class="screenshot" alt="Getting Started" src="screenshots/rename.png" width="300" height="219" />
 				</a>
 			</div>
 
@@ -103,7 +103,7 @@
 				</p>
 				<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">*.mkv</kbd></code>
 				<p>
-					Your <strong>fully automated media center</strong> is one <a href="script.html">filebot</a> command away – extract archives, identify and organize media files, fetch additional artwork and metadata, update Plex, and more – the <a href="amc.html">amc script</a> does it all.
+					Your <strong>automated media center</strong> is one <a href="script.html">filebot</a> command away – extract archives, identify and organize media files, fetch additional artwork and metadata, update Plex, and more – the <a href="amc.html">amc script</a> does it all.
 				</p>
 				<div class="video light">
 					<iframe src="getting-started/index.html" allowfullscreen></iframe>
@@ -115,65 +115,62 @@
 				<span class="quote light">Automatic for the people</span>
 				<h2>Some Features</h2>
 				<ul class="list">
-					<li>A simple user-interface tuned for drag-n-drop</li>
-					<li>Platform-independent and straight-forward application deployment</li>
-					<li>Powerful and full-featured <a class="important" href="cli.html">cmdline interface</a> and <a class="important" href="script.html">scripting interface</a> for any kind of <a href="forums/viewtopic.php?t=5">automation</a></li>
+					<li>A simple user-interface</li>
+					<li>Native installers and packages for all operating systems</li>
+					<li>A powerful <a href="cli.html">command-line interface</a> for any kind of <a href="forums/viewtopic.php?t=5">automation</a></li>
 				</ul>
 				<ul class="list next" id="rename">
 					<li>
 						<div class="screenshot light">
 							<a href="getting-started/index.html">
-								<img class="screenshot dialog" style="top: 29px; right: 20px" width="75" height="55" src="screenshots/small/dialog.format.png" alt="Episode naming scheme" />
+								<img class="dialog" alt="Rename" style="position: absolute; top: 29px; right: 20px" width="75" height="55" src="screenshots/small/dialog.format.png" />
 							</a>
 							<a href="getting-started/index.html">
-								<img width="150" height="118" src="screenshots/small/panel.rename.png" alt="Rename files" />
+								<img class="screenshot" alt="Format Dialog" width="150" height="118" src="screenshots/small/panel.rename.png" />
 							</a>
 						</div>
-						Rename and move hundreds of media files in a matter of seconds
+						Rename and move hundreds of files in a matter of seconds
 					</li>
-					<li>Fetch episode info from <a href="https://thetvdb.com/">TheTVDB</a>, <a href="https://anidb.net/">AniDB</a> or <a href="https://www.tvmaze.com/">TVmaze</a></li>
-					<li>Accurate and robust and simply awesome file / episode matching logic</li>
-					<li>Series / Anime / Movie name auto-detection</li>
-					<li>Powerful and highly customizable <a class="important" href="naming.html">episode naming scheme</a><br/><span class="note light mediainfo">MediaInfo optional</span></li>
-					<li>Supports language preferences for series and episode titles</li>
-					<li>Supports movie identification and renaming via <a href="https://www.themoviedb.org/">TheMovieDB</a></li>
-					<li>Reverse rename files using internal history or the original torrent file</li>
+					<li>Fetch episode / movie information from <a href="https://www.themoviedb.org/">TheMovieDB</a>, <a href="https://thetvdb.com/">TheTVDB</a> or <a href="https://anidb.net/">AniDB</a></li>
+					<li>Match files with online episode / movie information auto-magically</li>
+					<li>Powerful and highly customizable <a href="naming.html">naming scheme</a><br/><span class="note light mediainfo">MediaInfo optional</span></li>
+					<li>Language preferences for episode / movie information</li>
+					<li>Revert rename operations using the internal history</li>
+				</ul>
+				<ul class="list next" id="generic">
+					<li>Rename music using <a href="https://en.wikipedia.org/wiki/ID3">ID3</a> tags or <a href="https://acoustid.org/">AcoustID</a> acoustic fingerprints</li>
+					<li>Rename photos using <a href="https://en.wikipedia.org/wiki/Exif">Exif</a> metadata</li>
+					<li>Rename generic files using <a href="forums/viewtopic.php?t=2072">custom pattern matching</a></li>
 				</ul>
 				<ul class="list next" id="subtitles">
 					<li>
 						<div class="screenshot light">
 							<a href="getting-started/index.html">
-								<img width="150" height="118" src="screenshots/small/panel.subtitle.png" alt="Download subtitles" />
+								<img class="screenshot" alt="Subtitles" width="150" height="118" src="screenshots/small/panel.subtitle.png" />
 							</a>
 						</div>
 						Download subtitles from <a href="https://www.opensubtitles.org/">OpenSubtitles</a>
 					</li>
-					<li>Advanced logic for matching files to most suitable subtitles</li>
-					<li>Find <dfn>exact</dfn> subtitles on OpenSubtitles</li>
-					<li>Upload subtitles with movie hash to OpenSubtitles</li>
-					<li>Integrated subtitle viewer for <abbr title="SubRip">srt</abbr>, <abbr title="Advanced SubStation Alpha">ass</abbr> and <abbr title="MicroDVD and SubViewer">sub</abbr> files</li>
-					<li>Transcode any subtitle as UTF-8 encoded <abbr title="SubRip">srt</abbr></li>
+					<li>Find perfectly matching <a href="forums/viewtopic.php?t=2615">subtitles by movie hash</a></li>
+					<li>Upload subtitles with movie hash</li>
+					<li>Integrated subtitle viewer for <a title="SubRip" href="https://en.wikipedia.org/wiki/SubRip">srt</a>, <a title="Advanced SubStation Alpha" href="https://en.wikipedia.org/wiki/SubStation_Alpha">ass</a>, <a title="MicroDVD and SubViewer" href="https://en.wikipedia.org/wiki/MicroDVD">sub</a> and <a title="Synchronized Accessible Media Interchange" href="https://en.wikipedia.org/wiki/SAMI">sami</a> files</li>
+					<li>Transcode subtitle format and character encoding</li>
 				</ul>
 				<ul class="list next" id="sfv">
 					<li>
 						<div class="screenshot light">
 							<a href="getting-started/index.html">
-								<img width="150" height="118" src="screenshots/small/panel.sfv.png" alt="Verify SFV files" />
+								<img class="screenshot" alt="SFV" width="150" height="118" src="screenshots/small/panel.sfv.png" />
 							</a>
 						</div>
-						Easily create and verify <abbr title="simple file verification">sfv</abbr>, <abbr title="md5sum">md5</abbr>, <abbr title="sha1sum">sha1</abbr> and <abbr title="sha256sum">sha256</abbr> files
+						Compute and verify <a href="https://en.wikipedia.org/wiki/Simple_file_verification">sfv</a>, <a href="https://en.wikipedia.org/wiki/Md5sum">md5</a>, <a href="https://en.wikipedia.org/wiki/Sha1sum">sha1</a> and <a href="https://en.wikipedia.org/wiki/Sha1sum">sha256</a> files
 					</li>
-					<li>Aware of checksums that are embedded in the filename<br/><span class="note light anime">common in anime releases</span></li>
-					<li>Directly compare two or more directory trees</li>
-					<li>Auto-lookup of any existing file verification</li>
+					<li>Match and verify 8-digit checksums embedded in the file name<br/><span class="note light anime">common in anime releases</span></li>
+					<li>Find and verify checksums for individual files</li>
+					<li>Compare two or more directory trees</li>
 				</ul>
 				<ul class="list next" id="tools">
-					<li>
-						Identify and rename music using <a href="https://acoustid.org/">AcoustID</a> audio-fingerprints and <a href="https://musicbrainz.org/">MusicBrainz</a> info.
-					</li>
-					<li>
-						Extract files from <abbr title=".zip files">zip</abbr>, multi-volume <abbr title=".rar files">rar</abbr> and <abbr title=".7z files">7zip</abbr> archives as well as <abbr title=".ISO files">ISO images</abbr>.
-					</li>
+					<li>Batch extract files from archives and <a href="https://en.wikipedia.org/wiki/Optical_disc_image">ISO images</a></li>
 				</ul>
 			</div>
 
