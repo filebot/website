@@ -9,9 +9,6 @@ Redirect 301 /license/  https://pay.paddle.com/checkout/534413?quantity_variable
 # Enable Fancy Directory Index
 Options +Indexes
 
-# Use UTF-8 as default charset for HTML files
-AddDefaultCharset UTF-8
-
 IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
 IndexOrderDefault Ascending Date
 
@@ -32,3 +29,16 @@ AddIcon /index/download.mac.png      .pkg .app.tar.xz
 AddIcon /index/download.linux.png    .deb .rpm
 AddIcon /index/page.zip.png          .gz .xz .spk .qpkg
 AddIcon /index/page.key.png          .asc .gpg
+
+
+# Use UTF-8 as default charset for HTML files
+AddDefaultCharset UTF-8
+
+
+# Cache Static Resources
+ExpiresActive on
+ExpiresDefault                          "access plus 1 day"
+ExpiresByType text/css                  "access plus 1 month"
+ExpiresByType image/svg+xml             "access plus 1 month"
+ExpiresByType image/png                 "access plus 1 month"
+ExpiresByType image/x-icon              "access plus 1 month"
