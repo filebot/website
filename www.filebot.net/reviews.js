@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(window).on('load', function() {
 	const duration = 1000
 	const fragment = window.location.hash
-	
+
 	const template = $('body').html()
 	$('body').empty()
 
