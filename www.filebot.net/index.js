@@ -3,12 +3,12 @@ Paddle.Setup({
 })
 
 
-$(document).ready(function() {
-	// display random review
+$(window).on('load', function() {
 	$.ajax({
 		url: 'reviews.json',
 		dataType: 'json',
 		success: function(data) {
+			// display random review
 			const id = Math.floor(Math.random() * data.length)
 			const r = data[id]
 
