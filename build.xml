@@ -102,7 +102,7 @@
 		<!-- DSM 6.2.4 -->
 		<syno:package-source file="${repo.syno}/dsm6.json">
 			<spk file="${repo.release}/${release}-dsm6.spk">
-				<info name="link" value="${link.release.prefix}.spk" />
+				<info name="link" value="${link.release.prefix}-dsm6.spk" />
 				<thumbnail url="https://www.filebot.net/syno/filebot-thumbnail.png" />
 				<snapshot url="https://www.filebot.net/syno/filebot-snapshot.png" />
 			</spk>
