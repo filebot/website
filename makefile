@@ -11,6 +11,7 @@ update-website:
 	make website push-website
 
 pull-release:
+	find get.filebot.net -type f -name '*.sha256' -delete
 	$(RSYNC) $(FRS_USER)@$(FRS_HOST):~/get.filebot.net .
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
