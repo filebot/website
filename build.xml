@@ -88,6 +88,7 @@
 
 
 	<target name="syno" description="Update Synology Package Source">
+		<!-- DSM 7 -->
 		<syno:package-source file="${repo.syno}/index.json">
 			<spk file="${repo.release}/${release}.spk">
 				<info name="link" value="${link.release.prefix}.spk" />
@@ -96,6 +97,17 @@
 			</spk>
 			<source url="https://raw.githubusercontent.com/filebot/filebot-node/master/syno-dsm7.json" />
 			<source url="https://raw.githubusercontent.com/rednoah/java-installer/latest/syno-dsm7.json" />
+		</syno:package-source>
+
+		<!-- DSM 6.2.4 -->
+		<syno:package-source file="${repo.syno}/dsm6.json">
+			<spk file="${repo.release}/${release}-dsm6.spk">
+				<info name="link" value="${link.release.prefix}.spk" />
+				<thumbnail url="https://www.filebot.net/syno/filebot-thumbnail.png" />
+				<snapshot url="https://www.filebot.net/syno/filebot-snapshot.png" />
+			</spk>
+			<source url="https://raw.githubusercontent.com/filebot/filebot-node/master/syno.json" />
+			<source url="https://raw.githubusercontent.com/rednoah/java-installer/latest/syno.json" />
 		</syno:package-source>
 	</target>
 
