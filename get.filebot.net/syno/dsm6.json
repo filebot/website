@@ -1,0 +1,75 @@
+{
+    "packages": [
+        {
+            "package": "filebot",
+            "version": "4.9.4",
+            "dname": "FileBot",
+            "desc": "FileBot is the ultimate tool for organizing and renaming your Movies, TV Shows and Anime as well as fetching subtitles and artwork. It's smart and just works.",
+            "maintainer": "FileBot",
+            "maintainer_url": "https://www.filebot.net/",
+            "distributor": "FileBot",
+            "distributor_url": "https://www.filebot.net/",
+            "start": false,
+            "qstart": false,
+            "qinst": true,
+            "qupgrade": true,
+            "thumbnail": [
+                "https://www.filebot.net/syno/filebot-thumbnail.png"
+            ],
+            "snapshot": [
+                "https://www.filebot.net/syno/filebot-snapshot.png"
+            ],
+            "link": "https://get.filebot.net/filebot/FileBot_4.9.4/FileBot_4.9.4-dsm6.spk",
+            "md5": "5081eb39eae643bd45ee867e822bbec8",
+            "sha256": "766fb77b0afe4811ae2dea16b4d1951487dee53587d85df0428af326dd326b6a",
+            "size": 33679360
+        },
+        {
+            "package": "filebot-node",
+            "version": "0.4.2.1",
+            "dname": "FileBot Node",
+            "desc": "FileBot Node allows you to execute and schedule filebot calls via Synology DSM. FileBot Node requires Node.js and FileBot.",
+            "maintainer": "FileBot",
+            "maintainer_url": "http://www.filebot.net/",
+            "distributor": "FileBot",
+            "distributor_url": "http://www.filebot.net/",
+            "start": true,
+            "qstart": true,
+            "qinst": true,
+            "qupgrade": true,
+            "thumbnail": [
+                "https://www.filebot.net/syno/filebot-node-thumbnail.png"
+            ],
+            "snapshot": [
+                "https://www.filebot.net/syno/filebot-node-snapshot.png"
+            ],
+            "link": "https://github.com/filebot/filebot-node/releases/download/0.4.2.1/filebot-node_0.4.2.1.spk",
+            "download_count": "43000",
+            "md5": "558c45f795fcee875066b96b56783d4a",
+            "sha256": "c21ff7ac9f40e70067937cbbe9879f8117525d7772cbf2659a5e347c77765041",
+            "size": 665600
+        },
+        {
+            "package": "java-installer",
+            "version": "2.16",
+            "dname": "Java Installer",
+            "desc": "Java Installer will help you install and update Java. Supported platforms include armv7l, aarch64, i586 and x86_64 models. During the install, this package will download the latest OpenJDK binaries (180 MB) for your platform. This may take a while.",
+            "maintainer": "rednoah",
+            "maintainer_url": "https://github.com/rednoah/java-installer",
+            "distributor": "rednoah",
+            "distributor_url": "https://github.com/rednoah/java-installer",
+            "start": false,
+            "qstart": false,
+            "qinst": false,
+            "qupgrade": true,
+            "thumbnail": [
+                "https://www.filebot.net/syno/java-installer-thumbnail.png"
+            ],
+            "link": "https://github.com/rednoah/java-installer/releases/download/2.16/java-installer_2.16.spk",
+            "download_count": "41734",
+            "md5": "c7daa00301fe9dea2be8d3fb60e86973",
+            "sha256": "7408425cc67ea728428402da08ce3c7f25dd6be81d1f102cf7eb21624e797056",
+            "size": 40960
+        }
+    ]
+}
