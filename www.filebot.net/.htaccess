@@ -21,6 +21,7 @@ redirect 301 /help/xattr.html         https://www.filebot.net/forums/viewtopic.p
 redirect 301 /help/presets.html       https://www.filebot.net/forums/viewtopic.php?t=3228
 redirect 301 /help/apply.html         https://www.filebot.net/forums/viewtopic.php?t=11079
 redirect 301 /manpage.html            https://www.filebot.net/cli.html#arguments
+redirect 301 /notes.html              https://github.com/filebot/docs/blob/master/CHANGES.md
 redirect 301 /channel.html            https://discord.com/invite/cKVvZ2S
 redirect 301 /contact/paddle.html     https://paddle.net/
 
