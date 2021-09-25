@@ -6,6 +6,7 @@ Paddle.Setup({
 $(window).on('load', function() {
 	var deployment = null
 	var email = null
+	var type = null
 
 	if (location.hash) {
 		deployment = location.hash.substring(1)
@@ -16,11 +17,12 @@ $(window).on('load', function() {
 		var query = new URLSearchParams(location.search)
 		deployment = query.get('deployment')
 		email = query.get('email')
+		type = query.get('type')
 	}
 
 	if (deployment) {
 		Paddle.Checkout.open({
-			product: 532439,
+			product: type == 'PX' ? 534413 : 532439,
 			allowQuantity: false,
 			referring_domain: deployment,
 			email: email
