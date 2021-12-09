@@ -1,10 +1,6 @@
 Paddle.Setup({
-	vendor: 32405,
-	eventCallback: function(data) {
-		console.log(data.event)
-		console.log(data.eventData)
-	}
-});
+	vendor: 32405
+})
 
 
 $(document).ready(function() {
@@ -30,6 +26,6 @@ $(document).ready(function() {
 			allowQuantity: false,
 			referring_domain: deployment,
 			email: email
-		});
+		})
 	}
-});
+})

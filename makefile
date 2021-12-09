@@ -2,13 +2,13 @@ include *.variables
 
 
 ANT := ant -lib lib
-RSYNC := rsync --verbose --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude BETA --exclude HEAD --exclude .gitignore --exclude .DS_Store
+RSYNC := rsync --verbose --recursive --checksum --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude BETA --exclude HEAD --exclude .gitignore --exclude .DS_Store
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 MIRROR_FILES := --delete
 
 
 update-website:
-	make website push-website
+	make website push-website purge-cache
 
 pull-release:
 	find get.filebot.net -type f -name '*.sha256' -delete
