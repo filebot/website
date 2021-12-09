@@ -1,9 +1,13 @@
 Paddle.Setup({
-	vendor: 32405
+	vendor: 32405,
+	eventCallback: function(data) {
+		console.log(data.event)
+		console.log(data.eventData)
+	}
 });
 
 
-$(window).on('load', function() {
+$(document).ready(function() {
 	var deployment = null
 	var email = null
 	var type = null
