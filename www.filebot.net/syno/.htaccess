@@ -1,2 +1,4 @@
+DirectoryIndex index.json
+
 # Redirect Package Source
-redirect 301 /syno/ https://get.filebot.net/syno/
+redirect 301 /syno/index.json https://get.filebot.net/syno/
