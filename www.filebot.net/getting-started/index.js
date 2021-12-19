@@ -79,8 +79,12 @@ function getData() {
 function runGalleria() {
 	var data = getData()
 
+	var anchor = location.hash.match(/^#([1-9])$/)
+	var page = anchor ? parseInt(anchor[1]) - 1 : 0
+
 	Galleria.run('.galleria', {
 		dataSource: data,
+		show: page,
 		popupLinks: true,
 		maxScaleRatio: 1,
 		youtube: {
@@ -135,3 +139,14 @@ function toggleFullScreen(element) {
 	else
 		requestFullScreen(element || document.documentElement)
 }
+
+
+
+$(document).ready(function() {
+	// init galleria
+	runGalleria()
+	// init fullscreen button
+	$('.fullscreen').click(function() {
+		toggleFullScreen()
+	})
+})
