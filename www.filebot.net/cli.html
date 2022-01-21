@@ -71,6 +71,14 @@
 					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">A.mkv</kbd> <kbd class="option">--q</kbd> <kbd class="argument">19995</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB</kbd></code>
 					Rename a given movie file using the numeric ID to lookup the movie information.
 				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">/output</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{plex.id}"</kbd></code>
+					Clone movie  files into a new <a href="forums/viewtopic.php?t=4116">{plex} file and folder structure</a>.
+				</p>
+				<p>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">/output</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{plex.id}"</kbd></code>
+					Clone TV series episode files into a new <a href="forums/viewtopic.php?t=4116">{plex} file and folder structure</a>.
+				</p>
 				<p class="suggestion">
 					The GUI uses <a href="forums/viewtopic.php?t=4695">opportunistic matching</a> by default. However, the <kbd class="cmd">filebot</kbd> command is <a href="forums/viewtopic.php?t=4695">strict by default</a> to avoid mismatches. You may need to set <kbd class="option">-non-strict</kbd> depending on the files at hand.
 				</p>
