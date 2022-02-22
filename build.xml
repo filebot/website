@@ -6,7 +6,6 @@
 	<property name="www.src" location="www.filebot.net" />
 
 	<!-- import property files -->
-	<property file="${basedir}/profile.properties" />
 	<property file="${basedir}/app.properties" />
 
 	<!-- define release files -->
@@ -18,6 +17,12 @@
 	<property name="repo.rpm" location="get.filebot.net/rpm" />
 	<property name="repo.syno" location="get.filebot.net/syno" />
 	<property name="repo.qnap" location="get.filebot.net/qnap" />
+
+	<property name="dist.deb.main" location="dist/deb/main" />
+	<property name="dist.deb.universal" location="dist/deb/universal" />
+	<property name="dist.deb.universal-jdk8" location="dist/deb/universal-jdk8" />
+	<property name="dist.rpm.main" location="dist/rpm/main" />
+	<property name="gpg.home" location="sign/gpg" />
 
 
 	<!-- timestamp variables -->
@@ -48,27 +53,30 @@
 		<delete dir="${repo.deb}/dists" verbose="yes" />
 
 		<!-- main -->
-		<copy todir="dist/deb/main" flatten="yes" preservelastmodified="yes" verbose="yes">
+		<copy todir="${dist.deb.main}" flatten="yes" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${repo.release}" includes="*_amd64.deb" />
 		</copy>
-		<exec executable="prm" dir="dist/deb/main" failonerror="yes">
-			<arg line="--directory . --type deb --release stable --component main --arch amd64 --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${dist.deb.main}:/dist -v ${repo.deb}:/repo -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="--directory /dist --type deb --release stable --component main --arch amd64 --path /repo --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
 		</exec>
 
 		<!-- universal -->
-		<copy todir="dist/deb/universal" flatten="yes" preservelastmodified="yes" verbose="yes">
+		<copy todir="${dist.deb.universal}" flatten="yes" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${repo.release}" includes="*_universal.deb" />
 		</copy>
-		<exec executable="prm" dir="dist/deb/universal" failonerror="yes">
-			<arg line="--directory . --type deb --release universal --component main --arch all --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${dist.deb.universal}:/dist -v ${repo.deb}:/repo -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="--directory /dist --type deb --release universal --component main --arch all --path /repo --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
 		</exec>
 
 		<!-- universal-jdk8 -->
-		<copy todir="dist/deb/universal-jdk8" flatten="yes" preservelastmodified="yes" verbose="yes">
+		<copy todir="${dist.deb.universal-jdk8}" flatten="yes" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${repo.release}" includes="*_universal-jdk8.deb" />
 		</copy>
-		<exec executable="prm" dir="dist/deb/universal-jdk8" failonerror="yes">
-			<arg line="--directory . --type deb --release universal-jdk8 --component main --arch all --path ${repo.deb} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${dist.deb.universal-jdk8}:/dist -v ${repo.deb}:/repo -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="--directory /dist --type deb --release universal-jdk8 --component main --arch all --path /repo --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
 		</exec>
 	</target>
 
@@ -78,11 +86,12 @@
 		<delete dir="${repo.rpm}/main" verbose="yes" />
 
 		<!-- main -->
-		<copy todir="dist/rpm/main" flatten="yes" preservelastmodified="yes" verbose="yes">
+		<copy todir="${dist.rpm.main}" flatten="yes" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${repo.release}" includes="*_amd64.rpm" />
 		</copy>
-		<exec executable="prm" dir="dist/rpm/main" failonerror="yes">
-			<arg line="--directory . --type rpm --release main --arch x86_64 --path ${repo.rpm} --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${dist.rpm.main}:/dist -v ${repo.rpm}:/repo -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="--directory /dist --type rpm --release main --arch x86_64 --path /repo --gpg ${package.maintainer} --gpg_sign_algorithm SHA256" />
 		</exec>
 	</target>
 
