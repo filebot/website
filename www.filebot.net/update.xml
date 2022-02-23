@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 4.9.4</name>
-	<revision>8735</revision>
+	<name>FileBot 4.9.5</name>
+	<revision>9112</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 4.9.4</b><br>
+		<b>FileBot 4.9.5</b><br>
 		This release features:<br>
-		+ Enhanced find-as-you-type<br>
-		+ Enhanced match inspector<br>
+		+ Added Open / Reveal / Rename / Move to Trash context menu<br>
+		+ Autofill behaviour for Edit Match<br>
+		+ Improved Conflict resolution messages<br>
+		+ Improved support for {plex.id} style file paths<br>
 		+ Enhanced format bindings<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
-	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=55162#p55162]]></discussion>
+	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=57077#p57077]]></discussion>
 	<download><![CDATA[https://www.filebot.net/download.html]]></download>
 </update>
