@@ -22,7 +22,7 @@
 	<property name="dist.deb.universal" location="dist/deb/universal" />
 	<property name="dist.deb.universal-jdk8" location="dist/deb/universal-jdk8" />
 	<property name="dist.rpm.main" location="dist/rpm/main" />
-	<property name="gpg.home" location="sign/gpg" />
+	<property name="gpg.home" location="gpg" />
 
 
 	<!-- timestamp variables -->
