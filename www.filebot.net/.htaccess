@@ -17,6 +17,7 @@ redirect 301 /qnap/support.html       https://www.filebot.net/forums/viewforum.p
 redirect 301 /error/429.html          https://www.filebot.net/forums/viewtopic.php?t=9594
 redirect 301 /help/args.html          https://www.filebot.net/forums/viewtopic.php?t=1899
 redirect 301 /help/xattr.html         https://www.filebot.net/forums/viewtopic.php?t=324
+redirect 301 /help/plex.html          https://www.filebot.net/forums/viewtopic.php?t=4116
 redirect 301 /help/presets.html       https://www.filebot.net/forums/viewtopic.php?t=3228
 redirect 301 /help/apply.html         https://www.filebot.net/forums/viewtopic.php?t=11079
 redirect 301 /help/keyboard.html      https://www.filebot.net/forums/viewtopic.php?t=12703
