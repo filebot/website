@@ -26,6 +26,21 @@ function getData() {
 		image: 'images/sfv.png',
 		thumb: 'images/sfv.thumb.png'
 	}, {
+		iframe: 'https://www.youtube.com/embed/TnO8Pfn9Vlc',
+		thumb: 'images/youtube/TnO8Pfn9Vlc.thumb.jpg'
+	}, {
+		iframe: 'https://www.youtube.com/embed/cihWAvDW7MM',
+		thumb: 'images/youtube/cihWAvDW7MM.thumb.jpg'
+	}, {
+		iframe: 'https://www.youtube.com/embed/54h_Fb06drI',
+		thumb: 'images/youtube/54h_Fb06drI.thumb.jpg'
+	}, {
+		iframe: 'https://www.youtube.com/embed/YOhwvWrW4rs',
+		thumb: 'images/youtube/YOhwvWrW4rs.thumb.jpg'
+	}, {
+		iframe: 'https://www.youtube.com/embed/Yo02FD1mIUI',
+		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg'
+	}, {
 		image: 'images/rename.screenshot.png',
 		thumb: 'images/rename.screenshot.thumb.png'
 	}, {
