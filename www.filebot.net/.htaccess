@@ -1,6 +1,6 @@
 # Redirect to Microsoft Store or Mac App Store
-redirect 301 /windows/purchase.html   https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=purchase
-redirect 301 /mac/purchase.html       https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
+redirect 301 /windows/purchase.html     https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=purchase
+redirect 301 /mac/purchase.html         https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
 
 # Redirect to Support Pages
 redirect 301 /manual.html               https://www.filebot.net/forums/viewtopic.php?t=7
