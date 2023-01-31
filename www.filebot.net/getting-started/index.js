@@ -61,12 +61,6 @@ function getData() {
 		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
 		filter: location.hash != '#mas'
 	}, {
-		// Tutorial: How do I revert rename operations from the command-line?
-		video: 'https://www.youtube.com/watch?v=Yo02FD1mIUI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/Yo02FD1mIUI.jpg',
-		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
-		filter: location.hash != '#mas'
-	}, {
 		// Getting Started: Automatic Subtitle Lookup
 		video: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/subtitle-hash-lookup.png',
