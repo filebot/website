@@ -1,92 +1,129 @@
 
 function getData() {
 	var data = [{
-		link: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&index=1&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		video: 'https://app.filebot.net/getting-started/videos/rename.mp4',
+		// Getting Started: Rename TV Series
+		video: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/rename.png',
-		thumb: 'images/rename.thumb.png'
+		thumb: 'images/rename.thumb.png',
+		filter: location.hash != '#snap' && location.hash != '#deb'
 	}, {
-		link: 'https://www.youtube.com/watch?v=btNSv7AnMMw&index=2&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		video: 'https://app.filebot.net/getting-started/videos/episodes.mp4',
+		// Getting Started: Rename TV Series (Ubuntu)
+		video: 'https://www.youtube.com/watch?v=sEFP3CsntNs&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/rename.png',
+		thumb: 'images/rename.thumb.png',
+		filter: location.hash == '#snap' || location.hash == '#deb'
+	}, {
+		// Screenshot: Mac App Store Permissions
+		image: 'images/permissions.png',
+		thumb: 'images/permissions.thumb.png',
+		filter: location.hash == '#mas'
+	}, {
+		// Tutorial: How do I organize files for Plex?
+		video: 'https://www.youtube.com/watch?v=cihWAvDW7MM&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/cihWAvDW7MM.jpg',
+		thumb: 'images/youtube/cihWAvDW7MM.thumb.jpg',
+		filter: true
+	}, {
+		// Getting Started: Rename TV Series via Manual Matching
+		video: 'https://www.youtube.com/watch?v=btNSv7AnMMw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/episodes.png',
-		thumb: 'images/episodes.thumb.png'
+		thumb: 'images/episodes.thumb.png',
+		filter: true
 	}, {
-		link: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&index=3&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		video: 'https://app.filebot.net/getting-started/videos/subtitle-lookup.mp4',
-		image: 'images/subtitle-hash-lookup.png',
-		thumb: 'images/subtitle-hash-lookup.thumb.png'
+		// Tutorial: How do I manually match files with episodes in linear order?
+		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/dh2WXQSzgJA.jpg',
+		thumb: 'images/youtube/dh2WXQSzgJA.thumb.jpg',
+		filter: true
 	}, {
-		link: 'https://www.youtube.com/watch?v=R80tKtHf4zw&index=4&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		video: 'https://app.filebot.net/getting-started/videos/subtitle-search.mp4',
-		image: 'images/subtitle-search.png',
-		thumb: 'images/subtitle-search.thumb.png'
+		// Tutorial: How do I install my FileBot License File?
+		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/dh2WXQSzgJA.jpg',
+		thumb: 'images/youtube/TnO8Pfn9Vlc.thumb.jpg',
+		filter: location.hash != '#appx' && location.hash != '#mas'
 	}, {
-		link: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&index=5&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		video: 'https://app.filebot.net/getting-started/videos/sfv.mp4',
-		image: 'images/sfv.png',
-		thumb: 'images/sfv.thumb.png'
+		// Tutorial: How do I restore match information from locally stored xattr metadata?
+		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/dh2WXQSzgJA.jpg',
+		thumb: 'images/youtube/54h_Fb06drI.thumb.jpg',
+		filter: true
 	}, {
-		iframe: 'https://www.youtube.com/embed/TnO8Pfn9Vlc',
-		thumb: 'images/youtube/TnO8Pfn9Vlc.thumb.jpg'
-	}, {
-		iframe: 'https://www.youtube.com/embed/cihWAvDW7MM',
-		thumb: 'images/youtube/cihWAvDW7MM.thumb.jpg'
-	}, {
-		iframe: 'https://www.youtube.com/embed/54h_Fb06drI',
-		thumb: 'images/youtube/54h_Fb06drI.thumb.jpg'
-	}, {
+		// Tutorial: How do I undo rename operations?
 		iframe: 'https://www.youtube.com/embed/YOhwvWrW4rs',
-		thumb: 'images/youtube/YOhwvWrW4rs.thumb.jpg'
+		video: 'https://www.youtube.com/watch?v=YOhwvWrW4rs&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/YOhwvWrW4rs.jpg',
+		thumb: 'images/youtube/YOhwvWrW4rs.thumb.jpg',
+		filter: true
 	}, {
-		iframe: 'https://www.youtube.com/embed/Yo02FD1mIUI',
-		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg'
+		// Tutorial: How do I revert rename operations from the command-line?
+		video: 'https://www.youtube.com/watch?v=Yo02FD1mIUI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/Yo02FD1mIUI.jpg',
+		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
+		filter: location.hash != '#mas'
 	}, {
+		// Tutorial: How do I revert rename operations from the command-line?
+		video: 'https://www.youtube.com/watch?v=Yo02FD1mIUI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/Yo02FD1mIUI.jpg',
+		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
+		filter: location.hash != '#mas'
+	}, {
+		// Getting Started: Automatic Subtitle Lookup
+		video: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/subtitle-hash-lookup.png',
+		thumb: 'images/subtitle-hash-lookup.thumb.png',
+		filter: location.hash != '#mas'
+	}, {
+		// Getting Started: Subtitle Search
+		video: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/subtitle-search.png',
+		thumb: 'images/subtitle-search.thumb.png',
+		filter: location.hash != '#mas'
+	}, {
+		// Getting Started: Check and create SFV files
+		video: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/sfv.png',
+		thumb: 'images/sfv.thumb.png',
+		filter: true
+	}, {
+		// Screenshot: Rename TV Series
 		image: 'images/rename.screenshot.png',
-		thumb: 'images/rename.screenshot.thumb.png'
+		thumb: 'images/rename.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: Series Format
 		image: 'images/format.screenshot.png',
-		thumb: 'images/format.screenshot.thumb.png'
+		thumb: 'images/format.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: Automatic Subtitle Lookup
 		image: 'images/subtitle-hash-lookup.screenshot.png',
-		thumb: 'images/subtitle-hash-lookup.screenshot.thumb.png'
+		thumb: 'images/subtitle-hash-lookup.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: Subtitle Search
 		image: 'images/subtitle-search.screenshot.png',
-		thumb: 'images/subtitle-search.screenshot.thumb.png'
+		thumb: 'images/subtitle-search.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: Check and create SFV files
 		image: 'images/sfv.screenshot.png',
-		thumb: 'images/sfv.screenshot.thumb.png'
+		thumb: 'images/sfv.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: CLI
 		image: 'images/cli.screenshot.png',
-		thumb: 'images/cli.screenshot.thumb.png'
+		thumb: 'images/cli.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}, {
+		// Screenshot: FileBot Node
 		image: 'images/node.screenshot.png',
-		thumb: 'images/node.screenshot.thumb.png'
+		thumb: 'images/node.screenshot.thumb.png',
+		filter: location.hash.length == 0
 	}]
 
-	var embed = location.hash.length > 0
-	var youtube = !(/zh(.CN)?/i).test(navigator.locale ? navigator.locale : navigator.language) // YouTube is blocked in China (mainland)
-
-	if (embed) {
-		data = data.slice(0, 5) // use only tutorial images
-
-		if (location.hash == '#mas') {
-			data.splice(1, 0, {
-					image: 'images/permissions.png',
-					thumb: 'images/permissions.thumb.png'
-			}) // add sandbox permissions
-			data.splice(3, 1) // remove subtitle support
-			data.splice(3, 1) // remove subtitle support
-		} else if (location.hash == '#snap' || location.hash == '#deb') {
-			data[0].link = 'https://www.youtube.com/watch?v=sEFP3CsntNs&index=6&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd' // ubuntu video
-		}
-	}
-
-	// prefer video file link over youtube link
-	if (!youtube) {
-		data.forEach(function(it) {
-			it.link = it.video
-		})
-	}
+	data = data.filter(function(item) {
+		return item.filter
+	})
 
 	return data
 }
@@ -97,13 +134,23 @@ function runGalleria() {
 	var anchor = location.hash.match(/^#([1-9])$/)
 	var page = anchor ? parseInt(anchor[1]) - 1 : 0
 
-	Galleria.run('.galleria', {
+	// open videos in a new tab when galleria is running within an iframe
+	if (window.location !== window.parent.location) {
+		data.forEach(function(item) {
+			item.link = item.video
+			// must not be undefined for "open in new tab" to work
+			item.video = '#'
+		})
+	}
+
+	Galleria.run('#galleria', {
 		dataSource: data,
 		show: page,
 		popupLinks: true,
 		maxScaleRatio: 1,
 		youtube: {
-			VQ: 'HD1080'
+			VQ: 'HD1080',
+			autoplay: 1
 		},
 		thumbnails: 'lazy'
 	})
@@ -161,7 +208,7 @@ $(document).ready(function() {
 	// init galleria
 	runGalleria()
 	// init fullscreen button
-	$('.fullscreen').click(function() {
+	$('#fullscreen').click(function() {
 		toggleFullScreen()
 	})
 })
