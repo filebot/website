@@ -37,19 +37,18 @@ function getData() {
 		filter: true
 	}, {
 		// Tutorial: How do I install my FileBot License File?
-		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/dh2WXQSzgJA.jpg',
+		video: 'https://www.youtube.com/watch?v=TnO8Pfn9Vlc&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/TnO8Pfn9Vlc.jpg',
 		thumb: 'images/youtube/TnO8Pfn9Vlc.thumb.jpg',
 		filter: location.hash != '#appx' && location.hash != '#mas'
 	}, {
 		// Tutorial: How do I restore match information from locally stored xattr metadata?
-		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/dh2WXQSzgJA.jpg',
+		video: 'https://www.youtube.com/watch?v=54h_Fb06drI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/54h_Fb06drI.jpg',
 		thumb: 'images/youtube/54h_Fb06drI.thumb.jpg',
 		filter: true
 	}, {
 		// Tutorial: How do I undo rename operations?
-		iframe: 'https://www.youtube.com/embed/YOhwvWrW4rs',
 		video: 'https://www.youtube.com/watch?v=YOhwvWrW4rs&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
 		image: 'images/youtube/YOhwvWrW4rs.jpg',
 		thumb: 'images/youtube/YOhwvWrW4rs.thumb.jpg',
