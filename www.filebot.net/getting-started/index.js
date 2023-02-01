@@ -5,13 +5,7 @@ function getData() {
 		video: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/rename.png',
 		thumb: 'images/rename.thumb.png',
-		filter: location.hash != '#snap' && location.hash != '#deb'
-	}, {
-		// Getting Started: Rename TV Series (Ubuntu)
-		video: 'https://www.youtube.com/watch?v=sEFP3CsntNs&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/rename.png',
-		thumb: 'images/rename.thumb.png',
-		filter: location.hash == '#snap' || location.hash == '#deb'
+		filter: true
 	}, {
 		// Screenshot: Mac App Store Permissions
 		image: 'images/permissions.png',
@@ -34,6 +28,24 @@ function getData() {
 		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
 		image: 'images/youtube/dh2WXQSzgJA.jpg',
 		thumb: 'images/youtube/dh2WXQSzgJA.thumb.jpg',
+		filter: true
+	}, {
+		// Getting Started: Automatic Subtitle Lookup
+		video: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/subtitle-hash-lookup.png',
+		thumb: 'images/subtitle-hash-lookup.thumb.png',
+		filter: location.hash != '#mas'
+	}, {
+		// Getting Started: Subtitle Search
+		video: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/subtitle-search.png',
+		thumb: 'images/subtitle-search.thumb.png',
+		filter: location.hash != '#mas'
+	}, {
+		// Getting Started: Check and create SFV files
+		video: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/sfv.png',
+		thumb: 'images/sfv.thumb.png',
 		filter: true
 	}, {
 		// Tutorial: How do I install my FileBot License File?
@@ -60,55 +72,44 @@ function getData() {
 		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
 		filter: location.hash != '#mas'
 	}, {
-		// Getting Started: Automatic Subtitle Lookup
-		video: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-hash-lookup.png',
-		thumb: 'images/subtitle-hash-lookup.thumb.png',
-		filter: location.hash != '#mas'
-	}, {
-		// Getting Started: Subtitle Search
-		video: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-search.png',
-		thumb: 'images/subtitle-search.thumb.png',
-		filter: location.hash != '#mas'
-	}, {
-		// Getting Started: Check and create SFV files
-		video: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/sfv.png',
-		thumb: 'images/sfv.thumb.png',
-		filter: true
-	}, {
 		// Screenshot: Rename TV Series
+		link: 'https://www.filebot.net/manual.html',
 		image: 'images/rename.screenshot.png',
 		thumb: 'images/rename.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Series Format
+		link: 'https://www.filebot.net/naming.html',
 		image: 'images/format.screenshot.png',
 		thumb: 'images/format.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Automatic Subtitle Lookup
+		link: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/subtitle-hash-lookup.screenshot.png',
 		thumb: 'images/subtitle-hash-lookup.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Subtitle Search
+		link: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/subtitle-search.screenshot.png',
 		thumb: 'images/subtitle-search.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Check and create SFV files
+		link: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/sfv.screenshot.png',
 		thumb: 'images/sfv.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: CLI
+		link: 'https://www.filebot.net/cli.html',
 		image: 'images/cli.screenshot.png',
 		thumb: 'images/cli.screenshot.thumb.png',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: FileBot Node
+		link: 'https://www.filebot.net/node.html',
 		image: 'images/node.screenshot.png',
 		thumb: 'images/node.screenshot.thumb.png',
 		filter: location.hash.length == 0
@@ -130,9 +131,11 @@ function runGalleria() {
 	// open videos in a new tab when galleria is running within an iframe
 	if (window.location !== window.parent.location) {
 		data.forEach(function(item) {
-			item.link = item.video
-			// must not be undefined for "open in new tab" to work
-			item.video = '#'
+			if (item.video) {
+				item.link = item.video
+				// must not be undefined for "open in new tab" to work
+				item.video = '#'
+			}
 		})
 	}
 
