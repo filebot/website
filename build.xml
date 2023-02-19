@@ -52,6 +52,16 @@
 	<target name="deb" description="Update DEB Package Repository">
 		<delete dir="${repo.deb}/dists" verbose="yes" />
 
+		<!-- fix permissions -->
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg --entrypoint /usr/bin/find rednoah/prm-build" />
+			<arg line="/root/.gnupg -type f -exec chmod -v 600 {} +" />
+		</exec>
+		<exec executable="docker" failonerror="yes">
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg --entrypoint /usr/bin/find rednoah/prm-build" />
+			<arg line="/root/.gnupg -type d -exec chmod -v 700 {} +" />
+		</exec>
+
 		<!-- main -->
 		<copy todir="${dist.deb.main}" flatten="yes" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${repo.release}" includes="*_amd64.deb" />
