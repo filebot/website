@@ -54,12 +54,12 @@
 
 		<!-- fix permissions -->
 		<exec executable="docker" failonerror="yes">
-			<arg line="run --rm -v ${gpg.home}:/root/.gnupg --entrypoint /usr/bin/find rednoah/prm-build" />
-			<arg line="/root/.gnupg -type f -exec chmod -v 600 {} +" />
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="find /root/.gnupg -type f -exec chmod -v 600 {} +" />
 		</exec>
 		<exec executable="docker" failonerror="yes">
-			<arg line="run --rm -v ${gpg.home}:/root/.gnupg --entrypoint /usr/bin/find rednoah/prm-build" />
-			<arg line="/root/.gnupg -type d -exec chmod -v 700 {} +" />
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="find /root/.gnupg -type d -exec chmod -v 700 {} +" />
 		</exec>
 
 		<!-- main -->
