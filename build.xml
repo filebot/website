@@ -54,11 +54,11 @@
 
 		<!-- fix permissions -->
 		<exec executable="docker" failonerror="yes">
-			<arg line="run --rm -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg fedora:36" />
 			<arg line="find /root/.gnupg -type f -exec chmod -v 600 {} +" />
 		</exec>
 		<exec executable="docker" failonerror="yes">
-			<arg line="run --rm -v ${gpg.home}:/root/.gnupg rednoah/prm-build" />
+			<arg line="run --rm -v ${gpg.home}:/root/.gnupg fedora:36" />
 			<arg line="find /root/.gnupg -type d -exec chmod -v 700 {} +" />
 		</exec>
 
