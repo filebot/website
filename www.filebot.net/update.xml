@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 4.9.6</name>
-	<revision>9125</revision>
+	<name>FileBot 5.0.0</name>
+	<revision>9655</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 4.9.6</b><br>
+		<b>FileBot 5.0.0</b><br>
 		This release features:<br>
-		+ Added Open / Reveal / Rename / Move to Trash context menu<br>
-		+ Autofill behaviour for Edit Match<br>
-		+ Improved Conflict resolution messages<br>
-		+ Improved support for {plex.id} style file paths<br>
+		+ Added episode order preferences<br>
+		+ Added default presets<br>
+		+ Added episode group tools<br>
 		+ Enhanced format bindings<br>
+		+ Enhanced auto-align behaviour<br>
+		+ Added column edit behaviour<br>
+		+ Added keyboard shortcuts<br>
+		+ Enable TheTVDBv4<br>
+		+ Enable HTTP/2<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
-	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=57077#p57077]]></discussion>
+	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=59304#p59304]]></discussion>
 	<download><![CDATA[https://www.filebot.net/download.html]]></download>
 </update>
