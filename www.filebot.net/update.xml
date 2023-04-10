@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.0.1</name>
-	<revision>9665</revision>
+	<name>FileBot 5.0.2</name>
+	<revision>9722</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.0.1</b><br>
+		<b>FileBot 5.0.2</b><br>
 		This release features:<br>
 		+ Added episode order preferences<br>
 		+ Added default presets<br>
