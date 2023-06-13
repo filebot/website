@@ -22,6 +22,7 @@ redirect 301 /help/generic-files.html   https://www.filebot.net/forums/viewtopic
 redirect 301 /help/xattr.html           https://www.filebot.net/forums/viewtopic.php?t=324
 redirect 301 /help/presets.html         https://www.filebot.net/forums/viewtopic.php?t=3228
 redirect 301 /help/apply.html           https://www.filebot.net/forums/viewtopic.php?t=11079
+redirect 301 /help/apply-script.html    https://www.filebot.net/forums/viewtopic.php?t=13769
 redirect 301 /help/keyboard.html        https://www.filebot.net/forums/viewtopic.php?t=12703
 redirect 301 /help/history.html         https://www.filebot.net/forums/viewtopic.php?t=12133
 redirect 301 /report.html               https://www.filebot.net/forums/viewforum.php?f=6
