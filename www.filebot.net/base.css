@@ -280,7 +280,7 @@ span.note.mediainfo {
 }
 
 span.note.mediainfo:before {
-	content: url("images/plugin.png");
+	content: image-set("images/plugin.png" 2x);
 	position: relative;
 	top: 2px;
 	margin-right: 2px;
@@ -293,9 +293,9 @@ span.note.anime {
 }
 
 span.note.anime:before {
-	content: url("images/asterisk.png");
+	content: image-set("images/asterisk.png" 2x);
 	position: relative;
-	top: 3px;
+	top: 4px;
 	margin-left: 2px;
 	margin-right: 2px;
 }
