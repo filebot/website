@@ -142,10 +142,9 @@ function getData() {
 }
 
 function findPage(data, hash) {
-	var page = data.findIndex(function(item) {
+	return data.findIndex(function(item) {
 		return hash == item.anchor
 	})
-	return page < 0 ? 0 : page
 }
 
 function runGalleria() {
@@ -163,7 +162,7 @@ function runGalleria() {
 
 	Galleria.run('#galleria', {
 		dataSource: data,
-		show: page,
+		show: page < 0 ? 0 : page,
 		popupLinks: true,
 		maxScaleRatio: 1,
 		youtube: {
@@ -191,7 +190,7 @@ function runGalleria() {
 	$(window).on('hashchange', function() {
 		var galleria = $('#galleria').data('galleria')
 		var page = findPage(data, location.hash)
-		if (page != galleria.getIndex()) {
+		if (page != galleria.getIndex() && page >= 0 && galleria._queue.length == 0) {
 			galleria.show(page)	
 		}
 	})
