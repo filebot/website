@@ -72,13 +72,15 @@ div.navigation a {
 	letter-spacing: 0.1em;
 	text-decoration: none;
 	padding: 7px 5px;
-	background-image: url(nav-a-bg.png);
+	background-image: url(nav-a-bg.svg);
 	background-repeat: no-repeat;
 	background-position: left 90%;
+	background-size: 150px 3px;
 }
 
 div.navigation a:hover, .navigation a:focus {
-	background-image:url(nav-a-bg-h.png);
+	background-image: url(nav-a-bg-h.svg);
+	background-size: 100px 3px;
 }
 
 

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 6" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="background">
+			<stop offset="0%" style="stop-color: #FF8331; stop-opacity: 1.0" />
+			<stop offset="50%" style="stop-color: #FF8331; stop-opacity: 0.3" />
+			<stop offset="100%" style="stop-color: #FF8331; stop-opacity: 0.0" />
+		</linearGradient>
+	</defs>
+	<path shape-rendering="crispEdges" stroke="url(#background)" fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M2 1 L6 5 L10 1 L14 5 L18 1 L22 5 L26 1 L30 5 L34 1 L38 5 L42 1 L46 5 L50 1 L54 5 L58 1 L62 5 L66 1 L70 5 L74 1 L78 5 L82 1 L86 5 L90 1 L94 5 L98 1 L102 5 L106 1 L110 5 L114 1 L118 5 L122 1 L126 5 L130 1 L134 5 L138 1 L142 5 L146 1 L150 5 L154 1 L158 5 L162 1 L166 5 L170 1 L174 5 L178 1 L182 5 L186 1 L190 5 L194 1 L198 5" />
+</svg>

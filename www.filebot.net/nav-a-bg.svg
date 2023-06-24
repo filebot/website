@@ -1,0 +1,10 @@
+<svg viewBox="0 0 300 6" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="background">
+			<stop offset="0%" style="stop-color: #43A3FF; stop-opacity: 1.0" />
+			<stop offset="50%" style="stop-color: #43A3FF; stop-opacity: 0.3" />
+			<stop offset="100%" style="stop-color: #43A3FF; stop-opacity: 0.0" />
+		</linearGradient>
+	</defs>
+	<rect shape-rendering="crispEdges" stroke="none" fill="url(#background)" x="0" y="2" width="300" height="2" />
+</svg>
