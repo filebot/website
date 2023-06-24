@@ -141,27 +141,29 @@ function getData() {
 	return data
 }
 
+function findPage(data, hash) {
+	var page = data.findIndex(function(item) {
+		return hash == item.anchor
+	})
+	return page < 0 ? 0 : page
+}
+
 function runGalleria() {
 	var data = getData()
-
-	var page = data.findIndex(function(item) {
-		return location.hash == item.anchor
-	})
+	var page = findPage(data, location.hash)
 
 	// open videos in a new tab when galleria is running within an iframe
-	if (window.location !== window.parent.location) {
-		data.forEach(function(item) {
-			if (item.video) {
-				item.link = item.video
-				// must not be undefined for "open in new tab" to work
-				item.video = '#'
-			}
-		})
-	}
+	data.forEach(function(item) {
+		if (item.video) {
+			item.link = item.video
+			// must not be undefined for "open in new tab" to work
+			item.video = '#'
+		}
+	})
 
 	Galleria.run('#galleria', {
 		dataSource: data,
-		show: page < 0 ? 0 : page,
+		show: page,
 		popupLinks: true,
 		maxScaleRatio: 1,
 		youtube: {
@@ -183,6 +185,15 @@ function runGalleria() {
 			left: this.prev,
 			right: this.next
 		})
+	})
+
+	// enable back button
+	$(window).on('hashchange', function() {
+		var galleria = $('#galleria').data('galleria')
+		var page = findPage(data, location.hash)
+		if (page != galleria.getIndex()) {
+			galleria.show(page)	
+		}
 	})
 }
 
