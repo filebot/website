@@ -51,4 +51,7 @@ div.review div.thumbs {
 div.review div.thumbs img {
 	position: relative;
 	top: 8px;
+	left: 1px;
+	transform: rotate(-2deg);
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
 }
