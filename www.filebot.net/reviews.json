@@ -1,120 +1,120 @@
 [
-    {
-        "user": "Mark",
-        "date": "2012-03-25",
-        "text": "One of the most liked \u201cmust have\u201d programs I use. Much thanks to the author!"
-    },
-    {
-        "user": "Gillardino",
-        "date": "2012-05-12",
-        "text": "Indispensable tool for people with a large library of videos. Through this program, I was able to restore order in films and serials. Thank you!"
-    },
-    {
-        "user": "Akya",
-        "date": "2013-02-21",
-        "text": "Extremely efficient, especially for renaming single episodes."
-    },
-    {
-        "user": "Bobby",
-        "date": "2013-05-27",
-        "text": "Pretty awesome piece of software. Very fast and easy to use. As it states: \u201cit just works\u201d."
-    },
-    {
-        "user": "Hayward",
-        "date": "2013-08-08",
-        "text": "Wow! I had a large collection of tv shows which I was not looking forward to sorting out. Dumped the files into FileBot and within minutes, all done."
-    },
-    {
-        "user": "Raydan",
-        "date": "2013-09-08",
-        "text": "I can really recommend using filebot... I just started the script once... and it was quite mindblowing to be honest."
-    },
-    {
-        "user": "Mitch",
-        "date": "2013-11-17",
-        "text": "Absolutely brilliant application. Does everything so smoothly!"
-    },
-    {
-        "user": "Alexander",
-        "date": "2013-12-12",
-        "text": "Loving FileBot. I only wish I had discovered it sooner. Thank you for saving me so much time!"
-    },
-    {
-        "user": "Chuck",
-        "date": "2014-04-08",
-        "text": "It will rip through movies and tv series files like a knife through butter."
-    },
-    {
-        "user": "Piers",
-        "date": "2014-04-16",
-        "text": "I would go with FileBot to rename content - over 18,000 files and a 99.8% first time success rate."
-    },
-    {
-        "user": "Joe",
-        "date": "2014-07-31",
-        "text": "Filebot is probably one of the top 5 computer programs I've ever used."
-    },
-    {
-        "user": "Jeff",
-        "date": "2015-02-11",
-        "text": "This app has saved me thousands of hours."
-    },
-    {
-        "user": "Christian",
-        "date": "2015-04-14",
-        "text": "This is a new level and the ease of use is amazing!!!"
-    },
-    {
-        "user": "Digital Addictions",
-        "date": "2015-08-31",
-        "text": "Worth every penny and then some! I can't even start to fathom how much time and mind numbing tedium FileBot has saved me."
-    },
-    {
-        "user": "Barry",
-        "date": "2015-11-06",
-        "text": "Indispensable as far as I am concerned. Simple to use and works every time."
-    },
-    {
-        "user": "Frankie CzechMate",
-        "date": "2015-12-20",
-        "text": "Absolute miracle! I cannot recommend it enough. It made renaming and organizing more than 10.000 files a breeze!"
-    },
-    {
-        "user": "Brandoneous",
-        "date": "2016-02-05",
-        "text": "Fantastic application - Shut up and take my money!"
-    },
-    {
-        "user": "Kygo Kris",
-        "date": "2016-04-17",
-        "text": "A tool I can't live without! One of those programs you don't realize you need until after you have it!"
-    },
-    {
-        "user": "Pratty",
-        "date": "2016-05-11",
-        "text": "I'm pretty OCD when it comes to organizing my files and this little beauty is my medication. Love it like a Fat Kid Loves Cake!"
-    },
-    {
-        "user": "chr0nemics",
-        "date": "2016-09-20",
-        "text": "20,000 files renamed and counting. Best little investment I ever made. Saves me a ton of time on formatting my media files."
-    },
-    {
-        "user": "@palecur",
-        "date": "2018-08-05",
-        "text": "Few things are as satisfactory as unleashing FileBot on your media collection and gazing on a universe of neatly, uniformly named files.",
-        "link": "https://twitter.com/palecur/status/1025905607402872832"
-    },
-    {
-        "user": "MrPenguin",
-        "date": "2021-06-04",
-        "text": "Why would you bother looking for a free one at that price when Filebot is absolutely f.....in incredible.",
-        "link": "https://www.filebot.net/forums/viewtopic.php?p=54810#p54810"
-    },
-    {
-        "user": "Steve",
-        "date": "2021-12-21",
-        "text": "This is one of those applications that is stealthily powerful, and the more you use it, the more you like it!",
-        "link": "https://www.filebot.net/forums/viewtopic.php?p=56428#p56428"
-    }
+	{
+		"user": "Mark",
+		"date": "2012-03-25",
+		"text": "One of the most liked \u201cmust have\u201d programs I use. Much thanks to the author!"
+	},
+	{
+		"user": "Gillardino",
+		"date": "2012-05-12",
+		"text": "Indispensable tool for people with a large library of videos. Through this program, I was able to restore order in films and serials. Thank you!"
+	},
+	{
+		"user": "Akya",
+		"date": "2013-02-21",
+		"text": "Extremely efficient, especially for renaming single episodes."
+	},
+	{
+		"user": "Bobby",
+		"date": "2013-05-27",
+		"text": "Pretty awesome piece of software. Very fast and easy to use. As it states: \u201cit just works\u201d."
+	},
+	{
+		"user": "Hayward",
+		"date": "2013-08-08",
+		"text": "Wow! I had a large collection of tv shows which I was not looking forward to sorting out. Dumped the files into FileBot and within minutes, all done."
+	},
+	{
+		"user": "Raydan",
+		"date": "2013-09-08",
+		"text": "I can really recommend using filebot... I just started the script once... and it was quite mindblowing to be honest."
+	},
+	{
+		"user": "Mitch",
+		"date": "2013-11-17",
+		"text": "Absolutely brilliant application. Does everything so smoothly!"
+	},
+	{
+		"user": "Alexander",
+		"date": "2013-12-12",
+		"text": "Loving FileBot. I only wish I had discovered it sooner. Thank you for saving me so much time!"
+	},
+	{
+		"user": "Chuck",
+		"date": "2014-04-08",
+		"text": "It will rip through movies and tv series files like a knife through butter."
+	},
+	{
+		"user": "Piers",
+		"date": "2014-04-16",
+		"text": "I would go with FileBot to rename content - over 18,000 files and a 99.8% first time success rate."
+	},
+	{
+		"user": "Joe",
+		"date": "2014-07-31",
+		"text": "Filebot is probably one of the top 5 computer programs I've ever used."
+	},
+	{
+		"user": "Jeff",
+		"date": "2015-02-11",
+		"text": "This app has saved me thousands of hours."
+	},
+	{
+		"user": "Christian",
+		"date": "2015-04-14",
+		"text": "This is a new level and the ease of use is amazing!!!"
+	},
+	{
+		"user": "Digital Addictions",
+		"date": "2015-08-31",
+		"text": "Worth every penny and then some! I can't even start to fathom how much time and mind numbing tedium FileBot has saved me."
+	},
+	{
+		"user": "Barry",
+		"date": "2015-11-06",
+		"text": "Indispensable as far as I am concerned. Simple to use and works every time."
+	},
+	{
+		"user": "Frankie CzechMate",
+		"date": "2015-12-20",
+		"text": "Absolute miracle! I cannot recommend it enough. It made renaming and organizing more than 10.000 files a breeze!"
+	},
+	{
+		"user": "Brandoneous",
+		"date": "2016-02-05",
+		"text": "Fantastic application - Shut up and take my money!"
+	},
+	{
+		"user": "Kygo Kris",
+		"date": "2016-04-17",
+		"text": "A tool I can't live without! One of those programs you don't realize you need until after you have it!"
+	},
+	{
+		"user": "Pratty",
+		"date": "2016-05-11",
+		"text": "I'm pretty OCD when it comes to organizing my files and this little beauty is my medication. Love it like a Fat Kid Loves Cake!"
+	},
+	{
+		"user": "chr0nemics",
+		"date": "2016-09-20",
+		"text": "20,000 files renamed and counting. Best little investment I ever made. Saves me a ton of time on formatting my media files."
+	},
+	{
+		"user": "@palecur",
+		"date": "2018-08-05",
+		"text": "Few things are as satisfactory as unleashing FileBot on your media collection and gazing on a universe of neatly, uniformly named files.",
+		"link": "https://twitter.com/palecur/status/1025905607402872832"
+	},
+	{
+		"user": "MrPenguin",
+		"date": "2021-06-04",
+		"text": "Why would you bother looking for a free one at that price when Filebot is absolutely f.....in incredible.",
+		"link": "https://www.filebot.net/forums/viewtopic.php?p=54810#p54810"
+	},
+	{
+		"user": "Steve",
+		"date": "2021-12-21",
+		"text": "This is one of those applications that is stealthily powerful, and the more you use it, the more you like it!",
+		"link": "https://www.filebot.net/forums/viewtopic.php?p=56428#p56428"
+	}
 ]
