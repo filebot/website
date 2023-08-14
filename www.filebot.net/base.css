@@ -363,11 +363,12 @@ p.suggestion {
 
 
 table.reference  {
+	margin: 0 auto;
 	border-collapse: collapse;
 }
 
 table.reference > tbody > tr > th, table.reference > tbody > tr > td {
-	padding: 5px 20px;
+	padding: 5px 20px 5px 16px;
 	white-space: nowrap;
 }
 
