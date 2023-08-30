@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.0.3</name>
-	<revision>9760</revision>
+	<name>FileBot 5.1.0</name>
+	<revision>9972</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.0.3</b><br>
+		<b>FileBot 5.1.0</b><br>
 		This release features:<br>
-		+ Added episode order preferences<br>
-		+ Added default presets<br>
-		+ Added episode group tools<br>
-		+ Enhanced format bindings<br>
-		+ Enhanced auto-align behaviour<br>
-		+ Added column edit behaviour<br>
-		+ Added keyboard shortcuts<br>
-		+ Enable TheTVDBv4<br>
-		+ Enable HTTP/2<br>
+		+ Support for custom post-processing scripts<br>
+		+ Added {tvdbid} binding<br>
+		+ Added {medium} binding<br>
+		+ Added {episodelist} binding<br>
+		+ Cache mediainfo and ffprobe output<br>
+		+ Improved support for EXIF metadata<br>
+		+ Improved support for xfs and bcachefs<br>
+		+ Improved support for nested include files<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
-	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=59304#p59304]]></discussion>
+	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=60846#p60846]]></discussion>
 	<download><![CDATA[https://www.filebot.net/download.html]]></download>
 </update>
