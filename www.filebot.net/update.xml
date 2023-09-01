@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.1.0</name>
-	<revision>9972</revision>
+	<name>FileBot 5.1.1</name>
+	<revision>9982</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.1.0</b><br>
+		<b>FileBot 5.1.1</b><br>
 		This release features:<br>
 		+ Support for custom post-processing scripts<br>
 		+ Added {tvdbid} binding<br>
