@@ -29,7 +29,7 @@ redirect 301 /help/mediainfo.html       https://www.filebot.net/forums/viewtopic
 redirect 301 /report.html               https://www.filebot.net/forums/viewforum.php?f=6
 redirect 301 /notes.html                https://www.filebot.net/forums/viewforum.php?f=7
 redirect 301 /support.html              https://www.filebot.net/forums/viewforum.php?f=8
-redirect 301 /node.html                 https://www.filebot.net/forums/viewtopic.php?t=2663
+redirect 301 /node.html                 https://www.filebot.net/forums/viewtopic.php?t=13942
 redirect 301 /manpage.html              https://www.filebot.net/cli.html#arguments
 redirect 301 /tutorials.html            https://youtube.com/playlist?list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9
 redirect 301 /channel.html              https://discord.com/invite/cKVvZ2S
