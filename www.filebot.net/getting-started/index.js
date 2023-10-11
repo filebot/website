@@ -4,133 +4,140 @@ function getData() {
 		// Getting Started: Rename TV Series
 		anchor: '#rename',
 		video: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/rename.png',
-		thumb: 'images/rename.thumb.png',
+		image: 'images/rename.webp',
+		thumb: 'images/rename.thumb.webp',
 		filter: true
 	}, {
 		// Screenshot: Mac App Store Permissions
-		anchor: '#permissions.png',
-		image: 'images/permissions.png',
-		thumb: 'images/permissions.thumb.png',
+		anchor: '#permissions',
+		image: 'images/permissions.webp',
+		thumb: 'images/permissions.thumb.webp',
 		filter: location.hash == '#mas'
 	}, {
 		// Tutorial: How do I organize files for Plex?
 		anchor: '#plex-naming-standard',
 		video: 'https://www.youtube.com/watch?v=cihWAvDW7MM&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/cihWAvDW7MM.jpg',
-		thumb: 'images/youtube/cihWAvDW7MM.thumb.jpg',
+		image: 'images/youtube/plex-naming-standard.webp',
+		thumb: 'images/youtube/plex-naming-standard.thumb.webp',
 		filter: true
 	}, {
 		// Getting Started: Rename TV Series via Manual Matching
 		anchor: '#manual-matching',
 		video: 'https://www.youtube.com/watch?v=btNSv7AnMMw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/episodes.png',
-		thumb: 'images/episodes.thumb.png',
+		image: 'images/episodes.webp',
+		thumb: 'images/episodes.thumb.webp',
 		filter: true
 	}, {
 		// Tutorial: How do I manually match files with episodes in linear order?
 		anchor: '#linear-matching',
 		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/dh2WXQSzgJA.jpg',
-		thumb: 'images/youtube/dh2WXQSzgJA.thumb.jpg',
+		image: 'images/youtube/linear-matching.webp',
+		thumb: 'images/youtube/linear-matching.thumb.webp',
+		filter: true
+	}, {
+		// Tutorial: How do I manually fix episode matches?
+		anchor: '#edit-match',
+		video: 'https://www.youtube.com/watch?v=5T6_4tsOU5o&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/edit-match.webp',
+		thumb: 'images/youtube/edit-match.thumb.webp',
 		filter: true
 	}, {
 		// Getting Started: Automatic Subtitle Lookup
 		anchor: '#subtitle-lookup',
 		video: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-hash-lookup.png',
-		thumb: 'images/subtitle-hash-lookup.thumb.png',
+		image: 'images/subtitle-hash-lookup.webp',
+		thumb: 'images/subtitle-hash-lookup.thumb.webp',
 		filter: location.hash != '#mas'
 	}, {
 		// Getting Started: Subtitle Search
 		anchor: '#subtitle-search',
 		video: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-search.png',
-		thumb: 'images/subtitle-search.thumb.png',
+		image: 'images/subtitle-search.webp',
+		thumb: 'images/subtitle-search.thumb.webp',
 		filter: location.hash != '#mas'
 	}, {
 		// Getting Started: Check and create SFV files
 		anchor: '#sfv',
 		video: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/sfv.png',
-		thumb: 'images/sfv.thumb.png',
+		image: 'images/sfv.webp',
+		thumb: 'images/sfv.thumb.webp',
 		filter: true
 	}, {
 		// Tutorial: How do I install my FileBot License File?
 		anchor: '#select-license-file',
 		video: 'https://www.youtube.com/watch?v=TnO8Pfn9Vlc&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/TnO8Pfn9Vlc.jpg',
-		thumb: 'images/youtube/TnO8Pfn9Vlc.thumb.jpg',
+		image: 'images/youtube/select-license-file.webp',
+		thumb: 'images/youtube/select-license-file.thumb.webp',
 		filter: location.hash != '#appx' && location.hash != '#mas'
 	}, {
 		// Tutorial: How do I restore match information from locally stored xattr metadata?
 		anchor: '#xattr',
 		video: 'https://www.youtube.com/watch?v=54h_Fb06drI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/54h_Fb06drI.jpg',
-		thumb: 'images/youtube/54h_Fb06drI.thumb.jpg',
+		image: 'images/youtube/xattr.webp',
+		thumb: 'images/youtube/xattr.thumb.webp',
 		filter: true
 	}, {
 		// Tutorial: How do I undo rename operations?
 		anchor: '#history',
 		video: 'https://www.youtube.com/watch?v=YOhwvWrW4rs&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/YOhwvWrW4rs.jpg',
-		thumb: 'images/youtube/YOhwvWrW4rs.thumb.jpg',
+		image: 'images/youtube/history.webp',
+		thumb: 'images/youtube/history.thumb.webp',
 		filter: true
 	}, {
 		// Tutorial: How do I revert rename operations from the command-line?
 		anchor: '#filebot-revert',
 		video: 'https://www.youtube.com/watch?v=Yo02FD1mIUI&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/Yo02FD1mIUI.jpg',
-		thumb: 'images/youtube/Yo02FD1mIUI.thumb.jpg',
+		image: 'images/youtube/revert.webp',
+		thumb: 'images/youtube/revert.thumb.webp',
 		filter: location.hash != '#mas'
 	}, {
 		// Screenshot: Rename TV Series
-		anchor: '#rename.png',
+		anchor: '#rename-screenshot',
 		link: 'https://www.filebot.net/manual.html',
-		image: 'images/rename.screenshot.png',
-		thumb: 'images/rename.screenshot.thumb.png',
+		image: 'images/rename.screenshot.webp',
+		thumb: 'images/rename.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Series Format
-		anchor: '#format.png',
+		anchor: '#format-screenshot',
 		link: 'https://www.filebot.net/naming.html',
-		image: 'images/format.screenshot.png',
-		thumb: 'images/format.screenshot.thumb.png',
+		image: 'images/format.screenshot.webp',
+		thumb: 'images/format.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Automatic Subtitle Lookup
-		anchor: '#subtitle-lookup.png',
+		anchor: '#subtitle-lookup-screenshot',
 		link: 'https://www.youtube.com/watch?v=q-oZ_hovsTY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-hash-lookup.screenshot.png',
-		thumb: 'images/subtitle-hash-lookup.screenshot.thumb.png',
+		image: 'images/subtitle-hash-lookup.screenshot.webp',
+		thumb: 'images/subtitle-hash-lookup.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Subtitle Search
-		anchor: '#subtitle-search.png',
+		anchor: '#subtitle-search-screenshot',
 		link: 'https://www.youtube.com/watch?v=R80tKtHf4zw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/subtitle-search.screenshot.png',
-		thumb: 'images/subtitle-search.screenshot.thumb.png',
+		image: 'images/subtitle-search.screenshot.webp',
+		thumb: 'images/subtitle-search.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: Check and create SFV files
-		anchor: '#sfv.png',
+		anchor: '#sfv-screenshot',
 		link: 'https://www.youtube.com/watch?v=4KWkSPr3fQY&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/sfv.screenshot.png',
-		thumb: 'images/sfv.screenshot.thumb.png',
+		image: 'images/sfv.screenshot.webp',
+		thumb: 'images/sfv.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: CLI
-		anchor: '#filebot-rename.png',
+		anchor: '#filebot-rename',
 		link: 'https://www.filebot.net/cli.html',
-		image: 'images/cli.screenshot.png',
-		thumb: 'images/cli.screenshot.thumb.png',
+		image: 'images/cli.screenshot.webp',
+		thumb: 'images/cli.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}, {
 		// Screenshot: FileBot Node
-		anchor: '#filebot-node.png',
+		anchor: '#filebot-node',
 		link: 'https://www.filebot.net/node.html',
-		image: 'images/node.screenshot.png',
-		thumb: 'images/node.screenshot.thumb.png',
+		image: 'images/node.screenshot.webp',
+		thumb: 'images/node.screenshot.thumb.webp',
 		filter: location.hash.length == 0
 	}]
 
