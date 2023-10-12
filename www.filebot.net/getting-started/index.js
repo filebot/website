@@ -159,13 +159,15 @@ function runGalleria() {
 	var page = findPage(data, location.hash)
 
 	// open videos in a new tab when galleria is running within an iframe
-	data.forEach(function(item) {
-		if (item.video) {
-			item.link = item.video
-			// must not be undefined for "open in new tab" to work
-			item.video = '#'
-		}
-	})
+	if (window.location !== window.parent.location) {
+		data.forEach(function(item) {
+			if (item.video) {
+				item.link = item.video
+				// must not be undefined for "open in new tab" to work
+				item.video = '#'
+			}
+		})
+	}
 
 	Galleria.run('#galleria', {
 		dataSource: data,
@@ -173,8 +175,13 @@ function runGalleria() {
 		popupLinks: true,
 		maxScaleRatio: 1,
 		youtube: {
-			VQ: 'HD1080',
-			autoplay: 1
+			vq: 'HD1080',
+			// enable captions by default
+			cc_lang_pref: 'en', cc_load_policy: 1,
+			// enable autoplay
+			autoplay: 1, mute: 1,
+			// disable links to 3rd party videos
+			rel: 0
 		},
 		thumbnails: 'lazy'
 	})
