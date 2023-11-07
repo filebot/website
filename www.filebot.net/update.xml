@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.1.1</name>
-	<revision>9982</revision>
+	<name>FileBot 5.1.2</name>
+	<revision>10125</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.1.1</b><br>
+		<b>FileBot 5.1.2</b><br>
 		This release features:<br>
-		+ Support for custom post-processing scripts<br>
-		+ Added {tvdbid} binding<br>
-		+ Added {medium} binding<br>
-		+ Added {episodelist} binding<br>
-		+ Cache mediainfo and ffprobe output<br>
-		+ Improved support for EXIF metadata<br>
-		+ Improved support for xfs and bcachefs<br>
-		+ Improved support for nested include files<br>
+		+ Added {plex.year} binding<br>
+		+ Added {language} binding<br>
+		+ Added {mediaFileName} binding<br>
+		+ Added {dovi} binding<br>
+		+ Support for companion files in Music Mode<br>
+		+ Improved support for APFS and BTRFS<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
 	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=60846#p60846]]></discussion>
