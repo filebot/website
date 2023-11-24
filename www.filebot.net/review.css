@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Handwriting';
-	src: url('fonts/handwriting.ttf');
+	src: url('fonts/handwriting.woff2');
 }
 
 @keyframes fadeIn {
