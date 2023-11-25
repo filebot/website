@@ -19,6 +19,13 @@ div.screenshot.column {
 	margin-left: 1.5em;
 }
 
+#purchase li.note.important:after {
+	content: '❗❗';
+	font-style: normal;
+	letter-spacing: -0.5em;
+	padding: 0em 0.2em;
+}
+
 #purchase {
 	margin-bottom: 55px;
 }
