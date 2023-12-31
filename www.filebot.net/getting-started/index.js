@@ -28,6 +28,13 @@ function getData() {
 		thumb: 'images/episodes.thumb.webp',
 		filter: true
 	}, {
+		// Tutorial: How do I manually fix episode matches?
+		anchor: '#edit-match',
+		video: 'https://www.youtube.com/watch?v=5T6_4tsOU5o&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/edit-match.webp',
+		thumb: 'images/youtube/edit-match.thumb.webp',
+		filter: true
+	}, {
 		// Tutorial: How do I manually match files with episodes in linear order?
 		anchor: '#linear-matching',
 		video: 'https://www.youtube.com/watch?v=dh2WXQSzgJA&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
@@ -35,11 +42,11 @@ function getData() {
 		thumb: 'images/youtube/linear-matching.thumb.webp',
 		filter: true
 	}, {
-		// Tutorial: How do I manually fix episode matches?
-		anchor: '#edit-match',
-		video: 'https://www.youtube.com/watch?v=5T6_4tsOU5o&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
-		image: 'images/youtube/edit-match.webp',
-		thumb: 'images/youtube/edit-match.thumb.webp',
+		// Tutorial: How do I manually match multi-episode files in linear order?
+		anchor: '#multi-episode-matching',
+		video: 'https://www.youtube.com/watch?v=BsIzoGyH4iY&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/multi-episode-matching.webp',
+		thumb: 'images/youtube/multi-episode-matching.thumb.webp',
 		filter: true
 	}, {
 		// Getting Started: Automatic Subtitle Lookup
