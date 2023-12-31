@@ -44,7 +44,7 @@ function getData() {
 	}, {
 		// Tutorial: How do I manually match multi-episode files in linear order?
 		anchor: '#multi-episode-matching',
-		video: 'https://www.youtube.com/watch?v=BsIzoGyH4iY&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		video: 'https://www.youtube.com/watch?v=fCCal3KPCR8&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
 		image: 'images/youtube/multi-episode-matching.webp',
 		thumb: 'images/youtube/multi-episode-matching.thumb.webp',
 		filter: true
