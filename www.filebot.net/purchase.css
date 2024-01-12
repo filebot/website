@@ -20,7 +20,7 @@ div.screenshot.column {
 }
 
 #purchase li.note.important:after {
-	content: '❗❗❗';
+	content: '❗❗❗❗';
 	font-style: normal;
 	letter-spacing: -0.5em;
 	padding: 0em 0.2em;
