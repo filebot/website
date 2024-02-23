@@ -67,11 +67,11 @@
 					Rename given episode files using AniDB episode listing.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{s} - {s00e00} - {t}"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd> <kbd class="option">--format</kbd> <kbd class="argument">&quot;{s} - {s00e00} - {t}&quot;</kbd></code>
 					Rename given episode files using the given <a href="naming.html">custom format</a>.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">"1x01.mkv"</kbd> <kbd class="option">--q</kbd> <kbd class="argument">"Firefly"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">--lang</kbd> <kbd class="argument">German</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="argument">&quot;1x01.mkv&quot;</kbd> <kbd class="option">--q</kbd> <kbd class="argument">&quot;Firefly&quot;</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">--lang</kbd> <kbd class="argument">German</kbd></code>
 					Rename a given episode file forcing a given series based on German language episode listing.
 				</p>
 				<p>
@@ -79,11 +79,11 @@
 					Rename a given movie file using the numeric ID to lookup the movie information.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">/output</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{plex.id}"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/input&quot;</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">&quot;/output&quot;</kbd> <kbd class="option">--format</kbd> <kbd class="argument">&quot;{plex.id}&quot;</kbd></code>
 					Clone movie  files into a new <a href="forums/viewtopic.php?t=4116">{plex} file and folder structure</a>.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">/output</kbd> <kbd class="option">--format</kbd> <kbd class="argument">"{plex.id}"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-rename</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/input&quot;</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="option">--output</kbd> <kbd class="argument">&quot;/output&quot;</kbd> <kbd class="option">--format</kbd> <kbd class="argument">&quot;{plex.id}&quot;</kbd></code>
 					Clone TV series episode files into a new <a href="forums/viewtopic.php?t=4116">{plex} file and folder structure</a>.
 				</p>
 				<p class="suggestion">
@@ -91,20 +91,20 @@
 				</p>
 				<h3>Fetch Subtitles</h3>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">-non-strict</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd> <kbd class="option">-non-strict</kbd></code>
 					Fetch missing subtitles for the given episode files or movie files.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--lang</kbd> <kbd class="argument">zh</kbd> <kbd class="option">--output</kbd> <kbd class="argument">srt</kbd> <kbd class="option">--encoding</kbd> <kbd class="argument">utf-8</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-get-subtitles</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd> <kbd class="option">-non-strict</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--lang</kbd> <kbd class="argument">zh</kbd> <kbd class="option">--output</kbd> <kbd class="argument">srt</kbd> <kbd class="option">--encoding</kbd> <kbd class="argument">utf-8</kbd></code>
 					Fetch missing Chinese language subtitles and convert them to <a href="https://en.wikipedia.org/wiki/SubRip">SubRip</a> format and <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a> encoding.
 				</p>
 				<h3>File Verification</h3>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">"/path/to/files"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd></code>
 					Compute CRC32 checksums and create an <a href="https://en.wikipedia.org/wiki/Simple_file_verification">SFV</a> file.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="option">--format</kbd> <kbd class="argument">SHA-256</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-check</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd> <kbd class="option">--format</kbd> <kbd class="argument">SHA-256</kbd></code>
 					Compute SHA-256 hashes and create an <a href="https://en.wikipedia.org/wiki/Sha1sum">sha256sum</a> file.
 				</p>
 				<p>
@@ -113,23 +113,23 @@
 				</p>
 				<h3>Scripting</h3>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-extract</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--output</kbd> <kbd class="argument">"/output"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-extract</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/input&quot;</kbd> <kbd class="option">--output</kbd> <kbd class="argument">&quot;/output&quot;</kbd></code>
 					Extract all archives from the given input folder to the given output folder.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-list</kbd> <kbd class="option">--q</kbd> <kbd class="argument">"Firefly"</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">"s == 1"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">"{id} | {s} | {y} | {sxe} | {t}"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-list</kbd> <kbd class="option">--q</kbd> <kbd class="argument">&quot;Firefly&quot;</kbd> <kbd class="option">--db</kbd> <kbd class="argument">TheMovieDB::TV</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">&quot;s == 1&quot;</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">&quot;{id} | {s} | {y} | {sxe} | {t}&quot;</kbd></code>
 					Fetch episode list and print episode information for the <a href="forums/viewtopic.php?t=2127">selected episodes</a>.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-mediainfo</kbd> <kbd class="option">-r</kbd> <kbd class="argument">"/path/to/files"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">"f.video && minutes > 15"</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">"{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-mediainfo</kbd> <kbd class="option">-r</kbd> <kbd class="argument">&quot;/path/to/files&quot;</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--filter</kbd> <kbd class="argument">&quot;f.video && minutes > 15&quot;</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">--format</kbd> <kbd class="argument">&quot;{vc} | {vf} | {ac} | {af} | {bitrate} | {bytes} | {f}&quot;</kbd></code>
 					Read <a href="forums/viewtopic.php?t=4285">media info</a> and print to console.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">*.groovy</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--def</kbd> <kbd class="argument">a=1</kbd> <kbd class="argument">b=2</kbd> <kbd class="argument">c=3</kbd> <kbd class="argument">...</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">*.groovy</kbd> <kbd class="argument">&quot;/input&quot;</kbd> <kbd class="option">--def</kbd> <kbd class="argument">a=1</kbd> <kbd class="argument">b=2</kbd> <kbd class="argument">c=3</kbd> <kbd class="argument">...</kbd></code>
 					Execute a given <a href="script.html">Groovy script</a> and pass along input arguments and script parameters.
 				</p>
 				<p>
-					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">fn:amc</kbd> <kbd class="argument">"/input"</kbd> <kbd class="option">--output</kbd> <kbd class="argument">"/output"</kbd> <kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">-non-strict</kbd> <kbd class="option">--log-file</kbd> <kbd class="argument">amc.log</kbd> <kbd class="option">--def</kbd> <kbd class="argument">excludeList="amc.txt"</kbd></code>
+					<code><kbd class="cmd">filebot</kbd> <kbd class="option">-script</kbd> <kbd class="argument">fn:amc</kbd> <kbd class="argument">&quot;/input&quot;</kbd> <kbd class="option">--output</kbd> <kbd class="argument">&quot;/output&quot;</kbd> <kbd class="option">--action</kbd> <kbd class="argument">duplicate</kbd> <kbd class="cmd">\</kbd><br><kbd class="option">-non-strict</kbd> <kbd class="option">--log-file</kbd> <kbd class="argument">amc.log</kbd> <kbd class="option">--def</kbd> <kbd class="argument">excludeList=&quot;amc.txt&quot;</kbd></code>
 					Execute the <a href="amc.html">amc script</a> with the given input arguments, options and script parameters.
 				</p>
 			</div>
