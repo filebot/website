@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.1.2</name>
-	<revision>10125</revision>
+	<name>FileBot 5.1.3</name>
+	<revision>10185</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.1.2</b><br>
+		<b>FileBot 5.1.3</b><br>
 		This release features:<br>
 		+ Added {plex.year} binding<br>
 		+ Added {language} binding<br>
 		+ Added {mediaFileName} binding<br>
 		+ Added {dovi} binding<br>
-		+ Support for companion files in Music Mode<br>
-		+ Improved support for APFS and BTRFS<br>
+		+ Improved charset detection<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
 	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=60846#p60846]]></discussion>
