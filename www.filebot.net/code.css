@@ -19,7 +19,6 @@ kbd {
 
 kbd.variable, kbd.function {
 	color: #7f0055;
-	font-weight: bold;
 }
 
 kbd.type, kbd.method {
@@ -29,7 +28,6 @@ kbd.type, kbd.method {
 kbd.property {
 	color: #225577;
 	font-size: 11pt;
-	font-weight: bold;
 }
 
 kbd.string, kbd.numeral, kbd.regex {
@@ -39,17 +37,14 @@ kbd.string, kbd.numeral, kbd.regex {
 kbd.block {
 	color: #225577;
 	font-size: larger;
-	font-weight: bold;
 }
 
 kbd.cmd {
 	color: #5C7684;
-	font-weight: bold;
 }
 
 kbd.option {
 	color: #225577;
-	font-weight: bold;
 }
 
 kbd.argument {
@@ -103,5 +98,4 @@ div.documentation dt {
 	margin-bottom: 3px;
 	color: #4E4E4E;
 	font-size: 10pt;
-	font-weight: bold;
 }
