@@ -5,9 +5,10 @@ def f = new File(project.properties.'repo.qnap', 'index.xml')
 def now = new Date()
 
 
+// use platform values from the QDMS package (see https://download.qnap.com/Liveupdate/QTS5.2.0/qpkgcenter_eng.xml)
 def qnap = [
 	version: '4.3.4',
-	platforms: ['TS-NASARM', 'TS-NASX86', 'TS-X28A', 'TS-X32', 'TS-X32U', 'TS-X35A', 'TS-XA28A', 'TS-X73']
+	platforms: ['TS-NASARM', 'TS-NASX86', 'QB-103', 'TS-531P', 'TS-X16', 'TS-X28A', 'TS-X31P2', 'TS-X31P3', 'TS-X31X', 'TS-X31XU', 'TS-X32', 'TS-X32U', 'TS-X33', 'TS-X35', 'TS-X35A', 'TS-X35EU', 'TS-X41', 'TS-X42', 'TS-XA28A', 'TS-X73']
 ]
 
 
