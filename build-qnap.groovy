@@ -7,7 +7,7 @@ def now = new Date()
 
 def qnap = [
 	version: '4.3.4',
-	platforms: ['TS-NASARM', 'TS-NASX86', 'TS-X28A', 'TS-X32', 'TS-X32U', 'TS-X35A', 'TS-XA28A']
+	platforms: ['TS-NASARM', 'TS-NASX86', 'TS-X28A', 'TS-X32', 'TS-X32U', 'TS-X35A', 'TS-XA28A', 'TS-X73']
 ]
 
 
