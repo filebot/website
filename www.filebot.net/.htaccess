@@ -20,6 +20,7 @@ redirect 301 /help/args.html            https://www.filebot.net/forums/viewtopic
 redirect 301 /help/argument-files.html  https://www.filebot.net/forums/viewtopic.php?t=3244
 redirect 301 /help/generic-files.html   https://www.filebot.net/forums/viewtopic.php?t=2072
 redirect 301 /help/xattr.html           https://www.filebot.net/forums/viewtopic.php?t=324
+redirect 301 /help/settings.html        https://www.filebot.net/forums/viewtopic.php?t=3913
 redirect 301 /help/presets.html         https://www.filebot.net/forums/viewtopic.php?t=3228
 redirect 301 /help/apply.html           https://www.filebot.net/forums/viewtopic.php?t=11079
 redirect 301 /help/apply-script.html    https://www.filebot.net/forums/viewtopic.php?t=13769
