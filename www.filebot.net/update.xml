@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.1.5</name>
-	<revision>10380</revision>
+	<name>FileBot 5.1.6</name>
+	<revision>10435</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.1.5</b><br>
+		<b>FileBot 5.1.6</b><br>
 		This release features:<br>
+		+ Enable OpenSubtitles REST API by default<br>
 		+ Improved series / episode detection<br>
-		+ Improved charset detection<br>
 		+ Improved system integration<br>
 		+ Lots of minor improvements and bug fixes<br>
 	<html>]]></message>
