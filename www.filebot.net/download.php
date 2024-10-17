@@ -22,7 +22,7 @@ if (!isset($type)) {
 	if (preg_match('/Windows/i', $ua) && preg_match('/x64/i', $ua)) {
 		redirect($FRS.'FileBot_'.$version.'_x64.msi');
 	} else if (preg_match('/Macintosh/i', $ua)) {
-		redirect($FRS.'FileBot_'.$version.'.pkg');
+		redirect($FRS.'FileBot_'.$version.'_x64.pkg');
 	} else {
 		redirect('https://www.filebot.net/download.html');
 	}
@@ -31,9 +31,9 @@ if (!isset($type)) {
 } else if ($type == 'zip') {
 	redirect($FRS.'FileBot_'.$version.'-portable.zip');
 } else if ($type == 'pkg') {
-	redirect($FRS.'FileBot_'.$version.'.pkg');
+	redirect($FRS.'FileBot_'.$version.'_x64.pkg');
 } else if ($type == 'app') {
-	redirect($FRS.'FileBot_'.$version.'.app.tar.xz');
+	redirect($FRS.'FileBot_'.$version.'_x64.app.tar.xz');
 } else if ($type == 'deb') {
 	redirect($FRS.'FileBot_'.$version.'_universal.deb');
 } else if ($type == 'portable') {
