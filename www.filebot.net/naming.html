@@ -872,7 +872,7 @@
 					<tr id="today">
 						<td><kbd class="variable">today</kbd></td>
 						<td>current date</td>
-						<td>2022-08-08</td>
+						<td><script>document.write(new Date().toISOString().match(/\d{4}-\d{2}-\d{2}/)[0])</script><noscript>2022-08-08</noscript></td>
 						<td><kbd class="type">Date</kbd></td>
 					</tr>
 					<tr id="home">
