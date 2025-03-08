@@ -3,13 +3,14 @@ function getData() {
 	var data = [{
 		// Getting Started: Rename TV Series
 		anchor: '#rename',
-		video: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		video: 'https://www.youtube.com/watch?v=B6ZnpiIa-E4&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/rename.webp',
 		thumb: 'images/rename.thumb.webp',
 		filter: true
 	}, {
 		// Screenshot: Mac App Store Permissions
 		anchor: '#permissions',
+		video: 'https://www.youtube.com/watch?v=RRq2_Pjyko8&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
 		image: 'images/permissions.webp',
 		thumb: 'images/permissions.thumb.webp',
 		filter: location.hash == '#mas'
