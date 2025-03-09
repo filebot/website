@@ -3,9 +3,9 @@ function getData() {
 	var data = [{
 		// Getting Started: Rename TV Series
 		anchor: '#rename',
-		video: 'https://www.youtube.com/watch?v=B6ZnpiIa-E4&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/rename.webp',
-		thumb: 'images/rename.thumb.webp',
+		video: 'https://www.youtube.com/watch?v=uD4WQN_vWcE&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
+		image: 'images/youtube/rename.webp',
+		thumb: 'images/youtube/rename.thumb.webp',
 		filter: true
 	}, {
 		// Screenshot: Mac App Store Permissions
@@ -20,13 +20,6 @@ function getData() {
 		video: 'https://www.youtube.com/watch?v=cihWAvDW7MM&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
 		image: 'images/youtube/plex-naming-standard.webp',
 		thumb: 'images/youtube/plex-naming-standard.thumb.webp',
-		filter: true
-	}, {
-		// Getting Started: Rename TV Series via Manual Matching
-		anchor: '#manual-matching',
-		video: 'https://www.youtube.com/watch?v=btNSv7AnMMw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
-		image: 'images/episodes.webp',
-		thumb: 'images/episodes.thumb.webp',
 		filter: true
 	}, {
 		// Tutorial: How do I manually fix episode matches?
@@ -48,6 +41,13 @@ function getData() {
 		video: 'https://www.youtube.com/watch?v=fCCal3KPCR8&list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9',
 		image: 'images/youtube/multi-episode-matching.webp',
 		thumb: 'images/youtube/multi-episode-matching.thumb.webp',
+		filter: true
+	}, {
+		// Getting Started: Rename TV Series via Manual Matching
+		anchor: '#manual-matching',
+		video: 'https://www.youtube.com/watch?v=btNSv7AnMMw&list=PLdPvEJhzxLMCEJJpb1mJtVkOpS7FfALnd',
+		image: 'images/episodes.webp',
+		thumb: 'images/episodes.thumb.webp',
 		filter: true
 	}, {
 		// Getting Started: Automatic Subtitle Lookup
