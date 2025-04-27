@@ -12,6 +12,9 @@
 
 	<link rel="preload" href="nav-a-bg.svg" as="image">
 	<link rel="preload" href="nav-a-bg-h.svg" as="image">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="download.js"></script>
 </head>
 <body>
 	<div class="page">
@@ -38,8 +41,8 @@
 				<img class="icon light" src="images/microsoft.logo.svg" alt="download" width="42" height="42" />
 				<h2>FileBot for Windows</h2>
 				<ul class="list">
-					<li>Windows installer for x64: <a href="@{link.release.prefix}_x64.msi">@{release}_x64.msi</a></li>
-					<li>Windows installer for ARM: <a href="@{link.release.prefix}_arm64.msi">@{release}_arm64.msi</a></li>
+					<li>Windows installer for x64: <a class="windows-x64" href="@{link.release.prefix}_x64.msi">@{release}_x64.msi</a></li>
+					<li>Windows installer for ARM: <a class="windows-arm64" href="@{link.release.prefix}_arm64.msi">@{release}_arm64.msi</a></li>
 					<li>Windows portable ZIP: <a href="@{link.release.prefix}-portable.zip">@{release}-portable.zip</a></li>
 					<li>Windows packages are available <a href="windows/winget.html">via winget</a> and <a href="windows/scoop.html">via scoop</a></li>
 				</ul>
@@ -49,8 +52,8 @@
 				<img class="icon light" src="images/apple.logo.svg" alt="download" width="42" height="42" />
 				<h2>FileBot for macOS</h2>
 				<ul class="list">
-					<li>macOS installer for Apple Silicon: <a href="@{link.release.prefix}_arm64.pkg">@{release}_arm64.pkg</a></li>
-					<li>macOS installer for Intel: <a href="@{link.release.prefix}_x64.pkg">@{release}_x64.pkg</a></li>
+					<li>macOS installer for Apple Silicon: <a class="macos-arm64" href="@{link.release.prefix}_arm64.pkg">@{release}_arm64.pkg</a></li>
+					<li>macOS installer for Intel: <a class="macos-x64" href="@{link.release.prefix}_x64.pkg">@{release}_x64.pkg</a></li>
 					<li>macOS package is available <a href="mac/brew.html">via brew cask</a></li>
 				</ul>
 			</div>
