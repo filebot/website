@@ -158,6 +158,7 @@ a.box:focus {
 	background-color: #FAFAD2;
 }
 
+
 /* -------------------- MEDIA -------------------- */
 
 
@@ -314,6 +315,18 @@ div.section.features div.screenshot {
 }
 
 
+/* -------------------- DOWNLOAD -------------------- */
+
+
+div.section.download a.highlight {
+	margin: 2px;
+	padding: 4px;
+	border-radius: 6px;
+	background-color: rgba(50, 150, 220, 0.2);
+	box-shadow: 0 0 6px rgba(50, 150, 220, 0.8);
+}
+
+
 /* -------------------- DOCUMENTATION -------------------- */
 
 
@@ -358,6 +371,7 @@ p.suggestion {
 	padding: 8px;
 	margin: 25px 10px 45px 10px;
 }
+
 
 /* -------------------- REFERENCE -------------------- */
 
