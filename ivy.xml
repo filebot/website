@@ -2,12 +2,12 @@
 <ivy-module version="2.0">
 	<info organisation="net.filebot" module="website" />
 	<dependencies>
-		<dependency org="org.apache.ant" name="ant" rev="1.10.12" />
-		<dependency org="org.apache.groovy" name="groovy-ant" rev="4.0.21" />
-		<dependency org="org.apache.groovy" name="groovy-json" rev="4.0.21" />
-		<dependency org="org.apache.groovy" name="groovy-xml" rev="4.0.21" />
-		<dependency org="org.apache.groovy" name="groovy-dateutil" rev="4.0.21" />
-		<dependency org="org.apache.groovy" name="groovy-groovydoc" rev="4.0.21" />
+		<dependency org="org.apache.ant" name="ant" rev="1.10.15" />
+		<dependency org="org.apache.groovy" name="groovy-ant" rev="4.0.28" />
+		<dependency org="org.apache.groovy" name="groovy-json" rev="4.0.28" />
+		<dependency org="org.apache.groovy" name="groovy-xml" rev="4.0.28" />
+		<dependency org="org.apache.groovy" name="groovy-dateutil" rev="4.0.28" />
+		<dependency org="org.apache.groovy" name="groovy-groovydoc" rev="4.0.28" />
 		<dependency org="net.filebot" name="ant-spk" rev="0.7.1" />
 	</dependencies>
 </ivy-module>
