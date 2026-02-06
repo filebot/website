@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
 	<name>FileBot 5.2.0</name>
-	<revision>10514</revision>
+	<revision>10920</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.2.0</b><br>
+		<b>FileBot 5.2.1</b><br>
 		This release features:<br>
-		+ Support for matching or re-matching selected items<br>
-		+ Improved movie / episode auto-detection<br>
-		+ Improved support for DNG image files<br>
-		+ Improved support for multi-monitor environments<br>
+		+ Added SPACE bar shortcut to show / hide match details<br>
+		+ Improved series / episode auto-detection<br>
+		+ Enhanced support for SMB network shares<br>
+		+ Enhanced background task management<br>
 		+ Lots of minor improvements and bug fixes<br>
 	</html>]]></message>
 	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=65513#p65513]]></discussion>
