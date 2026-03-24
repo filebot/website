@@ -86,3 +86,7 @@ div.light:hover, a.light:hover, img.light:hover {
 	opacity: 1.0;
 	transition: opacity 0.1s ease;
 }
+
+img.screenshot.zoom:hover {
+	filter: drop-shadow(0px 0px 50px #F8F8FF88);
+}

@@ -142,7 +142,7 @@ a.box {
 	display: block;
 	padding: 10px;
 	min-height: 45px;
-	max-width: 380px;
+	max-width: 360px;
 	background-color: #F5F5F5;
 	border-radius: 4px;
 	box-shadow: 0 2px 5px #A2A2A2;
@@ -168,6 +168,17 @@ div.screenshot {
 
 img.screenshot, img.dialog {
 	box-shadow: 0px 2px 5px #a2a2a2;
+}
+
+img.screenshot.zoom {
+	position: relative;
+	z-index: 10;
+
+	transition: all 0.3s ease-in-out;
+}
+
+img.screenshot.zoom:hover {
+	transform: translate(-230px, 180px) scale(3.26);
 }
 
 div.screencast {
