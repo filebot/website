@@ -187,17 +187,6 @@ div.screencast {
 	margin-left: 20px;
 }
 
-div.screencast img.play {
-	position: absolute;
-	top: 2px;
-	right: 4px;
-	opacity: 0.2;
-}
-
-div.screencast:hover img.play {
-	opacity: 1.0;
-}
-
 div.video {
 	margin: 20px 0px;
 }
@@ -212,6 +201,19 @@ div.video iframe {
 	box-shadow: 2px 2px 5px #a2a2a2;
 	border-radius: 4px;
 }
+
+div.video.zoom {
+	position: relative;
+	z-index: 10;
+
+	transition: all 0.3s ease-in-out;
+	height: 480px;
+}
+
+div.video.zoom:hover {
+	transform: translate(0px, -68px) scale(1.4);
+}
+
 
 /* -------------------- SECTION -------------------- */
 
@@ -242,6 +244,7 @@ div.section {
 
 div.section.about {
 	clear: none;
+	max-width: 415px;
 }
 
 div.section img.icon {

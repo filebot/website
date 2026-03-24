@@ -10,7 +10,13 @@ body {
 	right: 5px;
 	z-index: 10;
 	cursor: pointer;
-	opacity: 0.3
+	opacity: 0.3;
+	transition: all 0.1s ease-in-out;
+}
+
+#fullscreen:hover {
+	opacity: 0.9;
+	transform: scale(1.2);
 }
 
 #galleria {
