@@ -10,13 +10,14 @@
 
 div.review {
 	margin: 30px 25px;
-	min-height: 100px;
-	max-height: 100px;
-	transition: all 0.4s ease-out;
+	min-height: 60px;
+	max-height: 0px;
+	transition: all 0.2s ease-out;
 }
 
 div.review.ready {
-	max-height: 300px;
+	min-height: 100px;
+	max-height: 200px;
 }
 
 div.review a.box {
