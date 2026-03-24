@@ -219,11 +219,12 @@ div.video.zoom:hover {
 
 
 div.section.tutorial ol {
+	list-style-position: inside;
 	background-color: #EFEFEF;
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	margin: 12px 25px 15px 25px;
-	padding: 8px 30px 9px 30px;
+	padding: 8px 15px 9px 15px;
 	border-radius: 7px;
 }
 
