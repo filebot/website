@@ -18,6 +18,7 @@ $(window).on('load', function() {
 			a > $('.text').text(r.text)
 			a.attr('href', a.attr('href') + '#' + id)
 			a.show()
+			a.parent().addClass('ready')
 		}
 	})
 })
