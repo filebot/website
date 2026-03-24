@@ -142,7 +142,7 @@ a.box {
 	display: block;
 	padding: 10px;
 	min-height: 45px;
-	max-width: 350px;
+	max-width: 345px;
 	background-color: #F5F5F5;
 	border-radius: 4px;
 	box-shadow: 0 2px 5px #A2A2A2;
@@ -178,7 +178,7 @@ img.screenshot.zoom {
 }
 
 img.screenshot.zoom:hover {
-	transform: translate(-230px, 180px) scale(3.26);
+	transform: translate(-230px, 180px) scale(3.27);
 }
 
 div.screencast {
