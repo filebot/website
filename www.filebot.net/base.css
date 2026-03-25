@@ -162,32 +162,36 @@ a.box:focus {
 /* -------------------- MEDIA -------------------- */
 
 
+img.screenshot {
+	filter: drop-shadow(0px 2px 5px #a2a2a2);
+}
+
 div.screenshot {
 	float: right;
 }
 
-img.screenshot, img.dialog {
-	box-shadow: 0px 2px 5px #a2a2a2;
-}
-
-img.screenshot.zoom {
+div.zoom {
 	position: relative;
 	z-index: 10;
-
 	transition: all 0.3s ease-in-out;
 }
 
-img.screenshot.zoom:hover {
+div.zoom:hover {
+	z-index: 20;
+}
+
+div.screenshot.about.zoom:hover {
 	transform: translate(-230px, 180px) scale(3.27);
 }
 
-div.screencast {
+div.screenshot.about {
 	position: relative;
 	margin-top: 37px;
 	margin-left: 20px;
 }
 
 div.video {
+	height: 480px;
 	margin: 20px 0px;
 }
 
@@ -200,14 +204,6 @@ div.video iframe {
 	border: 4px black solid;
 	box-shadow: 2px 2px 5px #a2a2a2;
 	border-radius: 4px;
-}
-
-div.video.zoom {
-	position: relative;
-	z-index: 10;
-
-	transition: all 0.3s ease-in-out;
-	height: 480px;
 }
 
 div.video.zoom:hover {
@@ -327,6 +323,11 @@ div.section.features > ul.next {
 div.section.features div.screenshot {
 	position: relative;
 	margin-bottom: 10px;
+}
+
+
+div.section.features div.screenshot.zoom:hover {
+	transform: translate(-300px, 0px) scale(7);
 }
 
 
