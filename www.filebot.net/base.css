@@ -327,7 +327,7 @@ div.section.features div.screenshot {
 
 
 div.section.features div.screenshot.zoom:hover {
-	transform: translate(-300px, 0px) scale(7);
+	transform: translate(-300px, 135px) scale(7.14);
 }
 
 
