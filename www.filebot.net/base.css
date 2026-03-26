@@ -163,7 +163,7 @@ a.box:focus {
 
 
 img.screenshot {
-	filter: drop-shadow(0px 2px 5px #a2a2a2);
+	filter: drop-shadow(0px 2px 5px #00000050);
 }
 
 div.screenshot {
