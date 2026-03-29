@@ -9,6 +9,7 @@ h1 {
 	font-size: 24px;
 	font-weight: bold;
 	margin-left: 65px;
+	margin-right: 40px;
 	letter-spacing: 0.03em;
 }
 
@@ -186,8 +187,7 @@ div.screenshot.about.zoom:hover {
 
 div.screenshot.about {
 	position: relative;
-	margin-top: 37px;
-	margin-left: 20px;
+	margin: 37px 20px 10px 20px;
 }
 
 div.video {
