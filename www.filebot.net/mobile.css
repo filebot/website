@@ -72,6 +72,10 @@
 		display: none;
 	}
 
+	div.reference {
+		overflow-wrap: anywhere;
+	}
+
 	ul.repository {
 		columns: 1;
 		width: unset;
