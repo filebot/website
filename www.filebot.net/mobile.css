@@ -1,0 +1,50 @@
+body {
+	margin: 0px;
+}
+
+div.page {
+	width: 100%;
+	margin: 0px 0px;
+	padding: 20px 0px;
+	border: unset;
+	border-radius: unset;
+	box-shadow: unset;
+}
+
+div.video {
+	width: unset;
+	height: unset;
+}
+
+div.video iframe {
+	width: 100%;
+	margin: 0px 0px;
+	border: unset;
+	border-radius: unset;
+}
+
+div.screenshot {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+div.section > img.icon {
+	margin-left: 5px;
+}
+
+div.section span.quote {
+	margin-right: 5px;
+}
+
+div.footer p {
+	left: unset;
+}
+
+div.zoom:hover {
+	transform: unset !important;
+}
+
+#purchase > a.paddle_button {
+	margin-left: 65px !important;
+	margin-right: 20px !important;
+}
