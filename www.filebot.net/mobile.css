@@ -29,11 +29,9 @@
 	}
 
 	div.screenshot {
-		margin-left: 20px;
-		margin-right: 10px;
+		margin-left: 20px !important;
+		margin-right: 10px !important;
 	}
-
-
 
 	div.section > img.icon, div.section > h2 {
 		margin-left: 5px;
