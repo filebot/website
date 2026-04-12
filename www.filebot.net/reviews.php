@@ -32,7 +32,7 @@ $reviews = json_decode($contents);
 
 foreach ($reviews as $id => $review) {
 ?>
-<div class="review light">
+<div class="review light ready">
 	<a class="box" href="<? echo '#'.$id ?>" id="<? echo $id ?>">
 		<div class="thumbs up">
 			<img alt="Like" src="images/thumbs.svg" width="26" height="26" />
