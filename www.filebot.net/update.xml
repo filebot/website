@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-	<name>FileBot 5.2.1</name>
-	<revision>10920</revision>
+	<name>FileBot 5.2.3</name>
+	<revision>10990</revision>
 	<title>New updates available</title>
 	<message><![CDATA[<html>
-		<b>FileBot 5.2.1</b><br>
+		<b>FileBot 5.2.3</b><br>
 		This release features:<br>
-		+ Added SPACE bar shortcut to show / hide match details<br>
 		+ Improved series / episode auto-detection<br>
-		+ Enhanced support for SMB network shares<br>
-		+ Enhanced background task management<br>
+		+ Improved column edit behaviour<br>
+		+ Support for TheDiscDB episode mappings<br>
 		+ Lots of minor improvements and bug fixes<br>
 	</html>]]></message>
 	<discussion><![CDATA[https://www.filebot.net/forums/viewtopic.php?p=65513#p65513]]></discussion>
