@@ -94,3 +94,8 @@ ExpiresByType font/woff2                "access plus 1 month"
 ExpiresByType application/javascript    "access plus 1 month"
 ExpiresByType application/json          "access plus 1 month"
 ExpiresByType application/xml           "access plus 1 month"
+
+
+# Temporarily redirect /forums/ to r/filebot
+RedirectMatch 301 ^/forums/$ https://www.reddit.com/r/filebot/
+
