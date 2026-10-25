@@ -32,6 +32,8 @@
 
 
 	<target name="website" description="Build website">
+		<delete dir="${www.dist}" verbose="yes" />
+
 		<!-- copy static website resources -->
 		<copy todir="${www.dist}" preservelastmodified="yes" verbose="yes">
 			<fileset dir="${www.src}" />
@@ -42,7 +44,6 @@
 			<fileset dir="${www.src}">
 				<include name="**/*.htaccess" />
 				<include name="**/*.html" />
-				<include name="**/*.php" />
 			</fileset>
 		</copy-replace>
 	</target>

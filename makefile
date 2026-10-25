@@ -16,7 +16,7 @@ pull-release:
 	$(RSYNC) $(GZ_FILES) $(FRS_USER)@$(FRS_HOST):~/logs .
 
 push-website:
-	$(RSYNC) dist/filebot.net/ $(WWW_USER)@$(WWW_HOST):~/filebot.net/
+	$(RSYNC) $(MIRROR_FILES) dist/filebot.net/ $(WWW_USER)@$(WWW_HOST):~/filebot.net/
 
 push-release:
 	$(RSYNC) --exclude 'FileBot_*' get.filebot.net/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/
