@@ -1,0 +1,15 @@
+Options +Indexes
+
+IndexOptions FancyIndexing NameWidth=* IconsAreLinks IconWidth=16 IconHeight=16 VersionSort FoldersFirst IgnoreClient SuppressDescription SuppressColumnSorting XHTML HTMLTable Charset=UTF-8
+IndexOrderDefault Descending Date
+
+AddDefaultCharset UTF-8
+
+IndexStyleSheet https://get.filebot.net/index/index.css
+DefaultIcon https://get.filebot.net/index/page.image.png
+
+IndexIgnore ..
+AddType image/avif *.avif
+
+ExpiresActive on
+ExpiresByType image/avif "access plus 1 year"
