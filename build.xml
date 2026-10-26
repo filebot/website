@@ -3,6 +3,7 @@
 
 	<!-- define source dirs -->
 	<property name="www.dist" location="dist/filebot.net" />
+	<property name="app.dist" location="dist/app.filebot.net" />
 	<property name="www.src" location="www.filebot.net" />
 
 	<!-- import property files -->
@@ -33,6 +34,7 @@
 
 	<target name="website" description="Build website">
 		<delete dir="${www.dist}" verbose="yes" />
+		<delete dir="${app.dist}" verbose="yes" />
 
 		<!-- copy static website resources -->
 		<copy todir="${www.dist}" preservelastmodified="yes" verbose="yes">
@@ -46,6 +48,11 @@
 				<include name="**/*.html" />
 			</fileset>
 		</copy-replace>
+
+		<!-- copy static files for app.filebot.net mirror -->
+		<copy todir="${app.dist}" preservelastmodified="yes" verbose="yes">
+			<fileset dir="${www.dist}" />
+		</copy>
 	</target>
 
 
