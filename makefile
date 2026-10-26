@@ -2,7 +2,7 @@ include *.variables
 
 
 ANT := ant -lib lib
-RSYNC := rsync --verbose --recursive --checksum --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --progress --human-readable --prune-empty-dirs --exclude BETA --exclude HEAD --exclude .gitignore --exclude .DS_Store --exclude .dh-diag
+RSYNC := rsync --verbose --recursive --checksum --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r --keep-dirlinks --copy-links --human-readable --prune-empty-dirs --exclude BETA --exclude HEAD --exclude .gitignore --exclude .DS_Store --exclude .dh-diag
 GZ_FILES := --include='*/' --include='*.gz' --exclude='*'
 MIRROR_FILES := --delete
 
