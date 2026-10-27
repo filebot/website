@@ -5,8 +5,8 @@ IndexOrderDefault Descending Date
 
 AddDefaultCharset UTF-8
 
-IndexStyleSheet https://app.filebot.net/index/index.css
-DefaultIcon https://app.filebot.net/index/page.image.png
+IndexStyleSheet /index/index.css
+DefaultIcon /index/page.image.png
 
 IndexIgnore ..
 AddType image/avif *.avif
