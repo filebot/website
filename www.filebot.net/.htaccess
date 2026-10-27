@@ -1,69 +1,67 @@
-# Redirect to Microsoft Store or Mac App Store
-redirect 301 /windows/purchase.html     https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=purchase
-redirect 301 /mac/purchase.html         https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
+# Redirect /forums/ to forum.filebot.net domain
+redirect 301 /forums/ https://forum.filebot.net/
 
 # Redirect to Support Pages
-redirect 301 /manual.html               https://www.filebot.net/forums/viewtopic.php?t=7
-redirect 301 /amc.html                  https://www.filebot.net/forums/viewtopic.php?t=215
-redirect 301 /help.html                 https://www.filebot.net/forums/viewtopic.php?t=1868
-redirect 301 /activate.html             https://www.filebot.net/forums/viewtopic.php?t=6121
-redirect 301 /refund.html               https://www.filebot.net/forums/viewtopic.php?t=6118
-redirect 301 /resend.html               https://www.filebot.net/forums/viewtopic.php?t=13460
-redirect 301 /error/429.html            https://www.filebot.net/forums/viewtopic.php?t=9594
-redirect 301 /windows/support.html      https://www.filebot.net/forums/viewforum.php?f=10
-redirect 301 /mac/support.html          https://www.filebot.net/forums/viewforum.php?f=12
-redirect 301 /linux/support.html        https://www.filebot.net/forums/viewforum.php?f=11
-redirect 301 /syno/support.html         https://www.filebot.net/forums/viewforum.php?f=13
-redirect 301 /qnap/support.html         https://www.filebot.net/forums/viewforum.php?f=13
-redirect 301 /manual/plex.html          https://www.filebot.net/forums/viewtopic.php?t=13466
-redirect 301 /manual/anime.html         https://www.filebot.net/forums/viewtopic.php?t=2769
-redirect 301 /help/args.html            https://www.filebot.net/forums/viewtopic.php?t=1899
-redirect 301 /help/argument-files.html  https://www.filebot.net/forums/viewtopic.php?t=3244
-redirect 301 /help/generic-files.html   https://www.filebot.net/forums/viewtopic.php?t=2072
-redirect 301 /help/generic-prompt.html  https://www.filebot.net/forums/viewtopic.php?t=14137
-redirect 301 /help/companion-files.html https://www.filebot.net/forums/viewtopic.php?t=12172
-redirect 301 /help/remote-files.html    https://www.filebot.net/forums/viewtopic.php?t=12022
-redirect 301 /help/xattr.html           https://www.filebot.net/forums/viewtopic.php?t=324
-redirect 301 /help/settings.html        https://www.filebot.net/forums/viewtopic.php?t=3913
-redirect 301 /help/presets.html         https://www.filebot.net/forums/viewtopic.php?t=3228
-redirect 301 /help/file-order.html      https://www.filebot.net/forums/viewtopic.php?t=13796
-redirect 301 /help/file-filter.html     https://www.filebot.net/forums/viewtopic.php?t=14936
-redirect 301 /help/apply.html           https://www.filebot.net/forums/viewtopic.php?t=11079
-redirect 301 /help/apply-script.html    https://www.filebot.net/forums/viewtopic.php?t=13769
-redirect 301 /help/keyboard.html        https://www.filebot.net/forums/viewtopic.php?t=12703
-redirect 301 /help/history.html         https://www.filebot.net/forums/viewtopic.php?t=12133
-redirect 301 /help/mediainfo.html       https://www.filebot.net/forums/viewtopic.php?t=4285
-redirect 301 /help/hardlink.html        https://www.filebot.net/forums/viewtopic.php?t=14601
-redirect 301 /help/debug.html           https://www.filebot.net/forums/viewtopic.php?t=14657
-redirect 301 /report.html               https://www.filebot.net/forums/viewforum.php?f=6
-redirect 301 /notes.html                https://www.filebot.net/forums/viewforum.php?f=7
-redirect 301 /support.html              https://www.filebot.net/forums/viewforum.php?f=8
-redirect 301 /node.html                 https://www.filebot.net/forums/viewtopic.php?t=13942
-redirect 301 /context-menu.html         https://www.filebot.net/forums/viewtopic.php?t=15059
-redirect 301 /manpage.html              https://www.filebot.net/cli.html#arguments
+redirect 301 /manual.html               https://forum.filebot.net/viewtopic.php?t=7
+redirect 301 /amc.html                  https://forum.filebot.net/viewtopic.php?t=215
+redirect 301 /help.html                 https://forum.filebot.net/viewtopic.php?t=1868
+redirect 301 /activate.html             https://forum.filebot.net/viewtopic.php?t=6121
+redirect 301 /refund.html               https://forum.filebot.net/viewtopic.php?t=6118
+redirect 301 /resend.html               https://forum.filebot.net/viewtopic.php?t=13460
+redirect 301 /error/429.html            https://forum.filebot.net/viewtopic.php?t=9594
+redirect 301 /windows/support.html      https://forum.filebot.net/viewforum.php?f=10
+redirect 301 /mac/support.html          https://forum.filebot.net/viewforum.php?f=12
+redirect 301 /linux/support.html        https://forum.filebot.net/viewforum.php?f=11
+redirect 301 /syno/support.html         https://forum.filebot.net/viewforum.php?f=13
+redirect 301 /qnap/support.html         https://forum.filebot.net/viewforum.php?f=13
+redirect 301 /manual/plex.html          https://forum.filebot.net/viewtopic.php?t=13466
+redirect 301 /manual/anime.html         https://forum.filebot.net/viewtopic.php?t=2769
+redirect 301 /help/args.html            https://forum.filebot.net/viewtopic.php?t=1899
+redirect 301 /help/argument-files.html  https://forum.filebot.net/viewtopic.php?t=3244
+redirect 301 /help/generic-files.html   https://forum.filebot.net/viewtopic.php?t=2072
+redirect 301 /help/generic-prompt.html  https://forum.filebot.net/viewtopic.php?t=14137
+redirect 301 /help/companion-files.html https://forum.filebot.net/viewtopic.php?t=12172
+redirect 301 /help/remote-files.html    https://forum.filebot.net/viewtopic.php?t=12022
+redirect 301 /help/xattr.html           https://forum.filebot.net/viewtopic.php?t=324
+redirect 301 /help/settings.html        https://forum.filebot.net/viewtopic.php?t=3913
+redirect 301 /help/presets.html         https://forum.filebot.net/viewtopic.php?t=3228
+redirect 301 /help/file-order.html      https://forum.filebot.net/viewtopic.php?t=13796
+redirect 301 /help/file-filter.html     https://forum.filebot.net/viewtopic.php?t=14936
+redirect 301 /help/apply.html           https://forum.filebot.net/viewtopic.php?t=11079
+redirect 301 /help/apply-script.html    https://forum.filebot.net/viewtopic.php?t=13769
+redirect 301 /help/keyboard.html        https://forum.filebot.net/viewtopic.php?t=12703
+redirect 301 /help/history.html         https://forum.filebot.net/viewtopic.php?t=12133
+redirect 301 /help/mediainfo.html       https://forum.filebot.net/viewtopic.php?t=4285
+redirect 301 /help/hardlink.html        https://forum.filebot.net/viewtopic.php?t=14601
+redirect 301 /help/debug.html           https://forum.filebot.net/viewtopic.php?t=14657
+redirect 301 /report.html               https://forum.filebot.net/viewforum.php?f=6
+redirect 301 /notes.html                https://forum.filebot.net/viewforum.php?f=7
+redirect 301 /support.html              https://forum.filebot.net/viewforum.php?f=8
+redirect 301 /node.html                 https://forum.filebot.net/viewtopic.php?t=13942
+redirect 301 /context-menu.html         https://forum.filebot.net/viewtopic.php?t=15059
+redirect 301 /manpage.html              https://forum.filebot.net/cli.html#arguments
 redirect 301 /tutorials.html            https://youtube.com/playlist?list=PLdPvEJhzxLMBBQrv9pmVumjzdGoEbQcH9
 redirect 301 /channel.html              https://discord.com/invite/cKVvZ2S
 redirect 301 /contact/paddle.html       https://help.paddle.com/hc/en-us/requests/new
 
 # Redirect to Package Links
-redirect 301 /windows/winget.html       https://www.filebot.net/forums/viewtopic.php?t=12620
-redirect 301 /windows/scoop.html        https://www.filebot.net/forums/viewtopic.php?t=12163
+redirect 301 /windows/winget.html       https://forum.filebot.net/viewtopic.php?t=12620
+redirect 301 /windows/scoop.html        https://forum.filebot.net/viewtopic.php?t=12163
 redirect 301 /windows/chocolatey.html   https://chocolatey.org/packages/filebot/
-redirect 301 /mac/brew.html             https://www.filebot.net/forums/viewtopic.php?t=2049
-redirect 301 /linux/tar.html            https://www.filebot.net/forums/viewtopic.php?t=6057
-redirect 301 /linux/apt.html            https://www.filebot.net/forums/viewtopic.php?t=6028
-redirect 301 /linux/yum.html            https://www.filebot.net/forums/viewtopic.php?t=10631
-redirect 301 /linux/syno.html           https://www.filebot.net/forums/viewtopic.php?t=1802
-redirect 301 /linux/qnap.html           https://www.filebot.net/forums/viewtopic.php?t=6014
-redirect 301 /linux/snap.html           https://www.filebot.net/forums/viewtopic.php?t=5984
-redirect 301 /linux/unraid.html         https://www.filebot.net/forums/viewtopic.php?t=12965
+redirect 301 /mac/brew.html             https://forum.filebot.net/viewtopic.php?t=2049
+redirect 301 /linux/tar.html            https://forum.filebot.net/viewtopic.php?t=6057
+redirect 301 /linux/apt.html            https://forum.filebot.net/viewtopic.php?t=6028
+redirect 301 /linux/yum.html            https://forum.filebot.net/viewtopic.php?t=10631
+redirect 301 /linux/syno.html           https://forum.filebot.net/viewtopic.php?t=1802
+redirect 301 /linux/qnap.html           https://forum.filebot.net/viewtopic.php?t=6014
+redirect 301 /linux/snap.html           https://forum.filebot.net/viewtopic.php?t=5984
+redirect 301 /linux/unraid.html         https://forum.filebot.net/viewtopic.php?t=12965
 redirect 301 /linux/docker.html         https://github.com/filebot/filebot-docker#readme
 redirect 301 /linux/aur.html            https://aur.archlinux.org/packages/filebot/
 
-# Redirect Forum Links
-redirect 301 /forums/rules.php          https://www.filebot.net/forums/viewtopic.php?t=1868
-redirect 301 /forums/faq.php            https://www.filebot.net/forums/viewtopic.php?t=7
-redirect 301 /forums/help/faq           https://www.filebot.net/forums/viewtopic.php?t=7
+# Redirect to Microsoft Store or Mac App Store
+redirect 301 /windows/purchase.html     https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=purchase
+redirect 301 /mac/purchase.html         https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
 
 # Custom Error Page
 ErrorDocument 500 "BAD REQUEST"
@@ -94,8 +92,3 @@ ExpiresByType font/woff2                "access plus 1 month"
 ExpiresByType application/javascript    "access plus 1 month"
 ExpiresByType application/json          "access plus 1 month"
 ExpiresByType application/xml           "access plus 1 month"
-
-
-# Temporarily redirect /forums/ to r/filebot
-RedirectMatch 301 ^/forums/$ https://www.reddit.com/r/filebot/
-
