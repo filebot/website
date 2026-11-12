@@ -8,7 +8,7 @@ MIRROR_FILES := --delete
 
 
 update-website:
-	make website push-website purge-cache
+	make website push-website harden-permissions purge-cache
 
 pull-release:
 	find get.filebot.net -type f -name '*.sha256' -delete
@@ -27,6 +27,12 @@ push-repository:
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/rpm/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/rpm/
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/syno/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/syno/
 	$(RSYNC) $(MIRROR_FILES) get.filebot.net/qnap/ $(FRS_USER)@$(FRS_HOST):~/get.filebot.net/qnap/
+
+harden-permissions:
+	ssh -t $(WWW_USER)@$(WWW_HOST) "find ~/filebot.net -type f -not -path '*/acme-challenge*' -exec chmod -v 444 {} '+'"
+	ssh -t $(WWW_USER)@$(WWW_HOST) "find ~/filebot.net -type d -not -path '*/acme-challenge*' -exec chmod -v 555 {} '+'"
+	ssh -t $(WWW_USER)@$(WWW_HOST) "find ~/app.filebot.net -type f -not -path '*/acme-challenge*' -exec chmod -v 444 {} '+'"
+	ssh -t $(WWW_USER)@$(WWW_HOST) "find ~/app.filebot.net -type d -not -path '*/acme-challenge*' -exec chmod -v 555 {} '+'"
 
 website:
 	$(ANT) website
