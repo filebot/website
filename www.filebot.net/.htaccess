@@ -61,6 +61,11 @@ redirect 301 /linux/unraid.html         https://forum.filebot.net/viewtopic.php?
 redirect 301 /linux/docker.html         https://github.com/filebot/filebot-docker#readme
 redirect 301 /linux/aur.html            https://aur.archlinux.org/packages/filebot/
 
+# Redirect deprecated pages
+redirect 301 /download.php              https://www.filebot.net/download.html
+redirect 301 /donate.php                https://www.filebot.net/purchase.html
+redirect 301 /reviews.php               https://www.filebot.net/reviews.html
+
 # Redirect to Microsoft Store or Mac App Store
 redirect 301 /windows/purchase.html     https://www.microsoft.com/en-us/store/p/filebot/9nblggh52t9x?cid=purchase
 redirect 301 /mac/purchase.html         https://itunes.apple.com/us/app/filebot/id905384638?mt=12&uo=6&at=1l3vupy&ct=purchase
